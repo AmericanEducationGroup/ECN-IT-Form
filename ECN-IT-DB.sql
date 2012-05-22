@@ -422,7 +422,7 @@ INSERT INTO Positions (title, division, school_department) VALUES ("Teacher", 2,
 --    Fusion Regional
 INSERT INTO Positions (title, division, school_department) VALUES ("Regional Assistant", 2, 24);                        -- 229
 INSERT INTO Positions (title, division, school_department) VALUES ("Regional Director of Community Outreach", 2, 24);   -- 230
-INSERT INTO Positions (title, division, school_department) VALUES ("Regional Director of Operations", 2, 24);           -- 231
+INSERT INTO Positions (title, division, school_department) VALUES ("Director of Operations", 2, 24);                    -- 231
 INSERT INTO Positions (title, division, school_department) VALUES ("New Talent Coordinator", 2, 24);                    -- 232
 --  Lexis
 --    Barnstable Academy
@@ -511,6 +511,7 @@ INSERT INTO Positions (title, division, school_department) VALUES ("Executive As
 
 -- Added Positions
 INSERT INTO Positions (title, division, school_department) VALUES ("Regional Fusionologist", 2, 24);                    -- 295
+INSERT INTO Positions (title, division, school_department) VALUES ("Regional Director", 2, 24);                         -- 296
 
 -- Source_Directories
 INSERT INTO Source_Directories (name, parent) VALUES ("American Education Group", 1);           -- 1
@@ -970,454 +971,495 @@ INSERT INTO Directory_Owner (directory, owner_position) VALUES (62, 195);
 INSERT INTO Directory_Owner (directory, owner_position) VALUES (63, 26);
 
 --   Outreach
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (64, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (64, 25);
 
 --   Accounting
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, 18);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, 16);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, 17);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (65, 287);
 
 --   Leadership
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (66, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (66, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (66, 287);
 
 --   Registrar
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (67, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (67, 161);
 
 --   Curriculum
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (68, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (68, 231);
 
 --   Training
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (69, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (69, 231);
 
 -- American Education Group/Schools/Lexis/
 --   Barnstable
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (70, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (70, 233);
 
 --   Shreiner
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (71, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (71, 239);
 
 --   Tampa Day
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (72, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (72, 244);
 
 --   Talking Heads
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (73, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (73, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (73, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (73, 244);
 
 --   Curriculum
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (74, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (74, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (74, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (74, 244);
 
 --   Scholarship
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (75, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (75, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (75, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (75, 244);
 
 -- American Education Group/Schools/Little Sprouts/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (76, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (76, 284);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (77, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (77, 284);
 
 --   SMK
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (78, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (78, 284);
 
 --   Financials
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (79, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (79, 285);
 
 --   Data Centralization
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (80, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (80, 286);
 
 -- American Education Group/Team Sites/AEG R.O.C.K.S/
 --   Corporate
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (81, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (81, 33);
 
 --   Fusion
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (82, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (82, 33);
 
 --   Little Sprouts
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (83, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (83, 33);
 
 -- American Education Group/Team Site/NSO/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (84, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (84, 11);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (85, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (85, 11);
 
 --   New Business Development
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (86, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (86, 11);
 
 --   Construction Folder
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (87, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (87, 11);
 
 --   Real Estate Folder
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (88, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (88, 11);
 
 --   Project Tasks
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (89, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (89, 11);
 
 --   Project Calendar
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (90, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (90, 11);
 
 -- American Education Group/Team Sites/MPOPs/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (91, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (91, 11);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (92, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (92, 11);
 
 --   Little Sprouts
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (93, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (93, 11);
 
 --   Fusion Division
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (94, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (94, 11);
 
 --   Tampa Day School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (95, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (95, 11);
 
 --   Barnstable Academy
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (96, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (96, 11);
 
 --   Shreiner Academy
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (97, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (97, 11);
 
 -- American Education Group/Team Sites/EPIC! Portal/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (98, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (98, 11);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (99, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (99, 11);
 
 --   EPIC! Summits
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (100, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (100, 11);
 
 --   Reinventing School News
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (101, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (101, 11);
 
 --   Rock 'N' CulturRoll Awareness
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (102, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (102, 11);
 
 -- American Education Group/Schools/Fusion Division/Huntington Beach/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (103, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (103, 41);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (104, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (104, 41);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (105, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (105, 41);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (106, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (106, 41);
 
 -- American Education Group/Schools/Fusion Division/Long Island/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (107, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (107, 210);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (108, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (108, 210);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (109, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (109, 210);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (110, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (110, 210);
 
 -- American Education Group/Schools/Fusion Division/Los Angeles/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (111, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (111, 54);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (112, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (112, 54);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (113, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (113, 54);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (114, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (114, 54);
 
 -- American Education Group/Schools/Fusion Division/Los Gatos/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (115, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (115, 67);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (116, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (116, 67);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (117, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (117, 67);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (118, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (118, 67);
 
 -- American Education Group/Schools/Fusion Division/Manhattan/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (119, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (119, 197);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (120, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (120, 197);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (121, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (121, 197);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (122, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (122, 197);
 
 -- American Education Group/Schools/Fusion Division/Mission Viejo/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (123, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (123, 80);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (124, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (124, 80);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (125, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (125, 80);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (126, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (126, 80);
 
 -- American Education Group/Schools/Fusion Division/Pasadena/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (127, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (127, 93);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (128, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (128, 93);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (129, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (129, 93);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (130, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (130, 93);
 
 -- American Education Group/Schools/Fusion Division/Regional/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (131, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (131, 231);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (132, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (132, 231);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (133, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (133, 231);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (134, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (134, 231);
 
 -- American Education Group/Schools/Fusion Division/San Francisco/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (135, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (135, 119);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (136, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (136, 119);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (137, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (137, 119);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (138, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (138, 119);
 
 -- American Education Group/Schools/Fusion Division/San Mateo/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (139, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (139, 132);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (140, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (140, 132);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (141, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (141, 132);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (142, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (142, 132);
 
 -- American Education Group/Schools/Fusion Division/Solana Beach/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (143, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (143, 158);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (144, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (144, 158);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (145, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (145, 158);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (146, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (146, 158);
 
 -- American Education Group/Schools/Fusion Division/South Bay/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (147, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (147, 145);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (148, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (148, 145);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (149, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (149, 145);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (150, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (150, 145);
 
 -- American Education Group/Schools/Fusion Division/Walnut Creek/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (151, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (151, 171);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (152, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (152, 171);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (153, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (153, 171);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (154, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (154, 171);
 
 -- American Education Group/Schools/Fusion Division/Warner Center/
 --   Staff
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (155, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (155, 184);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (156, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (156, 184);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (157, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (157, 184);
 
 --   Head of School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (158, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (158, 184);
 
 -- American Education Group/Schools/Fusion Division/Fusionology/
 --   Fusionology Content
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (159, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (159, 295);
 
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (160, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (160, 295);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (161, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (161, 295);
 
 --   Collaboration
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (162, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (162, 295);
 
 -- American Education Group/Schools/Fusion Division/Discussion Board/
 --   Marketing
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (163, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (163, 26);
 
 -- American Education Group/Schools/Fusion Division/Outreach/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (164, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (164, 25);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (165, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (165, 25);
 
 --   Outreach Discussions
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (166, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (166, 25);
 
 -- American Education Group/Schools/Fusion Division/Accounting/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, 18);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, 16);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, 17);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (167, 287);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, 16);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, 17);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, 18);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (168, 287);
 
 --   Billing
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, 16);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, 17);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, 18);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (169, 287);
 
 --   Budget
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, 16);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, 17);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, 18);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (170, 287);
 
 -- American Education Group/Schools/Fusion Division/Leadership/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (171, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (171, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (171, 287);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (172, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (172, 286);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (172, 287);
 
 -- American Education Group/Schools/Fusion Division/Registrar/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (173, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (173, 161);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (174, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (174, 161);
 
 --   Site Pages
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (175, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (175, 161);
 
 --   Transcript Requests
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (176, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (176, 161);
 
 --   POC
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (177, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (177, 161);
 
 -- Americane Education Group/Schools/Fusion Division/Curriculum/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (178, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (178, 231);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (179, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (179, 231);
 
 --   EPICenter!
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (180, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (180, 231);
 
 -- American Education Group/Schools/Fusion Division/Training/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (181, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (181, 231);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (182, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (182, 231);
 
 -- American Education Group/Schools/Lexis/Barnstable/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (183, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (183, 233);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (184, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (184, 233);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (185, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (185, 233);
 
 --   School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (186, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (186, 233);
 
 --   Sick or Coverage
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (187, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (187, 233);
 
 -- American Education Group/Schools/Lexis/Shreiner/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (188, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (188, 239);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (189, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (189, 239);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (190, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (190, 239);
 
 --   School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (191, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (191, 239);
 
 --   Sick or Coverage
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (192, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (192, 239);
 
 
 -- American Education Group/Schools/Lexis/Tampa Day/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (193, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (193, 244);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (194, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (194, 244);
 
 --   Administrators
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (195, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (195, 244);
 
 --   School
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (196, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (196, 244);
 
 --   Sick or Coverage
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (197, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (197, 244);
 
 -- American Education Group/Schools/Lexis/Talking Heads/
 --   Leadership
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (198, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (198, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (198, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (198, 244);
 
 --   EPIC! Customer Service
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (199, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (199, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (199, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (199, 244);
 
 -- American Education Group/Schools/Lexis/Curriculum/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (200, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (200, 7);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (200, 8);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (200, 9);
 
 --   Public
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (201, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (201, 7);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (201, 8);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (201, 9);
 
 
 -- American Education Group/Schools/Lexis/Scholarship/
 --   Private
-INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, );
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 233);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 239);
+INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 244);
+
+-- 

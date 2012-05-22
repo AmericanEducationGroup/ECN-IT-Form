@@ -1,0 +1,11 @@
+Populate MySQL DB	
+	divisions		done
+	schools_departments	done
+	positions		done
+	source_directories	done
+	directory_owner		done
+	edit_permissions	
+	read_permissions	
+	distribution_groups	
+	receive_dg		
+	send_to_dg		
