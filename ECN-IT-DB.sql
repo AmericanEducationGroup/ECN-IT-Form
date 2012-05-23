@@ -1462,4 +1462,933 @@ INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 233);
 INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 239);
 INSERT INTO Directory_Owner (directory, owner_position) VALUES (202, 244);
 
--- 
+
+
+
+
+
+
+
+-- Read_Permissions & Edit Permissions
+-- directory_owner
+-- American Ed Group/
+--   AEG
+--   Schools
+--   Team Sites
+
+-- American Education Group/AEG/
+--   Administration
+INSERT INTO Read_Permissions(position, directory) VALUES (1,5);
+INSERT INTO Read_Permissions(position, directory) VALUES (2,5);
+INSERT INTO Read_Permissions(position, directory) VALUES (3,5);
+INSERT INTO Read_Permissions(position, directory) VALUES (4,5);
+INSERT INTO Read_Permissions(position, directory) VALUES (5,5);
+INSERT INTO Read_Permissions(position, directory) VALUES (6,5);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (1,5);
+INSERT INTO Edit_Permissions(position, directory) VALUES (2,5);
+INSERT INTO Edit_Permissions(position, directory) VALUES (3,5);
+INSERT INTO Edit_Permissions(position, directory) VALUES (4,5);
+INSERT INTO Edit_Permissions(position, directory) VALUES (5,5);
+INSERT INTO Edit_Permissions(position, directory) VALUES (6,5);
+
+--   Information Technology
+INSERT INTO Read_Permissions(position, directory) VALUES (14,6);
+INSERT INTO Read_Permissions(position, directory) VALUES (15,6);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (14,6);
+INSERT INTO Edit_Permissions(position, directory) VALUES (15,6);
+
+--   Marketing
+INSERT INTO Read_Permissions(position, directory) VALUES (23,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (24,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (25,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (26,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (27,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (28,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (29,7);
+INSERT INTO Read_Permissions(position, directory) VALUES (30,7);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (23,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (24,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (25,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (26,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (27,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (28,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (29,7);
+INSERT INTO Edit_Permissions(position, directory) VALUES (30,7);
+
+--   Human Resources
+INSERT INTO Read_Permissions(position, directory) VALUES (11,8);
+INSERT INTO Read_Permissions(position, directory) VALUES (12,8);
+INSERT INTO Read_Permissions(position, directory) VALUES (13,8);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (11,8);
+INSERT INTO Edit_Permissions(position, directory) VALUES (12,8);
+INSERT INTO Edit_Permissions(position, directory) VALUES (13,8);
+
+--   Finance
+INSERT INTO Read_Permissions(position, directory) VALUES (,9);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,9);
+
+--   Coaching and Learning
+INSERT INTO Read_Permissions(position, directory) VALUES (,10);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,10);
+--   New Business Development
+INSERT INTO Read_Permissions(position, directory) VALUES (,11);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,11);
+--   Procurement
+INSERT INTO Read_Permissions(position, directory) VALUES (,12);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,12);
+
+-- American Education Group/Schools/
+--   Fusion Division
+INSERT INTO Read_Permissions(position, directory) VALUES (,13);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,13);
+--   Lexis
+INSERT INTO Read_Permissions(position, directory) VALUES (,14);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,14);
+--   Little Sprouts
+INSERT INTO Read_Permissions(position, directory) VALUES (,15);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,15);
+
+-- American Education Group/Team Sites/
+--   AEG R.O.C.K.S!
+INSERT INTO Read_Permissions(position, directory) VALUES (,16);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,16);
+--   NSO
+INSERT INTO Read_Permissions(position, directory) VALUES (,17);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,17);
+--   MPOPs
+INSERT INTO Read_Permissions(position, directory) VALUES (,18);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,18);
+--   EPIC! Portal
+INSERT INTO Read_Permissions(position, directory) VALUES (,19);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,19);
+--   1:1 Digital Curriculum
+INSERT INTO Read_Permissions(position, directory) VALUES (,20);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,20);
+
+-- American Education Group/AEG/Administration/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,21);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,21);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,22);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,22);
+
+-- American Education Group/AEG/Information Technology/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,23);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,23);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,24);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,24);
+--   IT Planning
+INSERT INTO Read_Permissions(position, directory) VALUES (,25);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,25);
+--   Corporate Email Migration
+INSERT INTO Read_Permissions(position, directory) VALUES (,26);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,26);
+
+-- American Education Group/AEG/Marketing/
+--   Test Marketing
+INSERT INTO Read_Permissions(position, directory) VALUES (,27);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,27);
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,28);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,28);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,29);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,29);
+--   Task List
+INSERT INTO Read_Permissions(position, directory) VALUES (,30);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,30);
+--   Project Tasks
+INSERT INTO Read_Permissions(position, directory) VALUES (,31);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,31);
+
+-- American Education Group/AEG/Human Resources/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,32);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,32);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,33);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,33);
+--   New Hire Paperwork
+INSERT INTO Read_Permissions(position, directory) VALUES (,34);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,34);
+--   Benefits
+INSERT INTO Read_Permissions(position, directory) VALUES (,35);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,35);
+--   Observation
+INSERT INTO Read_Permissions(position, directory) VALUES (,36);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,36);
+--   Fusionology
+INSERT INTO Read_Permissions(position, directory) VALUES (,37);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,37);
+--   HR Resources
+INSERT INTO Read_Permissions(position, directory) VALUES (,38);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,38);
+
+-- American Education Group/AEG/Finance/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,39);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,39);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,40);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,40);
+--   Administrator
+INSERT INTO Read_Permissions(position, directory) VALUES (,41);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,41);
+
+-- American Education Group/AEG/New Business Development/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,42);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,42);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,43);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,43);
+
+-- American education Groupo/AEG/Procurement/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,44);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,44);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,45);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,45);
+--   Master Task List
+INSERT INTO Read_Permissions(position, directory) VALUES (,46);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,46);
+--   Master Calendar
+INSERT INTO Read_Permissions(position, directory) VALUES (,47);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,47);
+
+-- American Education Group/Schools/Fusion Division/
+--   Huntington Beach
+INSERT INTO Read_Permissions(position, directory) VALUES (,48);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,48);
+--   Long Island
+INSERT INTO Read_Permissions(position, directory) VALUES (,49);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,49);
+--   Los Angeles
+INSERT INTO Read_Permissions(position, directory) VALUES (,50);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,50);
+--   Los Gatos
+INSERT INTO Read_Permissions(position, directory) VALUES (,51);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,51);
+--   Manhattan
+INSERT INTO Read_Permissions(position, directory) VALUES (,52);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,52);
+--   Mission Viejo
+INSERT INTO Read_Permissions(position, directory) VALUES (,53);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,53);
+--   Pasadena
+INSERT INTO Read_Permissions(position, directory) VALUES (,54);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,54);
+--   Regional
+INSERT INTO Read_Permissions(position, directory) VALUES (,55);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,55);
+--   San Francisco
+INSERT INTO Read_Permissions(position, directory) VALUES (,56);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,56);
+--   San Mateo
+INSERT INTO Read_Permissions(position, directory) VALUES (,57);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,57);
+--   Solana Beach
+INSERT INTO Read_Permissions(position, directory) VALUES (,58);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,58);
+--   South Bay
+INSERT INTO Read_Permissions(position, directory) VALUES (,59);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,59);
+--   Walnut Creek
+INSERT INTO Read_Permissions(position, directory) VALUES (,60);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,60);
+--   Warner Center
+INSERT INTO Read_Permissions(position, directory) VALUES (,61);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,61);
+--   Fusionology
+INSERT INTO Read_Permissions(position, directory) VALUES (,62);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,62);
+--   Discussion Board
+INSERT INTO Read_Permissions(position, directory) VALUES (,63);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,63);
+--   Outreach
+INSERT INTO Read_Permissions(position, directory) VALUES (,64);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,64);
+--   Accounting
+INSERT INTO Read_Permissions(position, directory) VALUES (,65);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,65);
+--   Leadership
+INSERT INTO Read_Permissions(position, directory) VALUES (,66);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,66);
+--   Registrar
+INSERT INTO Read_Permissions(position, directory) VALUES (,67);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,67);
+--   Curriculum
+INSERT INTO Read_Permissions(position, directory) VALUES (,68);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,68);
+--   Training
+INSERT INTO Read_Permissions(position, directory) VALUES (,69);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,69);
+
+-- American Education Group/Schools/Lexis/
+--   Barnstable
+INSERT INTO Read_Permissions(position, directory) VALUES (,70);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,70);
+--   Shreiner
+INSERT INTO Read_Permissions(position, directory) VALUES (,71);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,71);
+--   Tampa Day
+INSERT INTO Read_Permissions(position, directory) VALUES (,72);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,72);
+--   Talking Heads
+INSERT INTO Read_Permissions(position, directory) VALUES (,73);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,73);
+--   Curriculum
+INSERT INTO Read_Permissions(position, directory) VALUES (,74);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,74);
+--   Scholarship
+INSERT INTO Read_Permissions(position, directory) VALUES (,75);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,75);
+
+-- American Education Group/Schools/Little Sprouts/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,76);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,76);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,77);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,77);
+--   SMK
+INSERT INTO Read_Permissions(position, directory) VALUES (,78);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,78);
+--   Financials
+INSERT INTO Read_Permissions(position, directory) VALUES (,79);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,79);
+--   Data Centralization
+INSERT INTO Read_Permissions(position, directory) VALUES (,80);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,80);
+
+-- American Education Group/Team Sites/AEG R.O.C.K.S/
+--   Corporate
+INSERT INTO Read_Permissions(position, directory) VALUES (,81);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,81);
+--   Fusion
+INSERT INTO Read_Permissions(position, directory) VALUES (,82);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,82);
+--   Little Sprouts
+INSERT INTO Read_Permissions(position, directory) VALUES (,83);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,83);
+
+-- American Education Group/Team Site/NSO/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,84);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,84);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,85);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,85);
+--   New Business Development
+INSERT INTO Read_Permissions(position, directory) VALUES (,86);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,86);
+--   Construction Folder
+INSERT INTO Read_Permissions(position, directory) VALUES (,87);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,87);
+--   Real Estate Folder
+INSERT INTO Read_Permissions(position, directory) VALUES (,88);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,88);
+--   Project Tasks
+INSERT INTO Read_Permissions(position, directory) VALUES (,89);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,89);
+--   Project Calendar
+INSERT INTO Read_Permissions(position, directory) VALUES (,90);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,90);
+
+-- American Education Group/Team Sites/MPOPs/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,91);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,91);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,92);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,92);
+--   Little Sprouts
+INSERT INTO Read_Permissions(position, directory) VALUES (,93);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,93);
+--   Fusion Division
+INSERT INTO Read_Permissions(position, directory) VALUES (,94);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,94);
+--   Tampa Day School
+INSERT INTO Read_Permissions(position, directory) VALUES (,95);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,95);
+--   Barnstable Academy
+INSERT INTO Read_Permissions(position, directory) VALUES (,96);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,96);
+--   Shreiner Academy
+INSERT INTO Read_Permissions(position, directory) VALUES (,97);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,97);
+
+-- American Education Group/Team Sites/EPIC! Portal/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,98);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,98);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,99);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,99);
+--   EPIC! Summits
+INSERT INTO Read_Permissions(position, directory) VALUES (,100);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,100);
+--   Reinventing School News
+INSERT INTO Read_Permissions(position, directory) VALUES (,101);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,101);
+--   Rock 'N' CulturRoll Awareness
+INSERT INTO Read_Permissions(position, directory) VALUES (,102);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,102);
+
+-- American Education Group/Schools/Fusion Division/Huntington Beach/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,103);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,103);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,104);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,104);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,105);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,105);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,106);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,106);
+
+-- American Education Group/Schools/Fusion Division/Long Island/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,107);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,107);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,108);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,108);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,109);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,109);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,110);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,110);
+
+-- American Education Group/Schools/Fusion Division/Los Angeles/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,111);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,111);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,112);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,112);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,113);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,113);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,114);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,114);
+
+-- American Education Group/Schools/Fusion Division/Los Gatos/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,115);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,115);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,116);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,116);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,117);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,117);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,118);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,118);
+
+-- American Education Group/Schools/Fusion Division/Manhattan/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,119);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,119);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,120);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,120);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,121);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,121);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,122);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,122);
+
+-- American Education Group/Schools/Fusion Division/Mission Viejo/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,123);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,123);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,124);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,124);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,125);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,125);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,126);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,126);
+
+-- American Education Group/Schools/Fusion Division/Pasadena/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,127);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,127);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,128);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,128);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,129);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,129);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,130);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,130);
+
+-- American Education Group/Schools/Fusion Division/Regional/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,131);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,131);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,132);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,132);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,133);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,133);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,134);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,134);
+
+-- American Education Group/Schools/Fusion Division/San Francisco/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,135);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,135);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,136);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,136);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,137);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,137);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,138);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,138);
+
+-- American Education Group/Schools/Fusion Division/San Mateo/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,139);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,139);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,140);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,140);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,141);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,141);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,142);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,142);
+
+-- American Education Group/Schools/Fusion Division/Solana Beach/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,143);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,143);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,144);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,144);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,145);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,145);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,146);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,146);
+
+-- American Education Group/Schools/Fusion Division/South Bay/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,147);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,147);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,148);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,148);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,149);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,149);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,150);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,150);
+
+-- American Education Group/Schools/Fusion Division/Walnut Creek/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,151);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,151);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,152);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,152);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,153);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,153);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,154);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,154);
+
+-- American Education Group/Schools/Fusion Division/Warner Center/
+--   Staff
+INSERT INTO Read_Permissions(position, directory) VALUES (,155);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,155);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,156);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,156);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,157);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,157);
+--   Head of School
+INSERT INTO Read_Permissions(position, directory) VALUES (,158);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,158);
+
+-- American Education Group/Schools/Fusion Division/Fusionology/
+--   Fusionology Content
+INSERT INTO Read_Permissions(position, directory) VALUES (,159);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,159);
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,160);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,160);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,161);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,161);
+--   Collaboration
+INSERT INTO Read_Permissions(position, directory) VALUES (,162);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,162);
+
+-- American Education Group/Schools/Fusion Division/Discussion Board/
+--   Marketing
+INSERT INTO Read_Permissions(position, directory) VALUES (,163);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,163);
+
+-- American Education Group/Schools/Fusion Division/Outreach/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,164);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,164);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,165);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,165);
+--   Outreach Discussions
+INSERT INTO Read_Permissions(position, directory) VALUES (,166);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,166);
+
+-- American Education Group/Schools/Fusion Division/Accounting/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,167);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,167);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,168);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,168);
+--   Billing
+INSERT INTO Read_Permissions(position, directory) VALUES (,169);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,169);
+--   Budget
+INSERT INTO Read_Permissions(position, directory) VALUES (,170);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,170);
+
+-- American Education Group/Schools/Fusion Division/Leadership/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,171);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,171);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,172);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,172);
+
+-- American Education Group/Schools/Fusion Division/Registrar/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,173);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,173);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,174);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,174);
+--   Site Pages
+INSERT INTO Read_Permissions(position, directory) VALUES (,175);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,175);
+--   Transcript Requests
+INSERT INTO Read_Permissions(position, directory) VALUES (,176);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,176);
+--   POC
+INSERT INTO Read_Permissions(position, directory) VALUES (,177);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,177);
+
+-- Americane Education Group/Schools/Fusion Division/Curriculum/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,178);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,178);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,179);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,179);
+--   EPICenter!
+INSERT INTO Read_Permissions(position, directory) VALUES (,180);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,180);
+
+-- American Education Group/Schools/Fusion Division/Training/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,181);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,181);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,182);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,182);
+
+-- American Education Group/Schools/Lexis/Barnstable/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,183);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,183);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,184);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,184);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,185);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,185);
+--   School
+INSERT INTO Read_Permissions(position, directory) VALUES (,186);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,186);
+--   Sick or Coverage
+INSERT INTO Read_Permissions(position, directory) VALUES (,187);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,187);
+
+-- American Education Group/Schools/Lexis/Shreiner/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,188);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,188);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,189);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,189);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,190);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,190);
+--   School
+INSERT INTO Read_Permissions(position, directory) VALUES (,191);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,191);
+--   Sick or Coverage
+INSERT INTO Read_Permissions(position, directory) VALUES (,192);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,192);
+
+-- American Education Group/Schools/Lexis/Tampa Day/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,193);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,193);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,194);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,194);
+--   Administrators
+INSERT INTO Read_Permissions(position, directory) VALUES (,195);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,195);
+--   School
+INSERT INTO Read_Permissions(position, directory) VALUES (,196);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,196);
+--   Sick or Coverage
+INSERT INTO Read_Permissions(position, directory) VALUES (,197);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,197);
+
+-- American Education Group/Schools/Lexis/Talking Heads/
+--   Leadership
+INSERT INTO Read_Permissions(position, directory) VALUES (,198);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,198);
+--   EPIC! Customer Service
+INSERT INTO Read_Permissions(position, directory) VALUES (,199);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,199);
+
+-- American Education Group/Schools/Lexis/Curriculum/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,200);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,200);
+--   Public
+INSERT INTO Read_Permissions(position, directory) VALUES (,201);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,201);
+
+-- American Education Group/Schools/Lexis/Scholarship/
+--   Private
+INSERT INTO Read_Permissions(position, directory) VALUES (,202);
+
+INSERT INTO Edit_Permissions(position, directory) VALUES (,202);

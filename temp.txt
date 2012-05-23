@@ -1,0 +1,248 @@
+-- directory_owner
+-- American Ed Group/
+--   AEG
+--   Schools
+--   Team Sites
+-- American Education Group/AEG/
+--   Administration
+--   Information Technology
+--   Marketing
+--   Human Resources
+--   Finance
+--   Coaching and Learning
+--   New Business Development
+--   Procurement
+-- American Education Group/Schools/
+--   Fusion Division
+--   Lexis
+--   Little Sprouts
+-- American Education Group/Team Sites/
+--   AEG R.O.C.K.S!
+--   NSO
+--   MPOPs
+--   EPIC! Portal
+--   1:1 Digital Curriculum
+-- American Education Group/AEG/Administration/
+--   Private
+--   Public
+-- American Education Group/AEG/Information Technology/
+--   Private
+--   Public
+--   IT Planning
+--   Corporate Email Migration
+-- American Education Group/AEG/Marketing/
+--   Test Marketing
+--   Private
+--   Public
+--   Task List
+--   Project Tasks
+-- American Education Group/AEG/Human Resources/
+--   Private
+--   Public
+--   New Hire Paperwork
+--   Benefits
+--   Observation
+--   Fusionology
+--   HR Resources
+-- American Education Group/AEG/Finance/
+--   Private
+--   Public
+--   Administrator
+-- American Education Group/AEG/New Business Development/
+--   Private
+--   Public
+-- American education Groupo/AEG/Procurement/
+--   Private
+--   Public
+--   Master Task List
+--   Master Calendar
+-- American Education Group/Schools/Fusion Division/
+--   Huntington Beach
+--   Long Island
+--   Los Angeles
+--   Los Gatos
+--   Manhattan
+--   Mission Viejo
+--   Pasadena
+--   Regional
+--   San Francisco
+--   San Mateo
+--   Solana Beach
+--   South Bay
+--   Walnut Creek
+--   Warner Center
+--   Fusionology
+--   Discussion Board
+--   Outreach
+--   Accounting
+--   Leadership
+--   Registrar
+--   Curriculum
+--   Training
+-- American Education Group/Schools/Lexis/
+--   Barnstable
+--   Shreiner
+--   Tampa Day
+--   Talking Heads
+--   Curriculum
+--   Scholarship
+-- American Education Group/Schools/Little Sprouts/
+--   Private
+--   Public
+--   SMK
+--   Financials
+--   Data Centralization
+-- American Education Group/Team Sites/AEG R.O.C.K.S/
+--   Corporate
+--   Fusion
+--   Little Sprouts
+-- American Education Group/Team Site/NSO/
+--   Private
+--   Public
+--   New Business Development
+--   Construction Folder
+--   Real Estate Folder
+--   Project Tasks
+--   Project Calendar
+-- American Education Group/Team Sites/MPOPs/
+--   Private
+--   Public
+--   Little Sprouts
+--   Fusion Division
+--   Tampa Day School
+--   Barnstable Academy
+--   Shreiner Academy
+-- American Education Group/Team Sites/EPIC! Portal/
+--   Private
+--   Public
+--   EPIC! Summits
+--   Reinventing School News
+--   Rock 'N' CulturRoll Awareness
+-- American Education Group/Schools/Fusion Division/Huntington Beach/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Long Island/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Los Angeles/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Los Gatos/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Manhattan/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Mission Viejo/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Pasadena/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Regional/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/San Francisco/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/San Mateo/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Solana Beach/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/South Bay/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Walnut Creek/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Warner Center/
+--   Staff
+--   Public
+--   Administrators
+--   Head of School
+-- American Education Group/Schools/Fusion Division/Fusionology/
+--   Fusionology Content
+--   Private
+--   Public
+--   Collaboration
+-- American Education Group/Schools/Fusion Division/Discussion Board/
+--   Marketing
+-- American Education Group/Schools/Fusion Division/Outreach/
+--   Private
+--   Public
+--   Outreach Discussions
+-- American Education Group/Schools/Fusion Division/Accounting/
+--   Private_Owner (directory, owner_position) VALUES (167, 287);
+--   Public
+--   Billing
+--   Budget
+-- American Education Group/Schools/Fusion Division/Leadership/
+--   Private
+--   Public
+-- American Education Group/Schools/Fusion Division/Registrar/
+--   Private
+--   Public
+--   Site Pages
+--   Transcript Requests
+--   POC
+-- Americane Education Group/Schools/Fusion Division/Curriculum/
+--   Private
+--   Public
+--   EPICenter!
+-- American Education Group/Schools/Fusion Division/Training/
+--   Private
+--   Public
+-- American Education Group/Schools/Lexis/Barnstable/
+--   Private
+--   Public
+--   Administrators
+--   School
+--   Sick or Coverage
+-- American Education Group/Schools/Lexis/Shreiner/
+--   Private
+--   Public
+--   Administrators
+--   School
+--   Sick or Coverage
+-- American Education Group/Schools/Lexis/Tampa Day/
+--   Private
+--   Public
+--   Administrators
+--   School
+--   Sick or Coverage
+-- American Education Group/Schools/Lexis/Talking Heads/
+--   Leadership
+--   EPIC! Customer Service
+-- American Education Group/Schools/Lexis/Curriculum/
+--   Private
+--   Public
+-- American Education Group/Schools/Lexis/Scholarship/
+--   Private
