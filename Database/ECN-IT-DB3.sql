@@ -3328,107 +3328,336 @@ INSERT INTO Edit_Permissions(position, directory) VALUES (296,179);
 
 -- American Education Group/Schools/Fusion Division/Training/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,181);
+INSERT INTO Read_Permissions(position, directory) VALUES (229,181);
+INSERT INTO Read_Permissions(position, directory) VALUES (231,181);
+INSERT INTO Read_Permissions(position, directory) VALUES (232,181);
+INSERT INTO Read_Permissions(position, directory) VALUES (296,181);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,181);
+INSERT INTO Edit_Permissions(position, directory) VALUES (229,181);
+INSERT INTO Edit_Permissions(position, directory) VALUES (231,181);
+INSERT INTO Edit_Permissions(position, directory) VALUES (232,181);
+INSERT INTO Edit_Permissions(position, directory) VALUES (296,181);
 
 --   Public
-INSERT INTO Edit_Permissions(position, directory) VALUES (,182);
+INSERT INTO Edit_Permissions(position, directory) VALUES (229,182);
+INSERT INTO Edit_Permissions(position, directory) VALUES (231,182);
+INSERT INTO Edit_Permissions(position, directory) VALUES (232,182);
+INSERT INTO Edit_Permissions(position, directory) VALUES (296,182);
 
 -- American Education Group/Schools/Lexis/Barnstable/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (237,183);
+INSERT INTO Read_Permissions(position, directory) VALUES (238,183);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,183);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,183);
 
 --   Public
-INSERT INTO Edit_Permissions(position, directory) VALUES (,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,184);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,184);
 
 --   Administrators
-INSERT INTO Read_Permissions(position, directory) VALUES (,185);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,185);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,185);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,185);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,185);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,185);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,185);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,185);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,185);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,185);
 
 --   School
-INSERT INTO Read_Permissions(position, directory) VALUES (,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (237,186);
+INSERT INTO Read_Permissions(position, directory) VALUES (238,186);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,186);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,186);
 
 --   Sick or Coverage
-INSERT INTO Read_Permissions(position, directory) VALUES (,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (237,187);
+INSERT INTO Read_Permissions(position, directory) VALUES (238,187);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,187);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,187);
 
 -- American Education Group/Schools/Lexis/Shreiner/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,188);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,188);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,188);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,188);
+INSERT INTO Read_Permissions(position, directory) VALUES (242,188);
+INSERT INTO Read_Permissions(position, directory) VALUES (243,188);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,188);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,188);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,188);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,188);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,188);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,188);
 
 --   Public
-INSERT INTO Edit_Permissions(position, directory) VALUES (,189);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,189);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,189);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,189);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,189);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,189);
 
 --   Administrators
-INSERT INTO Read_Permissions(position, directory) VALUES (,190);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,190);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,190);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,190);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,190);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,190);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,190);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,190);
 
 --   School
-INSERT INTO Read_Permissions(position, directory) VALUES (,191);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,191);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,191);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,191);
+INSERT INTO Read_Permissions(position, directory) VALUES (242,191);
+INSERT INTO Read_Permissions(position, directory) VALUES (243,191);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,191);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,191);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,191);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,191);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,191);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,191);
 
 --   Sick or Coverage
-INSERT INTO Read_Permissions(position, directory) VALUES (,192);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,192);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,192);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,192);
+INSERT INTO Read_Permissions(position, directory) VALUES (242,192);
+INSERT INTO Read_Permissions(position, directory) VALUES (243,192);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,192);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,192);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,192);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,192);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,192);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,192);
 
 -- American Education Group/Schools/Lexis/Tampa Day/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (245,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (246,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (249,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (250,193);
+INSERT INTO Read_Permissions(position, directory) VALUES (251,193);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,193);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,193);
 
 --   Public
-INSERT INTO Edit_Permissions(position, directory) VALUES (,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,194);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,194);
 
 --   Administrators
-INSERT INTO Read_Permissions(position, directory) VALUES (,195);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,195);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,195);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,195);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,195);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,195);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,195);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,195);
 
 --   School
-INSERT INTO Read_Permissions(position, directory) VALUES (,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (245,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (246,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (249,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (250,196);
+INSERT INTO Read_Permissions(position, directory) VALUES (251,196);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,196);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,196);
 
 --   Sick or Coverage
-INSERT INTO Read_Permissions(position, directory) VALUES (,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (245,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (246,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (249,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (250,197);
+INSERT INTO Read_Permissions(position, directory) VALUES (251,197);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,197);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,197);
 
 -- American Education Group/Schools/Lexis/Talking Heads/
 --   Leadership
-INSERT INTO Read_Permissions(position, directory) VALUES (,198);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,198);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,198);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,198);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,198);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,198);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,198);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,198);
 
 --   EPIC! Customer Service
-INSERT INTO Read_Permissions(position, directory) VALUES (,199);
+-- INSERT INTO Read_Permissions(position, directory) VALUES (,199); ----------------------------------------------------------------------------------------------------------
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,199);
+-- INSERT INTO Edit_Permissions(position, directory) VALUES (,199);
 
 -- American Education Group/Schools/Lexis/Curriculum/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (237,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (238,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (242,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (243,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (245,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (246,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (249,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (250,200);
+INSERT INTO Read_Permissions(position, directory) VALUES (251,200);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,200);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,200);
 
 --   Public
-INSERT INTO Edit_Permissions(position, directory) VALUES (,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,201);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,201);
 
 -- American Education Group/Schools/Lexis/Scholarship/
 --   Private
-INSERT INTO Read_Permissions(position, directory) VALUES (,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (233,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (234,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (235,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (236,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (237,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (238,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (239,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (240,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (241,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (242,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (243,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (244,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (245,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (246,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (247,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (248,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (249,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (250,202);
+INSERT INTO Read_Permissions(position, directory) VALUES (251,202);
 
-INSERT INTO Edit_Permissions(position, directory) VALUES (,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (233,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (234,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (235,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (236,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (237,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (238,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (239,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (240,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (241,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (242,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (243,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (244,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (245,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (246,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (247,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (248,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (249,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (250,202);
+INSERT INTO Edit_Permissions(position, directory) VALUES (251,202);
