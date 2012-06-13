@@ -13,6 +13,7 @@ DROP TABLE IF EXISTS Source_Directories;
 DROP TABLE IF EXISTS Positions;
 DROP TABLE IF EXISTS Schools_Departments;
 DROP TABLE IF EXISTS Divisions;
+DROP TABLE IF EXISTS Distribution_Groups;
 
 
 -- Create Tables
