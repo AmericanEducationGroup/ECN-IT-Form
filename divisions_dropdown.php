@@ -8,8 +8,16 @@
 		exit();
 	}
 	
-	$result = $db->query("SELECT name FROM divisions");
+	$result = $db->query("call viewAll_divisions()");
 
-    echo "<select style="width: 277px;" name="title">"; while ($row = $result->fetch_assoc()) { unset($id, $name); $id = $row['journal_id']; $name = $row['journal_name']; echo '<option value="'.$name.'">'.$name.'</option>'; } echo "</select>";
+	echo "<select name=\"division\" id=\"division\">\n";
+	
+    while ($row = $result->fetch_assoc())
+    {
+			echo "<option value=" . $row['name'] . ">" . $row['name'] . "</option>\n";
+    }
+    
+	echo "</select>";
+	$db->close();
 
 ?>
