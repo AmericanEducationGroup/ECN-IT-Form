@@ -126,9 +126,9 @@ BEGIN
 DELETE FROM receive_dg WHERE pID = receiveDGID;
 END //
 
-CREATE PROCEDURE remove_schools_departments(IN pID INT)
+CREATE PROCEDURE remove_schools_departments(IN pName VARCHAR(64))
 BEGIN
-DELETE FROM schools_departments WHERE pID = schoolDepartmentID;
+DELETE FROM schools_departments WHERE pName = name;
 END //
 
 CREATE PROCEDURE remove_send_to_dg(IN pID INT)

@@ -1,4 +1,7 @@
 <html>
+	<head>
+		<script type="text/javascript" src="Javascript/administration.js"></script>
+	</head>
 
 	<h1>ECN IT Administration</h1>
 
@@ -11,7 +14,7 @@
 	</select>
 
 		<!-- GENERAL -->
-		<select id="generalOptions" onchange="showGeneralActionFields(this)" style="display: none;">
+		<select id="generalOptions" onclick="showGeneralActionFields(this)" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDivision">Add a division.</option>
 			<option value="removeDivision">Remove a division.</option>
@@ -31,38 +34,25 @@
 
 			<!-- Remove Division -->
 			<form id="removeDivisionForm" action="remove_division.php" method="post" style="display: none;">
-				What division would you like to remove?
-				<?php 
-
-					$db = new mysqli("localhost:3306", "root", "", "ecn-it-db");
-
-					if($db->connect_errno)
-					{
-						printf("Connect failed: %s\n", $mysqli->connect_error);
-						exit();
-					}
-	
-					$result = $db->query("call viewAll_divisions()");
-
-					echo "<select name=\"division\" id=\"division\">\n";
-	
-					while ($row = $result->fetch_assoc())
-					{
-							echo "<option value=" . $row['name'] . ">" . $row['name'] . "</option>\n";
-					}
-		
-					echo "</select>";
-					$db->close();
-
-				?>
+				Which division would you like to remove?
+				<?php require 'removeDivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
 			<!-- Add School -->
-			
-						
+			<form id="addSchoolForm" action="add_school.php" method="post" style="display: none;">
+				What is the name of the new school? 						<input type="text" placeholder="School name?" name="newSchool"/><br>
+				What is the abbreviation of the new school (3 letters)? 	<input type="text" placeholder="School abbreviation?" name="newSchoolAbbreviation"/><br>
+				Which division would you like to add a school to? 			<?php include 'addSchool-DivisionDD.php'; ?>
+				<input type="submit" />
+			</form>
 			
 			<!-- Remove School -->
+			<form id="removeSchoolForm" action="remove_school.php" method="post" style="display: none;">
+				Which division is the school being removed from? 			<?php include 'removeSchool-DivisionDD.php'; ?><br>
+				Which school would you like to remove? 						<?php include 'removeSchoolDD.php'; ?>
+				<input type="submit" />
+			</form>
 			
 						
 			
@@ -84,7 +74,7 @@
 
 			
 		<!-- SOURCE -->
-		<select id="sourceOptions" onchange="" style="display: none;">
+		<select id="sourceOptions" onclick="" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDirectory">Add a Source directory.</option>
 			<option value="removeDirectory">Remove a Source directory.</option>
@@ -97,7 +87,7 @@
 		</select>
 
 		<!-- DISTRIBUTION GROUPS -->
-		<select id="distGroupOptions" onchange="" style="display: none;">
+		<select id="distGroupOptions" onclick="" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDG">Add an email distribution group.</option>
 			<option value="removeDG">Remove an email distribution group.</option>
@@ -109,69 +99,6 @@
 
 
 	<!-- JAVASCRIPT -->
-	<script type="text/javascript">
-		function showActionOptions(actionCategory)
-		{
-			var category = actionCategory.options[actionCategory.selectedIndex].value;
-			if(category == "general")
-			{
-				document.getElementById("generalOptions").style.display = 'block';
-				document.getElementById("sourceOptions").style.display = 'none';
-				document.getElementById("distGroupOptions").style.display = 'none';
-			}
-			else if(category == "source")
-			{
-				document.getElementById("generalOptions").style.display = 'none';
-				document.getElementById("sourceOptions").style.display = 'block';
-				document.getElementById("distGroupOptions").style.display = 'none';
-			}
-			else if(category == "distributionGroups")
-			{
-				document.getElementById("generalOptions").style.display = 'none';
-				document.getElementById("sourceOptions").style.display = 'none';
-				document.getElementById("distGroupOptions").style.display = 'block';
-			}
-		}
-
-		function showGeneralActionFields(generalAction)
-		{
-			var action = generalAction.options[generalAction.selectedIndex].value;
-			if(action == "addDivision")
-			{
-				document.getElementById("addDivisionForm").style.display = 'block';
-				
-			}
-			else if(action == "removeDivision")
-			{
-				
-			}
-			else if(action == "addSchool")
-			{
-				
-			}
-			else if(action == "removeSchool")
-			{
-				
-			}
-			else if(action == "addDepartment")
-			{
-				
-			}
-			else if(action == "removeDepartment")
-			{
-				
-			}
-			else if(action == "addPosition")
-			{
-				
-			}
-			else if(action == "removePosition")
-			{
-				
-			}
-			
-		}
-	</script>
 
 
 <!-- 

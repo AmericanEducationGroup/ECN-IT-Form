@@ -8,8 +8,8 @@
 		exit();
 	}
 
-	$newDivisionName = $_POST["newDivision"];
-	$db->query("call insert_divisions('" . $newDivisionName . "')");
+	$removedDivision = $_POST["removedDivision"];
+	$db->query("DELETE FROM divisions WHERE name = '" . $removedDivision . "'");
 	$db->close();
 
 	header( 'Location: administration.php' ) ;
