@@ -9,18 +9,18 @@
 	}
 
 	$result = $db->query("SELECT name, divisionID FROM divisions");
+?>
 
-	echo "<select name=\"removedDivision\" id=\"removedDivision\">\n"; ?>
-	
-<option disabled selected style='display:none;'>Choose a division.</option> 
+<select onchange='removePosition-SchoolDepartmentDD(this.value);' name='removedPositionsDivision' id='removedPositionsDivision'>
+	<option disabled selected style='display:none;'>Choose a division.</option> 
+
 <?php
-
 	while ($row = $result->fetch_assoc())
 	{
 			echo "<option value=" . $row['divisionID'] . ">" . $row['name'] . "</option>\n";
 	}
 
-	echo "</select>";
 	$db->close();
-
 ?>
+
+</select>

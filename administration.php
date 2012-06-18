@@ -52,12 +52,16 @@
 						
 			
 			<!-- Add Position -->
-			<form id="addPositionForm" action="add_position.php" method="post" style="display: none;">
+			<form onsubmit="document.getElementById('addedPositionsDivision').disabled = false;" id="addPositionForm" action="add_position.php" method="post" style="display: none;">
+				What is the name of the new position? 									<input type="text" placeholder="Position name?" id="newPosition" name="newPosition"/><br>
 				Which division is the position being added to? 			 				<?php include 'addPosition-DivisionDD.php'; ?><br>
 			</form>
-						
+			
 			
 			<!-- Remove Position -->
+			<form onsubmit="document.getElementById('removedPositionsDivision').disabled = false;" id="removePositionForm" action="remove_position.php" method="post" style="display: none;">
+				Which division is the position being removed from?		 				<?php include 'removePosition-DivisionDD.php'; ?><br>
+			</form>
 			
 						
 

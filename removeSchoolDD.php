@@ -10,18 +10,18 @@
 	}
 	
 	$removedSchoolsDivision = $_REQUEST["removedSchoolsDivision"];
-	$result = $db->query("SELECT name FROM schools_departments WHERE division = '" . $removedSchoolsDivision . "'");
+	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division = '" . $removedSchoolsDivision . "'");
 ?>
 
 	Which school or department would you like to remove?
-	<select name='removedSchool' id='removedSchool'>
+	<select name='removedSchoolDepartmentID' id='removedSchoolDepartmentID'>
 		<option disabled selected style='display:none;'>Choose a school/department.</option>
 
 		<?php
 
 			while ($row = $result->fetch_assoc())
 			{
-					echo "<option value=" . $row['name'] . ">" . $row['name'] . "</option>\n";
+					echo "<option value=" . $row['schoolDepartmentID'] . ">" . $row['name'] . "</option>\n";
 			}
 			$db->close(); 
 		?>

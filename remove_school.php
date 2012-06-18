@@ -8,8 +8,8 @@
 		exit();
 	}
 
-	$removedSchool = $_POST["removedSchool"];
-	$db->query("DELETE FROM schools_departments WHERE name = '" . $removedSchool . "'");
+	$removedSchoolDepartmentID = $_POST["removedSchoolDepartmentID"];
+	$db->query("DELETE FROM schools_departments WHERE schoolDepartmentID = '" . $removedSchoolDepartmentID . "'");
 	$db->close();
 
 	header('Location: administration.php');

@@ -45,6 +45,8 @@ function hideAllActionFields()
 		document.getElementById("removeSchoolForm").style.display = 'none';
 	if(document.getElementById("addPositionForm") != null)
 		document.getElementById("addPositionForm").style.display = 'none';
+	if(document.getElementById("removePositionForm") != null)
+		document.getElementById("removePositionForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -77,7 +79,7 @@ function showGeneralActionFields(generalAction)
 	}
 	else if(action == "removePosition")
 	{
-		
+		document.getElementById("removePositionForm").style.display = 'block';
 	}
 }
 
@@ -91,13 +93,25 @@ function removeSchoolDD(removedSchoolsDivision)
 	});
 }
 
+function removePosition-SchoolDepartmentDD(removedPositionsDivision)
+{
+	document.getElementById("removedPositionsDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removePosition-SchoolDepartmentDD.php",
+		data: "removedPositionsDivision="+removedPositionsDivision,
+		success: function(msg){ $("#removePositionForm").append(msg);}
+	});
+}
+
 function addPositionDD(addedPositionsDivision)
 {
+	document.getElementById("addedPositionsDivision").disabled = true;
 	$.ajax({
 		type: "POST",
 		url: "addPositionDD.php",
 		data: "addedPositionsDivision="+addedPositionsDivision,
-		success: function(msg){ $("#addPositionForm").html(msg);}
+		success: function(msg){ $("#addPositionForm").append(msg);}
 	});
 }
 

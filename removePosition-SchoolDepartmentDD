@@ -9,11 +9,11 @@
 		exit();
 	}
 	
-	$addedPositionsDivision = $_REQUEST["addedPositionsDivision"];
-	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division = '" . $addedPositionsDivision . "'");
+	$removedPositionsDivision = $_REQUEST["removedPositionsDivision"];
+	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division = '" . $removedPositionsDivision . "'");
 ?>
 
-	Which school or department would you like to add a position to?
+	Which school or department would you like to remove a position from?
 	<select name='addedPositionsSchoolDepartment' id='addedPositionsSchoolDepartment'>
 		<option disabled selected style='display:none;'>Choose a school/department.</option>
 
