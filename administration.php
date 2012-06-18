@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="Javascript/administration.js"></script>
 	</head>
 
@@ -14,58 +15,46 @@
 	</select>
 
 		<!-- GENERAL -->
-		<select id="generalOptions" onclick="showGeneralActionFields(this)" style="display: none;">
+		<select id="generalOptions" onchange="showGeneralActionFields(this)" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDivision">Add a division.</option>
 			<option value="removeDivision">Remove a division.</option>
-			<option value="addSchool">Add a school.</option>
-			<option value="removeSchool">Remove a school.</option>
-			<option value="addDepartment">Add a department.</option>
-			<option value="removeDepartment">Remove a department.</option>
+			<option value="addSchool">Add a school or department.</option>
+			<option value="removeSchool">Remove a school or department.</option>
 			<option value="addPosition">Add a position.</option>
 			<option value="removePosition">Remove a position.</option>
 		</select>
 
 			<!-- Add Division -->
 			<form id="addDivisionForm" action="add_division.php" method="post" style="display: none;">
-				What is the name of the new division? <input type="text" placeholder="Division name?" name="newDivision"/>
+				What is the name of the new division? 									<input type="text" placeholder="Division name?" name="newDivision"/>
 				<input type="submit" />
 			</form>
 
 			<!-- Remove Division -->
 			<form id="removeDivisionForm" action="remove_division.php" method="post" style="display: none;">
-				Which division would you like to remove?
-				<?php require 'removeDivisionDD.php'; ?>
+				Which division would you like to remove?								<?php require 'removeDivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
-			<!-- Add School -->
+			<!-- Add School or Department-->
 			<form id="addSchoolForm" action="add_school.php" method="post" style="display: none;">
-				What is the name of the new school? 						<input type="text" placeholder="School name?" name="newSchool"/><br>
-				What is the abbreviation of the new school (3 letters)? 	<input type="text" placeholder="School abbreviation?" name="newSchoolAbbreviation"/><br>
-				Which division would you like to add a school to? 			<?php include 'addSchool-DivisionDD.php'; ?>
+				What is the name of the new school or department? 						<input type="text" placeholder="School name?" name="newSchool"/><br>
+				What is the abbreviation of the new school (3 letters)? 				<input type="text" id="schoolAbbrv" placeholder="School abbreviation?" name="newSchoolAbbreviation"/><br>
+				Which division would you like to add a school/department to?			<?php include 'addSchool-DivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
-			<!-- Remove School -->
+			<!-- Remove School or Department -->
 			<form id="removeSchoolForm" action="remove_school.php" method="post" style="display: none;">
-				Which division is the school being removed from? 			<?php include 'removeSchool-DivisionDD.php'; ?><br>
-				Which school would you like to remove? 						<?php include 'removeSchoolDD.php'; ?>
-				<input type="submit" />
+				Which division is the school or department being removed from? 			 <?php include 'removeSchool-DivisionDD.php'; ?><br>
 			</form>
-			
-						
-			
-			<!-- Add Department -->
-			
-						
-			
-			<!-- Remove Department -->
-			
 						
 			
 			<!-- Add Position -->
-			
+			<form id="addPositionForm" action="add_position.php" method="post" style="display: none;">
+				Which division is the position being added to? 			 				<?php include 'addPosition-DivisionDD.php'; ?><br>
+			</form>
 						
 			
 			<!-- Remove Position -->
@@ -74,7 +63,7 @@
 
 			
 		<!-- SOURCE -->
-		<select id="sourceOptions" onclick="" style="display: none;">
+		<select id="sourceOptions" onchange="" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDirectory">Add a Source directory.</option>
 			<option value="removeDirectory">Remove a Source directory.</option>
@@ -87,7 +76,7 @@
 		</select>
 
 		<!-- DISTRIBUTION GROUPS -->
-		<select id="distGroupOptions" onclick="" style="display: none;">
+		<select id="distGroupOptions" onchange="" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDG">Add an email distribution group.</option>
 			<option value="removeDG">Remove an email distribution group.</option>

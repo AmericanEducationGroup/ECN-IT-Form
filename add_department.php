@@ -8,9 +8,9 @@
 		exit();
 	}
 
-	$removedSchool = $_POST["removedSchool"];
-	$db->query("DELETE FROM schools_departments WHERE name = '" . $removedSchool . "'");
+	$newDepartment = $_POST["newDepartment"];
+	$db->query("call insert_department('" .$newDepartment . "', 1)");
 	$db->close();
 
-	header('Location: administration.php');
+	header( 'Location: administration.php' ) ;
 ?>

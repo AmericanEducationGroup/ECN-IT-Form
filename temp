@@ -1,0 +1,17 @@
+
+	
+	$removedSchoolsDivision = $_POST["removedSchoolsDivision"];
+	$result = $db->query("SELECT name FROM schools WHERE division = '" . $removedSchoolsDivision . "'");
+?>
+	
+<select name='removedSchool' id='removedSchool'>
+<option disabled selected style='display:none;'>Choose a school.</option>
+
+<?php
+
+	while ($row = $result->fetch_assoc())
+	{
+			echo "<option value=" . $row['name'] . ">" . $row['name'] . "</option>\n";
+	}
+	$db->close();
+?>

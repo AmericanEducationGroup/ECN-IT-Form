@@ -12,7 +12,7 @@
 	$result_holder = $result;
 ?>
 
-<select onchange='removeSchoolDD(this.value);' name='removedSchoolsDivision' id='removedSchoolsDivision'>
+<select onchange='addPositionDD(this.value);' name='addedPositionsDivision' id='addedPositionsDivision'>
 	<option disabled selected style='display:none;'>Choose a division.</option> 
 
 <?php

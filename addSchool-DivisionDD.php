@@ -8,17 +8,15 @@
 		exit();
 	}
 
-	$result = $db->query("SELECT name FROM divisions");
+	$result = $db->query("SELECT name, divisionID FROM divisions");
 
-	echo "<select name=\"newSchoolDivision\" id=\"newSchoolDivision\">\n"; ?>
-
+?>
+<select name='newSchoolDivision' id='newSchoolDivision' onchange="checkAbbreviation(this)">
 <option disabled selected style='display:none;'>Choose a division.</option> 
 <?php
-	$i = 1;
 	while ($row = $result->fetch_assoc())
 	{
-			echo "<option value=" . $i . ">" . $row['name'] . "</option>\n";
-			$i++;
+			echo "<option value=" . $row['divisionID'] . ">" . $row['name'] . "</option>\n";
 	}
 
 	echo "</select>";
