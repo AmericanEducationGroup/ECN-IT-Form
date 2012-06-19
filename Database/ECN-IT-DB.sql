@@ -3336,6 +3336,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (129,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (130,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (131,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (132,100);
+
 INSERT INTO Read_Permissions(position, directory) VALUES (133,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (134,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (135,100);

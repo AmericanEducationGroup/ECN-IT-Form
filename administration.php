@@ -83,10 +83,18 @@
 			<!-- Add Directory -->
 			<form id="addDirectoryForm" action="add_directory.php" method="post" style="display: none;">
 				What is the name of the new directory? 									<input type="text" placeholder="Directory name?" name="newDirectory"/><br>
+																						<input type="text" placeholder="Latest" id="latestAddedDirectory" name="latestAddedDirectory" style="display: none;"/>
+				<input type="submit" />
+				What is the new directory's parent directory?		 					<?php include 'addDirectory-ParentDD.php'; ?>
 			</form>
 			
 			
 			<!-- Remove Directory -->
+			<form id="removeDirectoryForm" action="remove_directory.php" method="post" style="display: none;">
+																						<input type="text" placeholder="Latest" id="latestRemovedDirectory" name="latestRemovedDirectory" style="display: none;"/>
+				<input type="submit" />
+				What directory is being removed?		 								<?php include 'removeDirectory-ParentDD.php'; ?>
+			</form>
 			
 			
 			<!-- Add Owner -->

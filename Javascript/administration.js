@@ -49,6 +49,8 @@ function hideAllActionFields()
 		document.getElementById("removePositionForm").style.display = 'none';
 	if(document.getElementById("addDirectoryForm") != null)
 		document.getElementById("addDirectoryForm").style.display = 'none';
+	if(document.getElementById("removeDirectoryForm") != null)
+		document.getElementById("removeDirectoryForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -93,6 +95,10 @@ function showSourceActionFields(sourceAction)
 	{
 		document.getElementById("addDirectoryForm").style.display = 'block';
 	}
+	else if(action == "removeDirectory")
+	{
+		document.getElementById("removeDirectoryForm").style.display = 'block';
+	}
 }
 
 function removeSchoolDD(removedSchoolsDivision)
@@ -135,6 +141,30 @@ function removePositionDD(removedPositionsSchoolDepartment)
 		url: "removePositionDD.php",
 		data: "removedPositionsSchoolDepartment="+removedPositionsSchoolDepartment,
 		success: function(msg){ $("#removePositionForm").append(msg);}
+	});
+}
+
+function addDirectoryDDFunction(parent, parentDD)
+{
+	parentDD.disabled = true;
+	document.getElementById("latestAddedDirectory").value = parentDD.value;
+	$.ajax({
+		type: "POST",
+		url: "addDirectoryDD.php",
+		data: "parent="+parent,
+		success: function(msg){ $("#addDirectoryForm").append(msg);}
+	});
+}
+
+function removeDirectoryDDFunction(parent, parentDD)
+{
+	parentDD.disabled = true;
+	document.getElementById("latestRemovedDirectory").value = parent;
+	$.ajax({
+		type: "POST",
+		url: "removeDirectoryDD.php",
+		data: "parent="+parent,
+		success: function(msg){ $("#removeDirectoryForm").append(msg);}
 	});
 }
 
