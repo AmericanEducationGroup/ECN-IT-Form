@@ -51,6 +51,10 @@ function hideAllActionFields()
 		document.getElementById("addDirectoryForm").style.display = 'none';
 	if(document.getElementById("removeDirectoryForm") != null)
 		document.getElementById("removeDirectoryForm").style.display = 'none';
+	if(document.getElementById("addOwnerForm") != null)
+		document.getElementById("addOwnerForm").style.display = 'none';
+	if(document.getElementById("removeOwnerForm") != null)
+		document.getElementById("removeOwnerForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -99,8 +103,28 @@ function showSourceActionFields(sourceAction)
 	{
 		document.getElementById("removeDirectoryForm").style.display = 'block';
 	}
+	else if(action == "addOwner")
+	{
+		document.getElementById("addOwnerForm").style.display = 'block';
+	}
+	else if(action == "removeOwner")
+	{
+		document.getElementById("removeOwnerForm").style.display = 'block';
+	}
 }
 
+function checkAbbreviation(divisionSelector)
+{
+	var division = divisionSelector.options[divisionSelector.selectedIndex].value;
+	if(division == 1) {
+		document.getElementById("schoolAbbrv").value = "N/A";
+		document.getElementById("schoolAbbrv").disabled = true;
+	} else {
+		document.getElementById("schoolAbbrv").disabled = false;
+	}
+}
+
+// Remove School
 function removeSchoolDD(removedSchoolsDivision)
 {
 	$.ajax({
@@ -111,6 +135,8 @@ function removeSchoolDD(removedSchoolsDivision)
 	});
 }
 
+
+// Add Position
 function addPositionDD(addedPositionsDivision)
 {
 	document.getElementById("addedPositionsDivision").disabled = true;
@@ -122,6 +148,8 @@ function addPositionDD(addedPositionsDivision)
 	});
 }
 
+
+// Remove Position
 function removePositionSchoolDepartmentDD(removedPositionsDivision)
 {
 	document.getElementById("removedPositionsDivision").disabled = true;
@@ -144,6 +172,8 @@ function removePositionDD(removedPositionsSchoolDepartment)
 	});
 }
 
+
+// Add Directory
 function addDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
@@ -156,6 +186,8 @@ function addDirectoryDDFunction(parent, parentDD)
 	});
 }
 
+
+// Remove Directory
 function removeDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
@@ -168,13 +200,115 @@ function removeDirectoryDDFunction(parent, parentDD)
 	});
 }
 
-function checkAbbreviation(divisionSelector)
+
+
+
+// Add Owner
+function addOwnersSchoolDepartmentDD(addedOwnersDivision)
 {
-	var division = divisionSelector.options[divisionSelector.selectedIndex].value;
-	if(division == 1) {
-		document.getElementById("schoolAbbrv").value = "N/A";
-		document.getElementById("schoolAbbrv").disabled = true;
-	} else {
-		document.getElementById("schoolAbbrv").disabled = false;
-	}
+	document.getElementById("addedOwnersDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addOwner-Position-SchoolDepartment.php",
+		data: "addedOwnersDivision="+addedOwnersDivision,
+		success: function(msg){ $("#addOwnerForm").append(msg);}
+	});
 }
+
+function addOwnerPositionDD(addedOwnersSchoolDepartment)
+{
+	document.getElementById("addedOwnersSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addOwner-PositionDD.php",
+		data: "addedOwnersSchoolDepartment="+addedOwnersSchoolDepartment,
+		success: function(msg){ $("#addOwnerForm").append(msg);}
+	});
+}
+
+function addOwnerParentDirectoryDDFunction(positionDD)
+{
+	latestOwnersPosition.value = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addOwner-ParentDirectoryDD.php",
+		success: function(msg){ $("#addOwnerForm").append(msg);}
+	});
+}
+
+function addOwnerDirectoryDDFunction(parent, parentDD)
+{
+	parentDD.disabled = true;
+	document.getElementById("latestOwnersDirectory").value = parentDD.value;
+	$.ajax({
+		type: "POST",
+		url: "addOwner-DirectoryDD.php",
+		data: "parent="+parent,
+		success: function(msg){ $("#addOwnerForm").append(msg);}
+	});
+}
+
+
+// Remove Owner
+function removeOwnersSchoolDepartmentDD(removedOwnersDivision)
+{
+	document.getElementById("removedOwnersDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeOwner-Position-SchoolDepartment.php",
+		data: "removedOwnersDivision="+removedOwnersDivision,
+		success: function(msg){ $("#removeOwnerForm").append(msg);}
+	});
+}
+
+function removeOwnerPositionDD(removedOwnersSchoolDepartment)
+{
+	document.getElementById("removedOwnersSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeOwner-PositionDD.php",
+		data: "removedOwnersSchoolDepartment="+removedOwnersSchoolDepartment,
+		success: function(msg){ $("#removeOwnerForm").append(msg);}
+	});
+}
+
+function removeOwnerDirectoryDDFunction(positionDD)
+{
+	removedOwnersPosition = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeOwner-DirectoryDD.php",
+		data: "removedOwnersPosition="+removedOwnersPosition,
+		success: function(msg) { $("#removeOwnerForm").append(msg);}
+	});
+}
+
+function removeOwnerEnable()
+{
+	document.getElementById("removedOwnersPosition").disabled = false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

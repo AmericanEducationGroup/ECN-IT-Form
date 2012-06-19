@@ -33,7 +33,7 @@
 
 			<!-- Remove Division -->
 			<form id="removeDivisionForm" action="remove_division.php" method="post" style="display: none;">
-				Which division would you like to remove?								<?php include 'removeDivisionDD.php'; ?>
+				Which division would you like to remove?								<?php require 'removeDivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
@@ -41,26 +41,26 @@
 			<form id="addSchoolForm" action="add_school.php" method="post" style="display: none;">
 				What is the name of the new school or department? 						<input type="text" placeholder="School name?" name="newSchool"/><br>
 				What is the abbreviation of the new school (3 letters)? 				<input type="text" id="schoolAbbrv" placeholder="School abbreviation?" name="newSchoolAbbreviation"/><br>
-				Which division would you like to add a school/department to?			<?php include 'addSchool-DivisionDD.php'; ?>
+				Which division would you like to add a school/department to?			<?php require 'addSchool-DivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
 			<!-- Remove School or Department -->
 			<form id="removeSchoolForm" action="remove_school.php" method="post" style="display: none;">
-				Which division is the school or department being removed from? 			 <?php include 'removeSchool-DivisionDD.php'; ?><br>
+				Which division is the school or department being removed from? 			 <?php require 'removeSchool-DivisionDD.php'; ?><br>
 			</form>
 						
 			
 			<!-- Add Position -->
 			<form onsubmit="document.getElementById('addedPositionsDivision').disabled = false;" id="addPositionForm" action="add_position.php" method="post" style="display: none;">
 				What is the name of the new position? 									<input type="text" placeholder="Position name?" id="newPosition" name="newPosition"/><br>
-				Which division is the position being added to? 			 				<?php include 'addPosition-DivisionDD.php'; ?><br>
+				Which division is the position being added to? 			 				<?php require 'addPosition-DivisionDD.php'; ?><br>
 			</form>
 			
 			
 			<!-- Remove Position -->
 			<form id="removePositionForm" action="remove_position.php" method="post" style="display: none;">
-				Which division is the position being removed from?		 				<?php include 'removePosition-DivisionDD.php'; ?><br>
+				Which division is the position being removed from?		 				<?php require 'removePosition-DivisionDD.php'; ?><br>
 			</form>
 			
 						
@@ -85,7 +85,7 @@
 				What is the name of the new directory? 									<input type="text" placeholder="Directory name?" name="newDirectory"/><br>
 																						<input type="text" placeholder="Latest" id="latestAddedDirectory" name="latestAddedDirectory" style="display: none;"/>
 				<input type="submit" />
-				What is the new directory's parent directory?		 					<?php include 'addDirectory-ParentDD.php'; ?>
+				What is the new directory's parent directory?		 					<?php require 'addDirectory-ParentDD.php'; ?>
 			</form>
 			
 			
@@ -93,14 +93,22 @@
 			<form id="removeDirectoryForm" action="remove_directory.php" method="post" style="display: none;">
 																						<input type="text" placeholder="Latest" id="latestRemovedDirectory" name="latestRemovedDirectory" style="display: none;"/>
 				<input type="submit" />
-				What directory is being removed?		 								<?php include 'removeDirectory-ParentDD.php'; ?>
+				What directory is being removed?		 								<?php require 'removeDirectory-ParentDD.php'; ?>
 			</form>
 			
 			
 			<!-- Add Owner -->
+			<form id="addOwnerForm" action="add_owner.php" method="post" style="display: none;">
+																						<input type="text" placeholder="" id="latestOwnersDirectory" name="latestOwnersDirectory" style="display: none;"/>
+																						<input type="text" placeholder="" id="latestOwnersPosition" name="latestOwnersPosition" style="display: none;"/>
+				What division is the new owner in?		 								<?php require 'addOwner-Position-DivisionDD.php'; ?><br>
+			</form>
 			
 			
 			<!-- Remove Owner -->
+			<form id="removeOwnerForm" onsubmit="removeOwnerEnable();" action="remove_owner.php" method="post" style="display: none;">
+				What is the removed owner's division?	 								<?php require 'removeOwner-Position-DivisionDD.php'; ?><br>
+			</form>
 			
 			
 			<!-- Add Read Permissions -->
@@ -113,7 +121,8 @@
 			
 			
 			<!-- Remove Edit Permissions -->
-
+			
+			
 		<!-- DISTRIBUTION GROUPS -->
 		<select id="distGroupOptions" onchange="" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
