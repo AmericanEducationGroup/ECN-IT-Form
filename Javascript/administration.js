@@ -47,6 +47,8 @@ function hideAllActionFields()
 		document.getElementById("addPositionForm").style.display = 'none';
 	if(document.getElementById("removePositionForm") != null)
 		document.getElementById("removePositionForm").style.display = 'none';
+	if(document.getElementById("addDirectoryForm") != null)
+		document.getElementById("addDirectoryForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -83,6 +85,16 @@ function showGeneralActionFields(generalAction)
 	}
 }
 
+function showSourceActionFields(sourceAction)
+{
+	hideAllActionFields();
+	var action = sourceAction.options[sourceAction.selectedIndex].value;
+	if(action == "addDirectory")
+	{
+		document.getElementById("addDirectoryForm").style.display = 'block';
+	}
+}
+
 function removeSchoolDD(removedSchoolsDivision)
 {
 	$.ajax({
@@ -90,17 +102,6 @@ function removeSchoolDD(removedSchoolsDivision)
 		url: "removeSchoolDD.php",
 		data: "removedSchoolsDivision="+removedSchoolsDivision,
 		success: function(msg){ $("#removeSchoolForm").html(msg);}
-	});
-}
-
-function removePosition-SchoolDepartmentDD(removedPositionsDivision)
-{
-	document.getElementById("removedPositionsDivision").disabled = true;
-	$.ajax({
-		type: "POST",
-		url: "removePosition-SchoolDepartmentDD.php",
-		data: "removedPositionsDivision="+removedPositionsDivision,
-		success: function(msg){ $("#removePositionForm").append(msg);}
 	});
 }
 
@@ -112,6 +113,28 @@ function addPositionDD(addedPositionsDivision)
 		url: "addPositionDD.php",
 		data: "addedPositionsDivision="+addedPositionsDivision,
 		success: function(msg){ $("#addPositionForm").append(msg);}
+	});
+}
+
+function removePositionSchoolDepartmentDD(removedPositionsDivision)
+{
+	document.getElementById("removedPositionsDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removePosition-SchoolDepartmentDD.php",
+		data: "removedPositionsDivision="+removedPositionsDivision,
+		success: function(msg){ $("#removePositionForm").append(msg);}
+	});
+}
+
+function removePositionDD(removedPositionsSchoolDepartment)
+{
+	document.getElementById("removedPositionsSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removePositionDD.php",
+		data: "removedPositionsSchoolDepartment="+removedPositionsSchoolDepartment,
+		success: function(msg){ $("#removePositionForm").append(msg);}
 	});
 }
 

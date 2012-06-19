@@ -12,6 +12,7 @@
 	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division ='" . $removedPositionsDivision . "'");
 ?>
 
+	Which school or department would you like to remove a position from?
 <select onchange='removePositionDD(this.value);' name='removedPositionsSchoolDepartment' id='removedPositionsSchoolDepartment'>
 	<option disabled selected style='display:none;'>Choose a school/department.</option> 
 
@@ -24,4 +25,4 @@
 	$db->close();
 ?>
 
-</select>
+</select><br>

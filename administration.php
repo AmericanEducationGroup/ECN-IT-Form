@@ -33,7 +33,7 @@
 
 			<!-- Remove Division -->
 			<form id="removeDivisionForm" action="remove_division.php" method="post" style="display: none;">
-				Which division would you like to remove?								<?php require 'removeDivisionDD.php'; ?>
+				Which division would you like to remove?								<?php include 'removeDivisionDD.php'; ?>
 				<input type="submit" />
 			</form>
 			
@@ -59,7 +59,7 @@
 			
 			
 			<!-- Remove Position -->
-			<form onsubmit="document.getElementById('removedPositionsDivision').disabled = false;" id="removePositionForm" action="remove_position.php" method="post" style="display: none;">
+			<form id="removePositionForm" action="remove_position.php" method="post" style="display: none;">
 				Which division is the position being removed from?		 				<?php include 'removePosition-DivisionDD.php'; ?><br>
 			</form>
 			
@@ -67,7 +67,7 @@
 
 			
 		<!-- SOURCE -->
-		<select id="sourceOptions" onchange="" style="display: none;">
+		<select id="sourceOptions" onchange="showSourceActionFields(this)" style="display: none;">
 			<option disabled selected style='display:none;'>Choose an action.</option>
 			<option value="addDirectory">Add a Source directory.</option>
 			<option value="removeDirectory">Remove a Source directory.</option>
@@ -78,6 +78,33 @@
 			<option value="addEditPerm">Add Source directory edit permissions.</option>
 			<option value="removeEditPerm">Remove Source directory edit permissions.</option>
 		</select>
+			
+			
+			<!-- Add Directory -->
+			<form id="addDirectoryForm" action="add_directory.php" method="post" style="display: none;">
+				What is the name of the new directory? 									<input type="text" placeholder="Directory name?" name="newDirectory"/><br>
+			</form>
+			
+			
+			<!-- Remove Directory -->
+			
+			
+			<!-- Add Owner -->
+			
+			
+			<!-- Remove Owner -->
+			
+			
+			<!-- Add Read Permissions -->
+			
+			
+			<!-- Remove Read Permissions -->
+			
+			
+			<!-- Add Edit Permissions -->
+			
+			
+			<!-- Remove Edit Permissions -->
 
 		<!-- DISTRIBUTION GROUPS -->
 		<select id="distGroupOptions" onchange="" style="display: none;">

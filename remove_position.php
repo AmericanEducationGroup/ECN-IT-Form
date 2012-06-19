@@ -10,10 +10,7 @@
 
 	
 	$removedPosition = $_POST["removedPosition"];
-	$addedPositionsDivision = $_REQUEST["addedPositionsDivision"];
-	$addedPositionsSchoolDepartment = $_REQUEST["addedPositionsSchoolDepartment"];
-	echo $newPosition . " " . $addedPositionsDivision . " " . $addedPositionsSchoolDepartment;
-	$db->query("call insert_positions('" . $newPosition . "', '" . $addedPositionsDivision . "', '" . $addedPositionsSchoolDepartment . "')");
+	$db->query("call remove_positions('" . $removedPosition . "')");
 	$db->close();
 
 	header('Location: administration.php');

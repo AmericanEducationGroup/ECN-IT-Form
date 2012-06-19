@@ -1,6 +1,5 @@
 <?php 
 
-	
 	$db = new mysqli("localhost:3306", "root", "", "ecn-it-db");
 
 	if($db->connect_errno)
@@ -9,18 +8,18 @@
 		exit();
 	}
 	
-	$removedPositionsDivision = $_REQUEST["removedPositionsDivision"];
-	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division = '" . $removedPositionsDivision . "'");
+	$removedPositionsSchoolDepartment = $_REQUEST["removedPositionsSchoolDepartment"];
+	$result = $db->query("SELECT positionID, title FROM positions WHERE school_department = '" . $removedPositionsSchoolDepartment . "'");
 ?>
 
-	Which school or department would you like to remove a position from?
-	<select name='addedPositionsSchoolDepartment' id='addedPositionsSchoolDepartment'>
-		<option disabled selected style='display:none;'>Choose a school/department.</option>
+	Which position would you like to remove?
+	<select name='removedPosition' id='removedPosition'>
+		<option disabled selected style='display:none;'>Choose a position.</option>
 
 		<?php
 			while ($row = $result->fetch_assoc())
 			{
-					echo "<option value=" . $row['schoolDepartmentID'] . ">" . $row['name'] . "</option>\n";
+					echo "<option value=" . $row['positionID'] . ">" . $row['title'] . "</option>\n";
 			}
 			$db->close();
 		?>

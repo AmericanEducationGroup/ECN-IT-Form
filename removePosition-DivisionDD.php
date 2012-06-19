@@ -11,7 +11,7 @@
 	$result = $db->query("SELECT name, divisionID FROM divisions");
 ?>
 
-<select onchange='removePosition-SchoolDepartmentDD(this.value);' name='removedPositionsDivision' id='removedPositionsDivision'>
+<select onchange='removePositionSchoolDepartmentDD(this.value);' name='removedPositionsDivision' id='removedPositionsDivision'>
 	<option disabled selected style='display:none;'>Choose a division.</option> 
 
 <?php
