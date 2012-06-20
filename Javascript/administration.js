@@ -55,6 +55,22 @@ function hideAllActionFields()
 		document.getElementById("addOwnerForm").style.display = 'none';
 	if(document.getElementById("removeOwnerForm") != null)
 		document.getElementById("removeOwnerForm").style.display = 'none';
+	if(document.getElementById("addReadPermForm") != null)
+		document.getElementById("addReadPermForm").style.display = 'none';
+	if(document.getElementById("removeReadPermForm") != null) 
+		document.getElementById("removeReadPermForm").style.display = 'none';
+	if(document.getElementById("addEditPermForm") != null) 
+		document.getElementById("addEditPermForm").style.display = 'none';
+	if(document.getElementById("removeEditPermForm") != null) 
+		document.getElementById("removeEditPermForm").style.display = 'none';
+	if(document.getElementById("addDGForm") != null) 
+		document.getElementById("addDGForm").style.display = 'none';
+	if(document.getElementById("removeDGForm") != null) 
+		document.getElementById("removeDGForm").style.display = 'none';
+	if(document.getElementById("giveDGSendForm") != null) 
+		document.getElementById("giveDGSendForm").style.display = 'none';
+	if(document.getElementById("removeDGSendForm") != null) 
+		document.getElementById("removeDGSendForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -91,6 +107,29 @@ function showGeneralActionFields(generalAction)
 	}
 }
 
+
+function showDGActionFields(dgAction)
+{
+	hideAllActionFields();
+	var action = dgAction.options[dgAction.selectedIndex].value;
+	if(action == "addDG")
+	{
+		document.getElementById("addDGForm").style.display = 'block';
+	}
+	if(action == "removeDG")
+	{
+		document.getElementById("removeDGForm").style.display = 'block';
+	}
+	if(action == "giveDGSend")
+	{
+		document.getElementById("giveDGSendForm").style.display = 'block';
+	}
+	if(action == "removeDGSend")
+	{
+		document.getElementById("removeDGSendForm").style.display = 'block';
+	}
+}
+
 function showSourceActionFields(sourceAction)
 {
 	hideAllActionFields();
@@ -110,6 +149,22 @@ function showSourceActionFields(sourceAction)
 	else if(action == "removeOwner")
 	{
 		document.getElementById("removeOwnerForm").style.display = 'block';
+	}
+	else if(action == "addReadPerm")
+	{
+		document.getElementById("addReadPermForm").style.display = 'block';
+	}
+	else if(action == "removeReadPerm")
+	{
+		document.getElementById("removeReadPermForm").style.display = 'block';
+	}
+	else if(action == "addEditPerm")
+	{
+		document.getElementById("addEditPermForm").style.display = 'block';
+	}
+	else if(action == "removeEditPerm")
+	{
+		document.getElementById("removeEditPermForm").style.display = 'block';
 	}
 }
 
@@ -294,6 +349,236 @@ function removeOwnerEnable()
 
 
 
+// Add Read Permissions
+function addReadPermSchoolDepartmentDD(addedReadPermsDivision)
+{
+	document.getElementById("addedReadPermDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addReadPerm-Position-SchoolDepartmentDD.php",
+		data: "addedReadPermsDivision="+addedReadPermsDivision,
+		success: function(msg){ $("#addReadPermForm").append(msg);}
+	});
+}
+
+function addReadPermPositionDD(addedReadPermsSchoolDepartment)
+{
+	document.getElementById("addReadPermSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addReadPerm-PositionDD.php",
+		data: "addedReadPermsSchoolDepartment="+addedReadPermsSchoolDepartment,
+		success: function(msg){ $("#addReadPermForm").append(msg);}
+	});
+}
+
+function addReadPermParentDirectoryDDFunction(positionDD)
+{
+	newReadPermPosition.value = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addReadPerm-ParentDirectoryDD.php",
+		success: function(msg){ $("#addReadPermForm").append(msg);}
+	});
+}
+
+function addReadPermDirectoryDDFunction(parent, parentDD)
+{
+	parentDD.disabled = true;
+	document.getElementById("newReadPermDirectory").value = parentDD.value;
+	$.ajax({
+		type: "POST",
+		url: "addReadPerm-DirectoryDD.php",
+		data: "parent="+parent,
+		success: function(msg){ $("#addReadPermForm").append(msg);}
+	});
+}
+
+
+// Remove Read Permissions
+function removeReadPermSchoolDepartmentDD(removeReadPermsDivision)
+{
+	document.getElementById("removedReadPermsDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeReadPerm-Position-SchoolDepartment.php",
+		data: "removeReadPermsDivision="+removeReadPermsDivision,
+		success: function(msg){ $("#removeReadPermForm").append(msg);}
+	});
+}
+
+function removeReadPermPositionDD(removedReadPermSchoolDepartment)
+{
+	document.getElementById("removedReadPermsSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeReadPerm-PositionDD.php",
+		data: "removedReadPermSchoolDepartment="+removedReadPermSchoolDepartment,
+		success: function(msg){ $("#removeReadPermForm").append(msg);}
+	});
+}
+
+function removeReadPermDirectoryDDFunction(positionDD)
+{
+	document.getElementById("removedReadPermPosition").value = positionDD.value;
+	removedReadPermsPosition = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeReadPerm-DirectoryDD.php",
+		data: "removedReadPermsPosition="+removedReadPermsPosition,
+		success: function(msg) { $("#removeReadPermForm").append(msg);}
+	});
+}
+
+
+
+
+
+// Add Edit Permissions
+function addEditPermSchoolDepartmentDD(addedEditPermsDivision)
+{
+	document.getElementById("addedEditPermDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addEditPerm-Position-SchoolDepartmentDD.php",
+		data: "addedEditPermsDivision="+addedEditPermsDivision,
+		success: function(msg){ $("#addEditPermForm").append(msg);}
+	});
+}
+
+function addEditPermPositionDD(addedEditPermsSchoolDepartment)
+{
+	document.getElementById("addEditPermSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addEditPerm-PositionDD.php",
+		data: "addedEditPermsSchoolDepartment="+addedEditPermsSchoolDepartment,
+		success: function(msg){ $("#addEditPermForm").append(msg);}
+	});
+}
+
+function addEditPermParentDirectoryDDFunction(positionDD)
+{
+	newEditPermPosition.value = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "addEditPerm-ParentDirectoryDD.php",
+		success: function(msg){ $("#addEditPermForm").append(msg);}
+	});
+}
+
+function addEditPermDirectoryDDFunction(parent, parentDD)
+{
+	parentDD.disabled = true;
+	document.getElementById("newEditPermDirectory").value = parentDD.value;
+	$.ajax({
+		type: "POST",
+		url: "addEditPerm-DirectoryDD.php",
+		data: "parent="+parent,
+		success: function(msg){ $("#addEditPermForm").append(msg);}
+	});
+}
+
+
+// Remove Edit Permissions
+function removeEditPermSchoolDepartmentDD(removeEditPermsDivision)
+{
+	document.getElementById("removedEditPermsDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeEditPerm-Position-SchoolDepartment.php",
+		data: "removeEditPermsDivision="+removeEditPermsDivision,
+		success: function(msg){ $("#removeEditPermForm").append(msg);}
+	});
+}
+
+function removeEditPermPositionDD(removedEditPermSchoolDepartment)
+{
+	document.getElementById("removedEditPermsSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeEditPerm-PositionDD.php",
+		data: "removedEditPermSchoolDepartment="+removedEditPermSchoolDepartment,
+		success: function(msg){ $("#removeEditPermForm").append(msg);}
+	});
+}
+
+function removeEditPermDirectoryDDFunction(positionDD)
+{
+	document.getElementById("removedEditPermPosition").value = positionDD.value;
+	removedEditPermsPosition = positionDD.value;
+	positionDD.disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeEditPerm-DirectoryDD.php",
+		data: "removedEditPermsPosition="+removedEditPermsPosition,
+		success: function(msg) { $("#removeEditPermForm").append(msg);}
+	});
+}
+
+
+
+// Give DG Send Permissions
+function giveDGSendDepartmentSchoolDD(givenDGSendDivision)
+{
+	document.getElementById("giveDGSendDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "giveDGSend-SchoolDepartmentDD.php",
+		data: "givenDGSendDivision="+givenDGSendDivision,
+		success: function(msg){ $("#giveDGSendForm").append(msg);}
+	});
+}
+
+function giveDGSendPositionDD(givenDGSendSchoolDepartment)
+{
+	document.getElementById("giveDGSendSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "giveDGSend-PositionDD.php",
+		data: "givenDGSendSchoolDepartment="+givenDGSendSchoolDepartment,
+		success: function(msg){ $("#giveDGSendForm").append(msg);}
+	});
+}
+
+
+
+// Remove DG Send Permissions
+function removeDGSendDepartmentSchoolDD(removedDGSendDivision)
+{
+	document.getElementById("removeDGSendDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeDGSend-SchoolDepartmentDD.php",
+		data: "removedDGSendDivision="+removedDGSendDivision,
+		success: function(msg){ $("#removeDGSendForm").append(msg);}
+	});
+}
+
+function removeDGSendPositionDD(removedDGSendSchoolDepartment)
+{
+	document.getElementById("removeDGSendSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeDGSend-PositionDD.php",
+		data: "removedDGSendSchoolDepartment="+removedDGSendSchoolDepartment,
+		success: function(msg){ $("#removeDGSendForm").append(msg);}
+	});
+}
+
+function removeDGSendDGDD(removedDGSendPosition)
+{
+	document.getElementById("removeDGSendPosition").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeDGSendDGDD.php",
+		data: "removedDGSendPosition="+removedDGSendPosition,
+		success: function(msg){ $("#removeDGSendForm").append(msg);}
+	});
+}
 
 
 
