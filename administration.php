@@ -2,11 +2,14 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="Javascript/administration.js"></script>
+		<link href="test.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+	<div class="styled-select">
+		<div class="title-wording">
 		<h1>ECN IT Administration</h1>
-
 		<h3>What administrative action would you like to take?</h3>
+		</div>
 		<select id="actionCategory" onchange="showActionOptions(this);"">
 			<option disabled selected style='display:none;'>Choose an action category.</option>
 			<option value="general"">General</option>
@@ -176,22 +179,22 @@
 			
 				<!-- Remove Distribution Group Send Permissions -->
 				<form id="removeDGSendForm" action="remove_DGSend.php" method="post" style="display: none;">
-					Which division is the position getting new DG Send permissions in?		<?php require 'removeDGSend-DivisionDD.php'; ?><br>
+					Which division is the position losing DG Send permissions in?		<?php require 'removeDGSend-DivisionDD.php'; ?><br>
 				</form>
 			
 			
 				<!-- Give Distribution Group Receive Permissions -->
+				<form id="giveDGReceiveForm" action="give_DGReceive.php" method="post" style="display: none;">
+					Which DG would you like to add Receive permissions to? 					<?php require 'giveDGReceiveDD.php'; ?><br>
+					Which division is the position getting new DG Receive permissions in?		<?php require 'giveDGReceive-DivisionDD.php'; ?><br>
+				</form>
 			
 			
 				<!-- Remove Distribution Group Receive Permissions -->
+				<form id="removeDGReceiveForm" action="remove_DGReceive.php" method="post" style="display: none;">
+					Which division is the position losing DG Receive permissions in?		<?php require 'removeDGReceive-DivisionDD.php'; ?><br>
+				</form>
 
-
-
-
-
-
-
-
-
+	</div>
 	</body>
 </html>

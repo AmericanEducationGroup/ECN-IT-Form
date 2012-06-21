@@ -71,6 +71,10 @@ function hideAllActionFields()
 		document.getElementById("giveDGSendForm").style.display = 'none';
 	if(document.getElementById("removeDGSendForm") != null) 
 		document.getElementById("removeDGSendForm").style.display = 'none';
+	if(document.getElementById("giveDGReceiveForm") != null) 
+		document.getElementById("giveDGReceiveForm").style.display = 'none';
+	if(document.getElementById("removeDGReceiveForm") != null) 
+		document.getElementById("removeDGReceiveForm").style.display = 'none';
 }
 
 function showGeneralActionFields(generalAction)
@@ -127,6 +131,14 @@ function showDGActionFields(dgAction)
 	if(action == "removeDGSend")
 	{
 		document.getElementById("removeDGSendForm").style.display = 'block';
+	}
+	if(action == "giveDGReceive")
+	{
+		document.getElementById("giveDGReceiveForm").style.display = 'block';
+	}
+	if(action == "removeDGReceive")
+	{
+		document.getElementById("removeDGReceiveForm").style.display = 'block';
 	}
 }
 
@@ -577,6 +589,68 @@ function removeDGSendDGDD(removedDGSendPosition)
 		url: "removeDGSendDGDD.php",
 		data: "removedDGSendPosition="+removedDGSendPosition,
 		success: function(msg){ $("#removeDGSendForm").append(msg);}
+	});
+}
+
+
+
+// Give DG Receive Permissions
+function giveDGReceiveDepartmentSchoolDD(givenDGReceiveDivision)
+{
+	document.getElementById("giveDGReceiveDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "giveDGReceive-SchoolDepartmentDD.php",
+		data: "givenDGReceiveDivision="+givenDGReceiveDivision,
+		success: function(msg){ $("#giveDGReceiveForm").append(msg);}
+	});
+}
+
+function giveDGReceivePositionDD(givenDGReceiveSchoolDepartment)
+{
+	document.getElementById("giveDGReceiveSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "giveDGReceive-PositionDD.php",
+		data: "givenDGReceiveSchoolDepartment="+givenDGReceiveSchoolDepartment,
+		success: function(msg){ $("#giveDGReceiveForm").append(msg);}
+	});
+}
+
+
+
+// Remove DG Receive Permissions
+function removeDGReceiveDepartmentSchoolDD(removedDGReceiveDivision)
+{
+	document.getElementById("removeDGReceiveDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeDGReceive-SchoolDepartmentDD.php",
+		data: "removedDGReceiveDivision="+removedDGReceiveDivision,
+		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
+	});
+}
+
+function removeDGReceivePositionDD(removedDGReceiveSchoolDepartment)
+{
+	document.getElementById("removeDGReceiveSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "removeDGReceive-PositionDD.php",
+		data: "removedDGReceiveSchoolDepartment="+removedDGReceiveSchoolDepartment,
+		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
+	});
+}
+
+function removeDGReceiveDGDD(removedDGReceivePosition)
+{
+	document.getElementById("removeDGReceivePosition").disabled = true;
+	$.ajax({
+
+		type: "POST",
+		url: "removeDGReceiveDGDD.php",
+		data: "removedDGReceivePosition="+removedDGReceivePosition,
+		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
 	});
 }
 
