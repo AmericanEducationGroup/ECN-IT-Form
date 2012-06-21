@@ -23,3 +23,4 @@
 ?>
 
 </select>
+					<input type="submit" id="addDirectorySubmit"/><br>

@@ -239,12 +239,20 @@ function removePositionDD(removedPositionsSchoolDepartment)
 	});
 }
 
+function removeById(elementID)
+{
+	
+	var oldElement = document.getElementById(elementID);
+	oldElement.parentNode.removeChild(oldElement);
+}
+
 
 // Add Directory
 function addDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
 	document.getElementById("latestAddedDirectory").value = parentDD.value;
+	removeById("addDirectorySubmit");
 	$.ajax({
 		type: "POST",
 		url: "addDirectoryDD.php",
@@ -259,6 +267,7 @@ function removeDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
 	document.getElementById("latestRemovedDirectory").value = parent;
+	removeById("removeDirectorySubmit");
 	$.ajax({
 		type: "POST",
 		url: "removeDirectoryDD.php",
@@ -308,6 +317,7 @@ function addOwnerDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
 	document.getElementById("latestOwnersDirectory").value = parentDD.value;
+	removeById("addOwnerSubmit");
 	$.ajax({
 		type: "POST",
 		url: "addOwner-DirectoryDD.php",
@@ -399,6 +409,7 @@ function addReadPermDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
 	document.getElementById("newReadPermDirectory").value = parentDD.value;
+	removeById("addReadPermSubmit");
 	$.ajax({
 		type: "POST",
 		url: "addReadPerm-DirectoryDD.php",
@@ -486,6 +497,7 @@ function addEditPermDirectoryDDFunction(parent, parentDD)
 {
 	parentDD.disabled = true;
 	document.getElementById("newEditPermDirectory").value = parentDD.value;
+	removeById("addEditPermSubmit");
 	$.ajax({
 		type: "POST",
 		url: "addEditPerm-DirectoryDD.php",

@@ -8,7 +8,6 @@
 		exit();
 	}
 ?>
-	<input type="submit" />
 	What directory has new edit permissions?
 
 <?php
@@ -27,3 +26,4 @@
 ?>
 
 </select>
+	<input type="submit" id="addEditPermSubmit"/>

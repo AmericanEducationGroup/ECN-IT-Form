@@ -8,7 +8,6 @@
 		exit();
 	}
 ?>
-	<input type="submit" />
 	What directory does the new owner own?
 
 <?php
@@ -27,3 +26,4 @@
 ?>
 
 </select>
+	<input type="submit" id="addOwnerSubmit"/>
