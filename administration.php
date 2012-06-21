@@ -2,7 +2,7 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="Javascript/administration.js"></script>
-		<link href="test.css" rel="stylesheet" type="text/css" />
+		<link href="administration.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 	<div class="styled-select" id="styled-select">
