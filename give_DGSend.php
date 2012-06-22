@@ -10,8 +10,11 @@
 
 	$giveSendDG = $_POST["giveSendDG"];
 	$giveDGSendPosition = $_POST["giveDGSendPosition"];
-	$db->query("call insert_send_to_dg('" . $giveSendDG . "', '" . $giveDGSendPosition . "')");
+	$result = $db->query("call insert_send_to_dg('" . $giveSendDG . "', '" . $giveDGSendPosition . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

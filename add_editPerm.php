@@ -11,9 +11,11 @@
 	
 	$newEditPermPosition = $_POST["newEditPermPosition"];
 	$newEditPermDirectory = $_POST["newEditPermDirectory"];
-	echo $newEditPermPosition . " " . $newEditPermDirectory;
-	$db->query("call insert_edit_permissions(" . $newEditPermPosition . ", " . $newEditPermDirectory . ")");
+	$result = $db->query("call insert_edit_permissions(" . $newEditPermPosition . ", " . $newEditPermDirectory . ")");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

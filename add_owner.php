@@ -11,8 +11,11 @@
 	
 	$latestOwnersDirectory = $_POST["latestOwnersDirectory"];
 	$latestOwnersPosition = $_POST["latestOwnersPosition"];
-	$db->query("call insert_directory_owner('" . $latestOwnersDirectory . "', '" . $latestOwnersPosition . "')");
+	$result = $db->query("call insert_directory_owner('" . $latestOwnersDirectory . "', '" . $latestOwnersPosition . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

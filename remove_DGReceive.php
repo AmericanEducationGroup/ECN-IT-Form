@@ -9,8 +9,11 @@
 	}
 
 	$removeDGReceiveDG = $_POST["removeDGReceiveDG"];
-	$db->query("call remove_receive_dg('" . $removeDGReceiveDG . "')");
+	$result = $db->query("call remove_receive_dg('" . $removeDGReceiveDG . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

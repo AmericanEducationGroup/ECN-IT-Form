@@ -9,8 +9,11 @@
 	}
 
 	$removeDGSendDG = $_POST["removeDGSendDG"];
-	$db->query("call remove_send_to_dg('" . $removeDGSendDG . "')");
+	$result = $db->query("call remove_send_to_dg('" . $removeDGSendDG . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

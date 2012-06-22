@@ -9,8 +9,11 @@
 	}
 
 	$removedDivision = $_POST["removedDivision"];
-	$db->query("DELETE FROM divisions WHERE divisionID = '" . $removedDivision . "'");
+	$result = $db->query("DELETE FROM divisions WHERE divisionID = '" . $removedDivision . "'");
 	$db->close();
 
-	header( 'Location: administration.php' ) ;
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

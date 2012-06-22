@@ -9,8 +9,11 @@
 	}
 
 	$removedReadPermsID = $_POST["removedReadPermsID"];
-	$db->query("call remove_read_permissions('" . $removedReadPermsID . "')");
+	$result = $db->query("call remove_read_permissions('" . $removedReadPermsID . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

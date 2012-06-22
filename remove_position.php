@@ -10,8 +10,11 @@
 
 	
 	$removedPosition = $_POST["removedPosition"];
-	$db->query("call remove_positions('" . $removedPosition . "')");
+	$result = $db->query("call remove_positions('" . $removedPosition . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

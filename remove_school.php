@@ -9,8 +9,11 @@
 	}
 
 	$removedSchoolDepartmentID = $_POST["removedSchoolDepartmentID"];
-	$db->query("DELETE FROM schools_departments WHERE schoolDepartmentID = '" . $removedSchoolDepartmentID . "'");
+	$result = $db->query("DELETE FROM schools_departments WHERE schoolDepartmentID = '" . $removedSchoolDepartmentID . "'");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

@@ -10,8 +10,11 @@
 
 	$giveReceiveDG = $_POST["giveReceiveDG"];
 	$giveDGReceivePosition = $_POST["giveDGReceivePosition"];
-	$db->query("call insert_receive_dg('" . $giveReceiveDG . "', '" . $giveDGReceivePosition . "')");
+	$result = $db->query("call insert_receive_dg('" . $giveReceiveDG . "', '" . $giveDGReceivePosition . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

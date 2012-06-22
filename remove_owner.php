@@ -13,5 +13,8 @@
 	$result = $db->query("call remove_directory_owner(" . $removedDirectoryOwnerID . ")");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

@@ -12,8 +12,11 @@
 	$newPosition = $_POST["newPosition"];
 	$addedPositionsDivision = $_REQUEST["addedPositionsDivision"];
 	$addedPositionsSchoolDepartment = $_REQUEST["addedPositionsSchoolDepartment"];
-	$db->query("call insert_positions('" . $newPosition . "', '" . $addedPositionsDivision . "', '" . $addedPositionsSchoolDepartment . "')");
+	$result = $db->query("call insert_positions('" . $newPosition . "', '" . $addedPositionsDivision . "', '" . $addedPositionsSchoolDepartment . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

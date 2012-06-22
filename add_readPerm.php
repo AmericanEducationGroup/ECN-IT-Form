@@ -12,8 +12,11 @@
 	$newReadPermPosition = $_POST["newReadPermPosition"];
 	$newReadPermDirectory = $_POST["newReadPermDirectory"];
 	echo $newReadPermPosition . " " . $newReadPermDirectory;
-	$db->query("call insert_read_permissions(" . $newReadPermPosition . ", " . $newReadPermDirectory . ")");
+	$result = $db->query("call insert_read_permissions(" . $newReadPermPosition . ", " . $newReadPermDirectory . ")");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

@@ -9,8 +9,11 @@
 	}
 
 	$newDepartment = $_POST["newDepartment"];
-	$db->query("call insert_department('" .$newDepartment . "', 1)");
+	$result = $db->query("call insert_department('" .$newDepartment . "', 1)");
 	$db->close();
 
-	header( 'Location: administration.php' ) ;
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

@@ -9,8 +9,11 @@
 	}
 
 	$newDG = $_POST["newDG"];
-	$db->query("call insert_distribution_groups('" . $newDG . "')");
+	$result = $db->query("call insert_distribution_groups('" . $newDG . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

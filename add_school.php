@@ -11,8 +11,11 @@
 	$newSchool = $_POST["newSchool"];
 	$newSchoolAbbreviation = $_POST["newSchoolAbbreviation"];
 	$newSchoolDivision = $_POST["newSchoolDivision"];
-	$db->query("call insert_school('" . $newSchool . "','" . $newSchoolAbbreviation  . "','" .$newSchoolDivision . "')");
+	$result = $db->query("call insert_school('" . $newSchool . "','" . $newSchoolAbbreviation  . "','" .$newSchoolDivision . "')");
 	$db->close();
 
-	header( 'Location: administration.php' ) ;
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

@@ -9,8 +9,11 @@
 	}
 
 	$latestDirectory = $_POST["latestRemovedDirectory"];
-	$db->query("call remove_source_directories('" . $latestDirectory . "')");
+	$result = $db->query("call remove_source_directories('" . $latestDirectory . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

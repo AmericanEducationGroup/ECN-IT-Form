@@ -31,6 +31,7 @@ CREATE TABLE Schools_Departments(
 	division INT NOT NULL,
 	PRIMARY KEY (schoolDepartmentID),
 	UNIQUE KEY (name),
+	UNIQUE KEY (abbreviation),
 	FOREIGN KEY (division) REFERENCES Divisions(divisionID) ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
@@ -3337,6 +3338,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (130,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (131,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (132,100);
 
+
 INSERT INTO Read_Permissions(position, directory) VALUES (133,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (134,100);
 INSERT INTO Read_Permissions(position, directory) VALUES (135,100);
@@ -3939,6 +3941,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (121,102);
 INSERT INTO Read_Permissions(position, directory) VALUES (122,102);
 INSERT INTO Read_Permissions(position, directory) VALUES (123,102);
 INSERT INTO Read_Permissions(position, directory) VALUES (124,102);
+
 INSERT INTO Read_Permissions(position, directory) VALUES (125,102);
 INSERT INTO Read_Permissions(position, directory) VALUES (126,102);
 INSERT INTO Read_Permissions(position, directory) VALUES (127,102);
@@ -4603,6 +4606,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (134, 131);
 INSERT INTO Read_Permissions(position, directory) VALUES (135, 131);
 INSERT INTO Read_Permissions(position, directory) VALUES (136, 131);
 INSERT INTO Read_Permissions(position, directory) VALUES (137, 131);
+
 
 INSERT INTO Edit_Permissions(position, directory) VALUES (125, 131);
 INSERT INTO Edit_Permissions(position, directory) VALUES (126, 131);
@@ -6242,6 +6246,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (73, 170);
 INSERT INTO Read_Permissions(position, directory) VALUES (77, 170);
 INSERT INTO Read_Permissions(position, directory) VALUES (80, 170);
 INSERT INTO Read_Permissions(position, directory) VALUES (81, 170);
+
 INSERT INTO Read_Permissions(position, directory) VALUES (82, 170);
 INSERT INTO Read_Permissions(position, directory) VALUES (86, 170);
 INSERT INTO Read_Permissions(position, directory) VALUES (90, 170);
@@ -6612,6 +6617,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (36, 176);
 INSERT INTO Read_Permissions(position, directory) VALUES (37, 176);
 INSERT INTO Read_Permissions(position, directory) VALUES (38, 176);
 INSERT INTO Read_Permissions(position, directory) VALUES (39, 176);
+
 INSERT INTO Read_Permissions(position, directory) VALUES (40, 176);
 INSERT INTO Read_Permissions(position, directory) VALUES (41, 176);
 INSERT INTO Read_Permissions(position, directory) VALUES (42, 176);

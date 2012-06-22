@@ -9,8 +9,11 @@
 	}
 
 	$removedDG = $_POST["removedDG"];
-	$db->query("call remove_distribution_groups('" . $removedDG . "')");
+	$result = $db->query("call remove_distribution_groups('" . $removedDG . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

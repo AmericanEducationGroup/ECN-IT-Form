@@ -9,8 +9,11 @@
 	}
 
 	$removedEditPermsID = $_POST["removedEditPermsID"];
-	$db->query("call remove_edit_permissions('" . $removedEditPermsID . "')");
+	$result = $db->query("call remove_edit_permissions('" . $removedEditPermsID . "')");
 	$db->close();
 
-	header('Location: administration.php');
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>

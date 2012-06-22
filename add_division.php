@@ -9,8 +9,11 @@
 	}
 
 	$newDivisionName = $_POST["newDivision"];
-	$db->query("call insert_divisions('" . $newDivisionName . "')");
+	$result = $db->query("call insert_divisions('" . $newDivisionName . "')");
 	$db->close();
 
-	header( 'Location: administration.php' ) ;
+	if($result)
+		header( 'Location: success.html' ) ;
+	else
+		header( 'Location: failure.html') ;
 ?>
