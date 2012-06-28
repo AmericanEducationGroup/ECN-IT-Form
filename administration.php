@@ -140,6 +140,7 @@
 																							<input type="text" placeholder="" id="removedEditPermPosition" name="removedEditPermPosition" style="display: none;"/>
 					What is the division of the position losing edit permissions?	 		<?php require 'removeEditPerm-Position-DivisionDD.php'; ?><br>
 				</form>
+
 			
 			
 			<!-- DISTRIBUTION GROUPS -->
