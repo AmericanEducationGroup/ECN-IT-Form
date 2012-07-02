@@ -27,8 +27,9 @@ CREATE TABLE Divisions(
 CREATE TABLE Schools_Departments(
 	schoolDepartmentID INT AUTO_INCREMENT,
 	name VARCHAR(64) NOT NULL,
-  abbreviation VARCHAR(3),
+  	abbreviation VARCHAR(3),
 	division INT NOT NULL,
+	emailDomain VARCHAR(64) NOT NULL,
 	PRIMARY KEY (schoolDepartmentID),
 	UNIQUE KEY (name),
 	UNIQUE KEY (abbreviation),
@@ -121,53 +122,53 @@ INSERT INTO Divisions (name) VALUES ("Little Sprouts"); -- 4
 
 -- Schools_Departments
 --  Corporate
-INSERT INTO Schools_Departments (name, division) VALUES ("Administration", 1);                                  -- 1
-INSERT INTO Schools_Departments (name, division) VALUES ("Coaching and Learning", 1);                           -- 2
-INSERT INTO Schools_Departments (name, division) VALUES ("Human Resources", 1);                                 -- 3
-INSERT INTO Schools_Departments (name, division) VALUES ("Information Technology", 1);                          -- 4
-INSERT INTO Schools_Departments (name, division) VALUES ("Finance", 1);                                         -- 5
-INSERT INTO Schools_Departments (name, division) VALUES ("Marketing", 1);                                       -- 6
-INSERT INTO Schools_Departments (name, division) VALUES ("New Business Development", 1);                        -- 7
-INSERT INTO Schools_Departments (name, division) VALUES ("Procurement", 1);                                     -- 8
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Administration", 1, "americanedgroup.com");           						-- 1
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Coaching and Learning", 1, "americanedgroup.com");                           -- 2
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Human Resources", 1, "americanedgroup.com");                                 -- 3
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Information Technology", 1, "americanedgroup.com");                          -- 4
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Finance", 1, "americanedgroup.com");                                         -- 5
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Marketing", 1, "americanedgroup.com");                                       -- 6
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("New Business Development", 1, "americanedgroup.com");                        -- 7
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Procurement", 1, "americanedgroup.com");                                     -- 8
 --  Fusion
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Huntington Beach", "HB", 2);     -- 9
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Los Angeles", "LA", 2);          -- 10
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Los Gatos", "LG", 2);            -- 11
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Mission Viejo", "MV", 2);        -- 12
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Pasadena", "PA", 2);             -- 13
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion San Diego", "SD", 2);            -- 14
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion San Francisco", "SF", 2);        -- 15
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion San Mateo", "SM", 2);            -- 16
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion South Bay", "SB", 2);            -- 17
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Solana Beach", "SLB", 2);        -- 18
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Walnut Creek", "WCR", 2);        -- 19
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Warner Center", "WC", 2);        -- 20
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Manhattan", "MN", 2);            -- 21
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Long Island", "LI", 2);          -- 22
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Westchester", "WE", 2);          -- 23
-INSERT INTO Schools_Departments (name, abbreviation, division) VALUES ("Fusion Regional", "WE", 2);             -- 24
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Huntington Beach", "HB", 2, "fusionacademy.com");     	-- 9
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Los Angeles", "LA", 2, "fusionacademy.com");          	-- 10
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Los Gatos", "LG", 2, "fusionacademy.com");            	-- 11
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Mission Viejo", "MV", 2, "fusionacademy.com");        	-- 12
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Pasadena", "PA", 2, "fusionacademy.com");             	-- 13
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Diego", "SD", 2, "fusionacademy.com");            	-- 14
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Francisco", "SF", 2, "fusionacademy.com");        	-- 15
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Mateo", "SM", 2, "fusionacademy.com");            	-- 16
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion South Bay", "SB", 2, "fusionacademy.com");            	-- 17
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Solana Beach", "SLB", 2, "fusionacademy.com");        	-- 18
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Walnut Creek", "WCR", 2, "fusionacademy.com");        	-- 19
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Warner Center", "WC", 2, "fusionacademy.com");        	-- 20
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Manhattan", "MN", 2, "fusionacademy.com");            	-- 21
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Long Island", "LI", 2, "fusionacademy.com");          	-- 22
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Westchester", "WE", 2, "fusionacademy.com");          	-- 23
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Regional", "REG", 2, "fusionacademy.com");             	-- 24
 --  Lexis
-INSERT INTO Schools_Departments (name, division) VALUES ("Barnstable Academy", 3);                              -- 25
-INSERT INTO Schools_Departments (name, division) VALUES ("Shreiner Academy", 3);                                -- 26
-INSERT INTO Schools_Departments (name, division) VALUES ("Tampa Day School", 3);                                -- 27
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Barnstable Academy", 3, "barnstableacademy.com");                            -- 25
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Shreiner Academy", 3, "shreineracademy.com");                                -- 26
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Tampa Day School", 3, "tampadayschool.com");                                	-- 27
 --  Little Sprouts
-INSERT INTO Schools_Departments (name, division) VALUES ("Amesbury", 4);                                        -- 28
-INSERT INTO Schools_Departments (name, division) VALUES ("Andover", 4);                                         -- 29
-INSERT INTO Schools_Departments (name, division) VALUES ("Andover Industrial", 4);                              -- 30
-INSERT INTO Schools_Departments (name, division) VALUES ("Brighton", 4);                                        -- 31
-INSERT INTO Schools_Departments (name, division) VALUES ("Dedham", 4);                                          -- 32
-INSERT INTO Schools_Departments (name, division) VALUES ("Haverhill", 4);                                       -- 33
-INSERT INTO Schools_Departments (name, division) VALUES ("Haverhill NECC", 4);                                  -- 34
-INSERT INTO Schools_Departments (name, division) VALUES ("Lawrence", 4);                                        -- 35
-INSERT INTO Schools_Departments (name, division) VALUES ("Lowell", 4);                                          -- 36
-INSERT INTO Schools_Departments (name, division) VALUES ("Methuen", 4);                                         -- 37
-INSERT INTO Schools_Departments (name, division) VALUES ("North Andover", 4);                                   -- 38
-INSERT INTO Schools_Departments (name, division) VALUES ("Roxbury RCC", 4);                                     -- 39
-INSERT INTO Schools_Departments (name, division) VALUES ("Wilmington", 4);                                      -- 40
-INSERT INTO Schools_Departments (name, division) VALUES ("Woburn", 4);                                          -- 41
-INSERT INTO Schools_Departments (name, division) VALUES ("Boston", 4);                                          -- 42
-INSERT INTO Schools_Departments (name, division) VALUES ("Nashua", 4);                                          -- 43
-INSERT INTO Schools_Departments (name, division) VALUES ("Little Sprouts Corporate", 4);                        -- 44
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Amesbury", 4, "littlesprouts.com");                                        	-- 28
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Andover", 4, "littlesprouts.com");                                         	-- 29
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Andover Industrial", 4, "littlesprouts.com");                              	-- 30
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Brighton", 4, "littlesprouts.com");                                        	-- 31
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Dedham", 4, "littlesprouts.com");                                          	-- 32
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Haverhill", 4, "littlesprouts.com");                                       	-- 33
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Haverhill NECC", 4, "littlesprouts.com");                                  	-- 34
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Lawrence", 4, "littlesprouts.com");                                        	-- 35
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Lowell", 4, "littlesprouts.com");                                          	-- 36
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Methuen", 4, "littlesprouts.com");                                         	-- 37
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("North Andover", 4, "littlesprouts.com");                                   	-- 38
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Roxbury RCC", 4, "littlesprouts.com");                                     	-- 39
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Wilmington", 4, "littlesprouts.com");                                      	-- 40
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Woburn", 4, "littlesprouts.com");                                          	-- 41
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Boston", 4, "littlesprouts.com");                                          	-- 42
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Nashua", 4, "littlesprouts.com");                                          	-- 43
+INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Little Sprouts Corporate", 4, "littlesprouts.com");                        	-- 44
 
 -- Positions
 --  Corporate
