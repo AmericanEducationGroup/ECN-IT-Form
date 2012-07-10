@@ -180,14 +180,15 @@ function showSourceActionFields(sourceAction)
 	}
 }
 
+// Add School
 function checkAbbreviation(divisionSelector)
 {
 	var division = divisionSelector.options[divisionSelector.selectedIndex].value;
 	if(division == 1) {
-		document.getElementById("schoolAbbrv").value = "N/A";
-		document.getElementById("schoolAbbrv").disabled = true;
+		document.getElementById("newSchoolAbbreviation").value = "";
+		document.getElementById("addSchoolAbbrDiv").style.display = "none";
 	} else {
-		document.getElementById("schoolAbbrv").disabled = false;
+		document.getElementById("addSchoolAbbrDiv").style.display = "block";
 	}
 }
 
@@ -201,7 +202,6 @@ function removeSchoolDD(removedSchoolsDivision)
 		success: function(msg){ $("#removeSchoolForm").html(msg);}
 	});
 }
-
 
 // Add Position
 function addPositionDD(addedPositionsDivision)

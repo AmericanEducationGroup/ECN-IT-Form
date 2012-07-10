@@ -71,9 +71,9 @@ BEGIN
 INSERT INTO receive_dg (distributionGroup, position) VALUES (pDistributionGroup, pPosition);
 END //
 
-CREATE PROCEDURE insert_school(IN pName VARCHAR(64), IN pAbbreviation VARCHAR(3), IN pDivision INT)
+CREATE PROCEDURE insert_school(IN pName VARCHAR(64), IN pAbbreviation VARCHAR(3), IN pDivision INT, IN pEmailDomain VARCHAR(64))
 BEGIN
-INSERT INTO schools_departments (name, abbreviation, division) VALUES (pName, pAbbreviation, pDivision);
+INSERT INTO schools_departments (name, abbreviation, division, emailDomain) VALUES (pName, pAbbreviation, pDivision, pEmailDomain);
 END //
 
 CREATE PROCEDURE insert_department(IN pName VARCHAR(64), IN pDivision INT)

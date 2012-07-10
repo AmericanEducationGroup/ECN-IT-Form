@@ -11,7 +11,9 @@
 	$newSchool = $_POST["newSchool"];
 	$newSchoolAbbreviation = $_POST["newSchoolAbbreviation"];
 	$newSchoolDivision = $_POST["newSchoolDivision"];
-	$result = $db->query("call insert_school('" . $newSchool . "','" . $newSchoolAbbreviation  . "','" .$newSchoolDivision . "')");
+	$newSchoolEmailDomain = $_POST["newSchoolEmailDomain"];
+	echo $newSchool . " " . $newSchoolAbbreviation . " " . $newSchoolDivision . " " . $newSchoolEmailDomain;
+	$result = $db->query("call insert_school('" . $newSchool . "','" . $newSchoolAbbreviation  . "','" . $newSchoolDivision . "', '" . $newSchoolEmailDomain . "')");
 	$db->close();
 
 	if($result)

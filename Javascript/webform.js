@@ -4,8 +4,8 @@ function hideAllActionFields()
 		document.getElementById("newEmployeeForm").style.display = 'none';
 	if(document.getElementById("newPositionForm") != null)
 		document.getElementById("newPositionForm").style.display = 'none';
-	if(document.getElementById("additionalPositionForm") != null)
-		document.getElementById("additionalPositionForm").style.display = 'none';
+	if(document.getElementById("newAddPositionForm") != null)
+		document.getElementById("newAddPositionForm").style.display = 'none';
 	if(document.getElementById("terminationForm") != null)
 		document.getElementById("terminationForm").style.display = 'none';
 }
@@ -24,7 +24,7 @@ function showActionFields(generalAction)
 	}
 	else if(action == "additionalPosition")
 	{
-		document.getElementById("additionalPositionForm").style.display = 'block';
+		document.getElementById("newAddPositionForm").style.display = 'block';
 	}
 	else if(action == "termination")
 	{
@@ -38,7 +38,7 @@ function removeById(elementID)
 	oldElement.parentNode.removeChild(oldElement);
 }
 
-
+// New Employee
 function newEmpSchoolDepartmentDD(newEmpsDivision)
 {
 	document.getElementById("newEmpDivision").disabled = true;
@@ -68,6 +68,72 @@ function prepNewEmp()
 
 	document.getElementById("newEmpDivisionHolder").value = document.getElementById("newEmpDivision").options[document.getElementById("newEmpDivision").selectedIndex].text;
 	document.getElementById("newEmpSchoolDepHolder").value = document.getElementById("newEmpSchoolDepartment").options[document.getElementById("newEmpSchoolDepartment").selectedIndex].text;
+	document.getElementById("newEmpPositionHolder").value = document.getElementById("newEmpPosition").options[document.getElementById("newEmpPosition").selectedIndex].text;
+}
+
+// New Position
+function newPosSchoolDepartmentDD(newPosDivision)
+{
+	document.getElementById("newPosDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "newPosSchoolDepartmentDD.php",
+		data: "newPosDivision="+newPosDivision,
+		success: function(msg){ $("#newPositionForm").append(msg);}
+	});
+}
+
+function newPosPositionDD(newPosSchoolDepartment)
+{
+	document.getElementById("newPosSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "newPosPositionDD.php",
+		data: "newPosSchoolDepartment="+newPosSchoolDepartment,
+		success: function(msg){ $("#newPositionForm").append(msg);}
+	});
+}
+
+function prepNewPos()
+{
+	document.getElementById("newPosDivision").disabled = false;
+	document.getElementById("newPosSchoolDepartment").disabled = false;
+
+	document.getElementById("newPosDivisionHolder").value = document.getElementById("newPosDivision").options[document.getElementById("newPosDivision").selectedIndex].text;
+	document.getElementById("newPosSchoolDepHolder").value = document.getElementById("newPosSchoolDepartment").options[document.getElementById("newPosSchoolDepartment").selectedIndex].text;
+	document.getElementById("newPosPositionHolder").value = document.getElementById("newPosPosition").options[document.getElementById("newPosPosition").selectedIndex].text;
+}
+
+// Additional Position
+function newAddPosSchoolDepartmentDD(newPosDivision)
+{
+	document.getElementById("newAddPosDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "newAddPosSchoolDepartmentDD.php",
+		data: "newAddPosDivision="+newPosDivision,
+		success: function(msg){ $("#newAddPositionForm").append(msg);}
+	});
+}
+
+function newAddPosPositionDD(newPosSchoolDepartment)
+{
+	document.getElementById("newAddPosSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "newAddPosPositionDD.php",
+		data: "newAddPosSchoolDepartment="+newPosSchoolDepartment,
+		success: function(msg){ $("#newAddPositionForm").append(msg);}
+	});
+}
+
+function prepNewAddPos()
+{
+	document.getElementById("newAddPosDivision").disabled = false;
+	document.getElementById("newAddPosSchoolDepartment").disabled = false;
+	document.getElementById("newAddPosDivisionHolder").value = document.getElementById("newAddPosDivision").options[document.getElementById("newAddPosDivision").selectedIndex].text;
+	document.getElementById("newAddPosSchoolDepHolder").value = document.getElementById("newAddPosSchoolDepartment").options[document.getElementById("newAddPosSchoolDepartment").selectedIndex].text;
+	document.getElementById("newAddPosPositionHolder").value = document.getElementById("newAddPosPosition").options[document.getElementById("newAddPosPosition").selectedIndex].text;
 }
 
 

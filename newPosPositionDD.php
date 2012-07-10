@@ -8,12 +8,12 @@
 		exit();
 	}
 	
-	$newEmpsSchoolDepartment = $_REQUEST["newEmpsSchoolDepartment"];
-	$result = $db->query("SELECT positionID, title FROM positions WHERE school_department = '" . $newEmpsSchoolDepartment . "'");
+	$newPosSchoolDepartment = $_REQUEST["newPosSchoolDepartment"];
+	$result = $db->query("SELECT positionID, title FROM positions WHERE school_department = '" . $newPosSchoolDepartment . "'");
 ?>
 
 	What is the new employee's position?
-	<select name='newEmpPosition' id='newEmpPosition'>
+	<select name='newPosPosition' id='newPosPosition'>
 		<option disabled selected style='display:none;'>Choose a position.</option>
 
 		<?php
