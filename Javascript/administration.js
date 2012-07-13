@@ -197,7 +197,7 @@ function removeSchoolDD(removedSchoolsDivision)
 {
 	$.ajax({
 		type: "POST",
-		url: "removeSchoolDD.php",
+		url: "PHP/Remove School/removeSchoolDD.php",
 		data: "removedSchoolsDivision="+removedSchoolsDivision,
 		success: function(msg){ $("#removeSchoolForm").html(msg);}
 	});
@@ -209,7 +209,7 @@ function addPositionDD(addedPositionsDivision)
 	document.getElementById("addedPositionsDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addPositionDD.php",
+		url: "PHP/Add Position/addPositionDD.php",
 		data: "addedPositionsDivision="+addedPositionsDivision,
 		success: function(msg){ $("#addPositionForm").append(msg);}
 	});
@@ -222,7 +222,7 @@ function removePositionSchoolDepartmentDD(removedPositionsDivision)
 	document.getElementById("removedPositionsDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removePosition-SchoolDepartmentDD.php",
+		url: "PHP/Remove Position/removePosition-SchoolDepartmentDD.php",
 		data: "removedPositionsDivision="+removedPositionsDivision,
 		success: function(msg){ $("#removePositionForm").append(msg);}
 	});
@@ -233,7 +233,7 @@ function removePositionDD(removedPositionsSchoolDepartment)
 	document.getElementById("removedPositionsSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removePositionDD.php",
+		url: "PHP/Remove Position/removePositionDD.php",
 		data: "removedPositionsSchoolDepartment="+removedPositionsSchoolDepartment,
 		success: function(msg){ $("#removePositionForm").append(msg);}
 	});
@@ -255,7 +255,7 @@ function addDirectoryDDFunction(parent, parentDD)
 	removeById("addDirectorySubmit");
 	$.ajax({
 		type: "POST",
-		url: "addDirectoryDD.php",
+		url: "PHP/Add Directory/addDirectoryDD.php",
 		data: "parent="+parent,
 		success: function(msg){ $("#addDirectoryForm").append(msg);}
 	});
@@ -270,7 +270,7 @@ function removeDirectoryDDFunction(parent, parentDD)
 	removeById("removeDirectorySubmit");
 	$.ajax({
 		type: "POST",
-		url: "removeDirectoryDD.php",
+		url: "PHP/Remove Directory/removeDirectoryDD.php",
 		data: "parent="+parent,
 		success: function(msg){ $("#removeDirectoryForm").append(msg);}
 	});
@@ -285,7 +285,7 @@ function addOwnersSchoolDepartmentDD(addedOwnersDivision)
 	document.getElementById("addedOwnersDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addOwner-Position-SchoolDepartment.php",
+		url: "PHP/Add Owner/addOwner-Position-SchoolDepartment.php",
 		data: "addedOwnersDivision="+addedOwnersDivision,
 		success: function(msg){ $("#addOwnerForm").append(msg);}
 	});
@@ -296,7 +296,7 @@ function addOwnerPositionDD(addedOwnersSchoolDepartment)
 	document.getElementById("addedOwnersSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addOwner-PositionDD.php",
+		url: "PHP/Add Owner/addOwner-PositionDD.php",
 		data: "addedOwnersSchoolDepartment="+addedOwnersSchoolDepartment,
 		success: function(msg){ $("#addOwnerForm").append(msg);}
 	});
@@ -308,7 +308,7 @@ function addOwnerParentDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addOwner-ParentDirectoryDD.php",
+		url: "PHP/Add Owner/addOwner-ParentDirectoryDD.php",
 		success: function(msg){ $("#addOwnerForm").append(msg);}
 	});
 }
@@ -320,7 +320,7 @@ function addOwnerDirectoryDDFunction(parent, parentDD)
 	removeById("addOwnerSubmit");
 	$.ajax({
 		type: "POST",
-		url: "addOwner-DirectoryDD.php",
+		url: "PHP/Add Owner/addOwner-DirectoryDD.php",
 		data: "parent="+parent,
 		success: function(msg){ $("#addOwnerForm").append(msg);}
 	});
@@ -333,7 +333,7 @@ function removeOwnersSchoolDepartmentDD(removedOwnersDivision)
 	document.getElementById("removedOwnersDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeOwner-Position-SchoolDepartment.php",
+		url: "PHP/Remove Owner/removeOwner-Position-SchoolDepartment.php",
 		data: "removedOwnersDivision="+removedOwnersDivision,
 		success: function(msg){ $("#removeOwnerForm").append(msg);}
 	});
@@ -344,7 +344,7 @@ function removeOwnerPositionDD(removedOwnersSchoolDepartment)
 	document.getElementById("removedOwnersSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeOwner-PositionDD.php",
+		url: "PHP/Remove Owner/removeOwner-PositionDD.php",
 		data: "removedOwnersSchoolDepartment="+removedOwnersSchoolDepartment,
 		success: function(msg){ $("#removeOwnerForm").append(msg);}
 	});
@@ -356,7 +356,7 @@ function removeOwnerDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeOwner-DirectoryDD.php",
+		url: "PHP/Remove Owner/removeOwner-DirectoryDD.php",
 		data: "removedOwnersPosition="+removedOwnersPosition,
 		success: function(msg) { $("#removeOwnerForm").append(msg);}
 	});
@@ -377,7 +377,7 @@ function addReadPermSchoolDepartmentDD(addedReadPermsDivision)
 	document.getElementById("addedReadPermDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addReadPerm-Position-SchoolDepartmentDD.php",
+		url: "PHP/Add Read Permission/addReadPerm-Position-SchoolDepartmentDD.php",
 		data: "addedReadPermsDivision="+addedReadPermsDivision,
 		success: function(msg){ $("#addReadPermForm").append(msg);}
 	});
@@ -388,7 +388,7 @@ function addReadPermPositionDD(addedReadPermsSchoolDepartment)
 	document.getElementById("addReadPermSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addReadPerm-PositionDD.php",
+		url: "PHP/Add Read Permission/addReadPerm-PositionDD.php",
 		data: "addedReadPermsSchoolDepartment="+addedReadPermsSchoolDepartment,
 		success: function(msg){ $("#addReadPermForm").append(msg);}
 	});
@@ -400,7 +400,7 @@ function addReadPermParentDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addReadPerm-ParentDirectoryDD.php",
+		url: "PHP/Add Read Permission/addReadPerm-ParentDirectoryDD.php",
 		success: function(msg){ $("#addReadPermForm").append(msg);}
 	});
 }
@@ -412,7 +412,7 @@ function addReadPermDirectoryDDFunction(parent, parentDD)
 	removeById("addReadPermSubmit");
 	$.ajax({
 		type: "POST",
-		url: "addReadPerm-DirectoryDD.php",
+		url: "PHP/Add Read Permission/addReadPerm-DirectoryDD.php",
 		data: "parent="+parent,
 		success: function(msg){ $("#addReadPermForm").append(msg);}
 	});
@@ -425,7 +425,7 @@ function removeReadPermSchoolDepartmentDD(removeReadPermsDivision)
 	document.getElementById("removedReadPermsDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeReadPerm-Position-SchoolDepartment.php",
+		url: "PHP/Remove Read Permission/removeReadPerm-Position-SchoolDepartment.php",
 		data: "removeReadPermsDivision="+removeReadPermsDivision,
 		success: function(msg){ $("#removeReadPermForm").append(msg);}
 	});
@@ -436,7 +436,7 @@ function removeReadPermPositionDD(removedReadPermSchoolDepartment)
 	document.getElementById("removedReadPermsSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeReadPerm-PositionDD.php",
+		url: "PHP/Remove Read Permission/removeReadPerm-PositionDD.php",
 		data: "removedReadPermSchoolDepartment="+removedReadPermSchoolDepartment,
 		success: function(msg){ $("#removeReadPermForm").append(msg);}
 	});
@@ -449,7 +449,7 @@ function removeReadPermDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeReadPerm-DirectoryDD.php",
+		url: "PHP/Remove Read Permission/removeReadPerm-DirectoryDD.php",
 		data: "removedReadPermsPosition="+removedReadPermsPosition,
 		success: function(msg) { $("#removeReadPermForm").append(msg);}
 	});
@@ -465,7 +465,7 @@ function addEditPermSchoolDepartmentDD(addedEditPermsDivision)
 	document.getElementById("addedEditPermDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addEditPerm-Position-SchoolDepartmentDD.php",
+		url: "PHP/Add Edit Permission/addEditPerm-Position-SchoolDepartmentDD.php",
 		data: "addedEditPermsDivision="+addedEditPermsDivision,
 		success: function(msg){ $("#addEditPermForm").append(msg);}
 	});
@@ -476,7 +476,7 @@ function addEditPermPositionDD(addedEditPermsSchoolDepartment)
 	document.getElementById("addEditPermSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addEditPerm-PositionDD.php",
+		url: "PHP/Add Edit Permission/addEditPerm-PositionDD.php",
 		data: "addedEditPermsSchoolDepartment="+addedEditPermsSchoolDepartment,
 		success: function(msg){ $("#addEditPermForm").append(msg);}
 	});
@@ -488,7 +488,7 @@ function addEditPermParentDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "addEditPerm-ParentDirectoryDD.php",
+		url: "PHP/Add Edit Permission/addEditPerm-ParentDirectoryDD.php",
 		success: function(msg){ $("#addEditPermForm").append(msg);}
 	});
 }
@@ -500,7 +500,7 @@ function addEditPermDirectoryDDFunction(parent, parentDD)
 	removeById("addEditPermSubmit");
 	$.ajax({
 		type: "POST",
-		url: "addEditPerm-DirectoryDD.php",
+		url: "PHP/Add Edit Permission/addEditPerm-DirectoryDD.php",
 		data: "parent="+parent,
 		success: function(msg){ $("#addEditPermForm").append(msg);}
 	});
@@ -513,7 +513,7 @@ function removeEditPermSchoolDepartmentDD(removeEditPermsDivision)
 	document.getElementById("removedEditPermsDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeEditPerm-Position-SchoolDepartment.php",
+		url: "PHP/Remove Edit Permission/removeEditPerm-Position-SchoolDepartment.php",
 		data: "removeEditPermsDivision="+removeEditPermsDivision,
 		success: function(msg){ $("#removeEditPermForm").append(msg);}
 	});
@@ -524,7 +524,7 @@ function removeEditPermPositionDD(removedEditPermSchoolDepartment)
 	document.getElementById("removedEditPermsSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeEditPerm-PositionDD.php",
+		url: "PHP/Remove Edit Permission/removeEditPerm-PositionDD.php",
 		data: "removedEditPermSchoolDepartment="+removedEditPermSchoolDepartment,
 		success: function(msg){ $("#removeEditPermForm").append(msg);}
 	});
@@ -537,7 +537,7 @@ function removeEditPermDirectoryDDFunction(positionDD)
 	positionDD.disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeEditPerm-DirectoryDD.php",
+		url: "PHP/Remove Edit Permission/removeEditPerm-DirectoryDD.php",
 		data: "removedEditPermsPosition="+removedEditPermsPosition,
 		success: function(msg) { $("#removeEditPermForm").append(msg);}
 	});
@@ -551,7 +551,7 @@ function giveDGSendDepartmentSchoolDD(givenDGSendDivision)
 	document.getElementById("giveDGSendDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "giveDGSend-SchoolDepartmentDD.php",
+		url: "PHP/Give DG Send Permission/giveDGSend-SchoolDepartmentDD.php",
 		data: "givenDGSendDivision="+givenDGSendDivision,
 		success: function(msg){ $("#giveDGSendForm").append(msg);}
 	});
@@ -562,7 +562,7 @@ function giveDGSendPositionDD(givenDGSendSchoolDepartment)
 	document.getElementById("giveDGSendSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "giveDGSend-PositionDD.php",
+		url: "PHP/Give DG Send Permission/giveDGSend-PositionDD.php",
 		data: "givenDGSendSchoolDepartment="+givenDGSendSchoolDepartment,
 		success: function(msg){ $("#giveDGSendForm").append(msg);}
 	});
@@ -576,7 +576,7 @@ function removeDGSendDepartmentSchoolDD(removedDGSendDivision)
 	document.getElementById("removeDGSendDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeDGSend-SchoolDepartmentDD.php",
+		url: "PHP/Remove DG Send Permission/removeDGSend-SchoolDepartmentDD.php",
 		data: "removedDGSendDivision="+removedDGSendDivision,
 		success: function(msg){ $("#removeDGSendForm").append(msg);}
 	});
@@ -587,7 +587,7 @@ function removeDGSendPositionDD(removedDGSendSchoolDepartment)
 	document.getElementById("removeDGSendSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeDGSend-PositionDD.php",
+		url: "PHP/Remove DG Send Permission/removeDGSend-PositionDD.php",
 		data: "removedDGSendSchoolDepartment="+removedDGSendSchoolDepartment,
 		success: function(msg){ $("#removeDGSendForm").append(msg);}
 	});
@@ -598,12 +598,11 @@ function removeDGSendDGDD(removedDGSendPosition)
 	document.getElementById("removeDGSendPosition").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeDGSendDGDD.php",
+		url: "PHP/Remove DG Send Permission/removeDGSendDGDD.php",
 		data: "removedDGSendPosition="+removedDGSendPosition,
 		success: function(msg){ $("#removeDGSendForm").append(msg);}
 	});
 }
-
 
 
 // Give DG Receive Permissions
@@ -612,7 +611,7 @@ function giveDGReceiveDepartmentSchoolDD(givenDGReceiveDivision)
 	document.getElementById("giveDGReceiveDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "giveDGReceive-SchoolDepartmentDD.php",
+		url: "PHP/Give DG Receive Permission/giveDGReceive-SchoolDepartmentDD.php",
 		data: "givenDGReceiveDivision="+givenDGReceiveDivision,
 		success: function(msg){ $("#giveDGReceiveForm").append(msg);}
 	});
@@ -623,7 +622,7 @@ function giveDGReceivePositionDD(givenDGReceiveSchoolDepartment)
 	document.getElementById("giveDGReceiveSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "giveDGReceive-PositionDD.php",
+		url: "PHP/Give DG Receive Permission/giveDGReceive-PositionDD.php",
 		data: "givenDGReceiveSchoolDepartment="+givenDGReceiveSchoolDepartment,
 		success: function(msg){ $("#giveDGReceiveForm").append(msg);}
 	});
@@ -637,7 +636,7 @@ function removeDGReceiveDepartmentSchoolDD(removedDGReceiveDivision)
 	document.getElementById("removeDGReceiveDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeDGReceive-SchoolDepartmentDD.php",
+		url: "PHP/Remove DG Receive Permission/removeDGReceive-SchoolDepartmentDD.php",
 		data: "removedDGReceiveDivision="+removedDGReceiveDivision,
 		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
 	});
@@ -648,7 +647,7 @@ function removeDGReceivePositionDD(removedDGReceiveSchoolDepartment)
 	document.getElementById("removeDGReceiveSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "removeDGReceive-PositionDD.php",
+		url: "PHP/Remove DG Receive Permission/removeDGReceive-PositionDD.php",
 		data: "removedDGReceiveSchoolDepartment="+removedDGReceiveSchoolDepartment,
 		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
 	});
@@ -660,7 +659,7 @@ function removeDGReceiveDGDD(removedDGReceivePosition)
 	$.ajax({
 
 		type: "POST",
-		url: "removeDGReceiveDGDD.php",
+		url: "PHP/Remove DG Receive Permission/removeDGReceiveDGDD.php",
 		data: "removedDGReceivePosition="+removedDGReceivePosition,
 		success: function(msg){ $("#removeDGReceiveForm").append(msg);}
 	});

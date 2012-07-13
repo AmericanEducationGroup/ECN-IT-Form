@@ -44,7 +44,7 @@ function newEmpSchoolDepartmentDD(newEmpsDivision)
 	document.getElementById("newEmpDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newEmpSchoolDepartmentDD.php",
+		url: "PHP/New Employee/newEmpSchoolDepartmentDD.php",
 		data: "newEmpsDivision="+newEmpsDivision,
 		success: function(msg){ $("#newEmployeeForm").append(msg);}
 	});
@@ -55,7 +55,7 @@ function newEmpPositionDD(newEmpsSchoolDepartment)
 	document.getElementById("newEmpSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newEmpPositionDD.php",
+		url: "PHP/New Employee/newEmpPositionDD.php",
 		data: "newEmpsSchoolDepartment="+newEmpsSchoolDepartment,
 		success: function(msg){ $("#newEmployeeForm").append(msg);}
 	});
@@ -77,7 +77,7 @@ function newPosSchoolDepartmentDD(newPosDivision)
 	document.getElementById("newPosDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newPosSchoolDepartmentDD.php",
+		url: "PHP/New Position/newPosSchoolDepartmentDD.php",
 		data: "newPosDivision="+newPosDivision,
 		success: function(msg){ $("#newPositionForm").append(msg);}
 	});
@@ -88,7 +88,7 @@ function newPosPositionDD(newPosSchoolDepartment)
 	document.getElementById("newPosSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newPosPositionDD.php",
+		url: "PHP/New Position/newPosPositionDD.php",
 		data: "newPosSchoolDepartment="+newPosSchoolDepartment,
 		success: function(msg){ $("#newPositionForm").append(msg);}
 	});
@@ -110,7 +110,7 @@ function newAddPosSchoolDepartmentDD(newPosDivision)
 	document.getElementById("newAddPosDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newAddPosSchoolDepartmentDD.php",
+		url: "PHP/New Additional Position/newAddPosSchoolDepartmentDD.php",
 		data: "newAddPosDivision="+newPosDivision,
 		success: function(msg){ $("#newAddPositionForm").append(msg);}
 	});
@@ -121,7 +121,7 @@ function newAddPosPositionDD(newPosSchoolDepartment)
 	document.getElementById("newAddPosSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "newAddPosPositionDD.php",
+		url: "PHP/New Additional Position/newAddPosPositionDD.php",
 		data: "newAddPosSchoolDepartment="+newPosSchoolDepartment,
 		success: function(msg){ $("#newAddPositionForm").append(msg);}
 	});
