@@ -1,5 +1,5 @@
 <?php
-	$to      = 'mark.t.arbogast@gmail.com';
+	$to      = 'aeg.ecn.it.form@gmail.com';
 	$subject = 'ECN-IT-Form Submission: Additional Position';
 	$message = "Please give this employee the following additional Source permissions and send/receive DG permissions:";
 	$message = $message . "\r\nFirst name: " . $_POST['newAddPosFirstName'];
@@ -86,7 +86,7 @@
 		}
 	}
 	
-	$headers = 'From: marbogast@americanedgroup.com' . "\r\n" .
+	$headers = 'From: ' . $_POST['emailAddress'] . "\r\n" .
 		'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		

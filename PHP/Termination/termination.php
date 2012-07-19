@@ -1,11 +1,11 @@
 <?php
-	$to      = 'mark.t.arbogast@gmail.com';
+	$to      = 'aeg.ecn.it.form@gmail.com';
 	$subject = 'ECN-IT-Form Submission: Termination';
 	$message = "Please remove all Source permissions, email access, and send/receive DG permissions from this terminated employee:";
 	$message = $message . "\r\nFirst Name: " . $_POST['termFirstName'] . "\r\nLast Name: " . $_POST['termLastName'];
 
-	$headers = 'From: marbogast@americanedgroup.com' . "\r\n" .
-	'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
+	$headers = 'From: ' . $_POST['emailAddress'] . "\r\n" .
+	'Reply-To: aeg.ecn.it.form@gmail.com' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 		
 

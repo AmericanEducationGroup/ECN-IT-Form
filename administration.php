@@ -7,7 +7,7 @@
 	<body>
 	<div class="styled-select" id="styled-select">
 		<div class="title-wording">
-		<h1>ECN IT Administration</h1>
+		<a href="administration.php"><img src="/ECN-IT-Form/Resources/AdministrationTitle.png" alt="Administrative Web Form"></img></a>
 		<h3>What administrative action would you like to take?</h3>
 		</div>
 		<select id="actionCategory" onchange="showActionOptions(this);"">
@@ -56,7 +56,7 @@
 					<br>Which division is the school or department being removed from? 			 <?php require 'PHP/Remove School/removeSchool-DivisionDD.php'; ?><br>
 				</form>
 
-			
+	
 				<!-- Add Position -->
 				<form onsubmit="document.getElementById('addedPositionsDivision').disabled = false;" id="addPositionForm" action="PHP/Add Position/add_position.php" method="post" style="display: none;">
 					<br>What is the name of the new position? 									<input type="text" placeholder="Position name?" id="newPosition" name="newPosition"/><br>

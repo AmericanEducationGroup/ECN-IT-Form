@@ -71,14 +71,14 @@ BEGIN
 INSERT INTO receive_dg (distributionGroup, position) VALUES (pDistributionGroup, pPosition);
 END //
 
-CREATE PROCEDURE insert_school(IN pName VARCHAR(64), IN pAbbreviation VARCHAR(3), IN pDivision INT, IN pEmailDomain VARCHAR(64))
+CREATE PROCEDURE insert_school(IN pName VARCHAR(64), IN pAbbreviation VARCHAR(3), IN pDivision INT, IN pEmailDomain VARCHAR(64), IN pPhoneNumber VARCHAR(15))
 BEGIN
-INSERT INTO schools_departments (name, abbreviation, division, emailDomain) VALUES (pName, pAbbreviation, pDivision, pEmailDomain);
+INSERT INTO schools_departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES (pName, pAbbreviation, pDivision, pEmailDomain, pPhoneNumber);
 END //
 
-CREATE PROCEDURE insert_department(IN pName VARCHAR(64), IN pDivision INT)
+CREATE PROCEDURE insert_department(IN pName VARCHAR(64), IN pDivision INT, IN pPhoneNumber VARCHAR(15))
 BEGIN
-INSERT INTO schools_departments (name, division) VALUES (pName, pDivision);
+INSERT INTO schools_departments (name, division) VALUES (pName, pDivision, pPhoneNumber);
 END //
 
 CREATE PROCEDURE insert_send_to_dg(IN pDistributionGroup INT, IN pPosition INT)

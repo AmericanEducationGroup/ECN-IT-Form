@@ -7,7 +7,7 @@
    background:  #ff6600;
 	position:relative;
 	width:100%;
-   background: url(Resources/new_arrow3.jpg) no-repeat right #ddd;
+   background: url(../Resources/new_arrow3.jpg) no-repeat right #ddd;
 
    -webkit-appearance: none;
 }

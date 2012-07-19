@@ -30,6 +30,7 @@ CREATE TABLE Schools_Departments(
   	abbreviation VARCHAR(3),
 	division INT NOT NULL,
 	emailDomain VARCHAR(64) NOT NULL,
+	phoneNumber VARCHAR(15),
 	PRIMARY KEY (schoolDepartmentID),
 	UNIQUE KEY (name),
 	UNIQUE KEY (abbreviation),
@@ -122,53 +123,53 @@ INSERT INTO Divisions (name) VALUES ("Little Sprouts"); -- 4
 
 -- Schools_Departments
 --  Corporate
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Administration", 1, "americanedgroup.com");           						-- 1
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Coaching and Learning", 1, "americanedgroup.com");                           -- 2
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Human Resources", 1, "americanedgroup.com");                                 -- 3
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Information Technology", 1, "americanedgroup.com");                          -- 4
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Finance", 1, "americanedgroup.com");                                         -- 5
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Marketing", 1, "americanedgroup.com");                                       -- 6
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("New Business Development", 1, "americanedgroup.com");                        -- 7
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Procurement", 1, "americanedgroup.com");                                     -- 8
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Administration", 1, "americanedgroup.com", "616-308-4402");					 					-- 1
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Coaching and Learning", 1, "americanedgroup.com", "616-308-4402");                           	-- 2
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Human Resources", 1, "americanedgroup.com", "616-308-4402");                                 	-- 3
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Information Technology", 1, "americanedgroup.com", "616-308-4402");                          	-- 4
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Finance", 1, "americanedgroup.com", "616-308-4402");                                         	-- 5
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Marketing", 1, "americanedgroup.com", "616-308-4402");                                       	-- 6
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("New Business Development", 1, "americanedgroup.com", "616-308-4402");                        	-- 7
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Procurement", 1, "americanedgroup.com", "616-308-4402");                                     	-- 8
 --  Fusion
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Huntington Beach", "HB", 2, "fusionacademy.com");     	-- 9
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Los Angeles", "LA", 2, "fusionacademy.com");          	-- 10
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Los Gatos", "LG", 2, "fusionacademy.com");            	-- 11
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Mission Viejo", "MV", 2, "fusionacademy.com");        	-- 12
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Pasadena", "PA", 2, "fusionacademy.com");             	-- 13
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Diego", "SD", 2, "fusionacademy.com");            	-- 14
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Francisco", "SF", 2, "fusionacademy.com");        	-- 15
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion San Mateo", "SM", 2, "fusionacademy.com");            	-- 16
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion South Bay", "SB", 2, "fusionacademy.com");            	-- 17
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Solana Beach", "SLB", 2, "fusionacademy.com");        	-- 18
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Walnut Creek", "WCR", 2, "fusionacademy.com");        	-- 19
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Warner Center", "WC", 2, "fusionacademy.com");        	-- 20
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Manhattan", "MN", 2, "fusionacademy.com");            	-- 21
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Long Island", "LI", 2, "fusionacademy.com");          	-- 22
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Westchester", "WE", 2, "fusionacademy.com");          	-- 23
-INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain) VALUES ("Fusion Regional", "REG", 2, "fusionacademy.com");             	-- 24
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Huntington Beach", "HB", 2, "fusionacademy.com", "657-200-2300");     		-- 9
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Los Angeles", "LA", 2, "fusionacademy.com", "310-445-2516");          		-- 10
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Los Gatos", "LG", 2, "fusionacademy.com", "408-354-0802");            		-- 11
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Mission Viejo", "MV", 2, "fusionacademy.com", "949-716-7384");        		-- 12
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Pasadena", "PA", 2, "fusionacademy.com", "323-258-2012");             		-- 13
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion San Diego", "SD", 2, "fusionacademy.com", "866-670-9296");            		-- 14
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion San Francisco", "SF", 2, "fusionacademy.com", "415-765-9078");        		-- 15
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion San Mateo", "SM", 2, "fusionacademy.com", "650-312-8305");            		-- 16
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion South Bay", "SB", 2, "fusionacademy.com", "310-376-5139");            		-- 17
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Solana Beach", "SLB", 2, "fusionacademy.com", "858-792-2300");        		-- 18
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Walnut Creek", "WCR", 2, "fusionacademy.com", "925-296-0053");        		-- 19
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Warner Center", "WC", 2, "fusionacademy.com", "818-712-9521");        		-- 20
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Manhattan", "MN", 2, "fusionacademy.com", "646-290-5203");            		-- 21
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Long Island", "LI", 2, "fusionacademy.com", "631-390-8366");          		-- 22
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Westchester", "WE", 2, "fusionacademy.com", "866-622-7853");          		-- 23
+INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Regional", "REG", 2, "fusionacademy.com", "626-616-2060");             	-- 24
 --  Lexis
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Barnstable Academy", 3, "barnstableacademy.com");                            -- 25
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Shreiner Academy", 3, "shreineracademy.com");                                -- 26
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Tampa Day School", 3, "tampadayschool.com");                                	-- 27
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Barnstable Academy", 3, "barnstableacademy.com", "201-651-0200");                            	-- 25
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Shreiner Academy", 3, "shreineracademy.com", "770-953-1340");                                	-- 26
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Tampa Day School", 3, "tampadayschool.com", "813-269-2100");                                	-- 27
 --  Little Sprouts
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Amesbury", 4, "littlesprouts.com");                                        	-- 28
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Andover", 4, "littlesprouts.com");                                         	-- 29
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Andover Industrial", 4, "littlesprouts.com");                              	-- 30
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Brighton", 4, "littlesprouts.com");                                        	-- 31
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Dedham", 4, "littlesprouts.com");                                          	-- 32
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Haverhill", 4, "littlesprouts.com");                                       	-- 33
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Haverhill NECC", 4, "littlesprouts.com");                                  	-- 34
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Lawrence", 4, "littlesprouts.com");                                        	-- 35
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Lowell", 4, "littlesprouts.com");                                          	-- 36
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Methuen", 4, "littlesprouts.com");                                         	-- 37
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("North Andover", 4, "littlesprouts.com");                                   	-- 38
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Roxbury RCC", 4, "littlesprouts.com");                                     	-- 39
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Wilmington", 4, "littlesprouts.com");                                      	-- 40
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Woburn", 4, "littlesprouts.com");                                          	-- 41
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Boston", 4, "littlesprouts.com");                                          	-- 42
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Nashua", 4, "littlesprouts.com");                                          	-- 43
-INSERT INTO Schools_Departments (name, division, emailDomain) VALUES ("Little Sprouts Corporate", 4, "littlesprouts.com");                        	-- 44
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Amesbury", 4, "littlesprouts.com", "978-388-1299");                                        		-- 28
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Andover", 4, "littlesprouts.com", "978-691-1178");                                         		-- 29
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Andover Industrial", 4, "littlesprouts.com", "978-688-4270");                              		-- 30
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Brighton", 4, "littlesprouts.com", "617-254-1283");                                        		-- 31
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Dedham", 4, "littlesprouts.com", "781-329-8603");                                          		-- 32
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Haverhill", 4, "littlesprouts.com", "978-269-0044");                                       		-- 33
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Haverhill NECC", 4, "littlesprouts.com", "978-374-7260");                                  		-- 34
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Lawrence", 4, "littlesprouts.com", "978-291-0342");                                        		-- 35
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Lowell", 4, "littlesprouts.com", "978-453-6614");                                          		-- 36
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Methuen", 4, "littlesprouts.com", "978-683-1567");                                         		-- 37
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("North Andover", 4, "littlesprouts.com", "978-208-4796");                                   		-- 38
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Roxbury RCC", 4, "littlesprouts.com", "617-933-7492");                                     		-- 39
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Wilmington", 4, "littlesprouts.com", "978-658-2680");                                      		-- 40
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Woburn", 4, "littlesprouts.com", "782-569-1410");                                          		-- 41
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Boston", 4, "littlesprouts.com", "877-977-7688");                                          		-- 42
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Nashua", 4, "littlesprouts.com", "877-977-7688");                                          		-- 43
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Little Sprouts Corporate", 4, "littlesprouts.com", "978-291-0256");                        		-- 44
 
 -- Positions
 --  Corporate
@@ -5977,6 +5978,7 @@ INSERT INTO Read_Permissions(position, directory) VALUES (218,166);
 INSERT INTO Edit_Permissions(position, directory) VALUES (23,166);
 INSERT INTO Edit_Permissions(position, directory) VALUES (24,166);
 INSERT INTO Edit_Permissions(position, directory) VALUES (25,166);
+
 INSERT INTO Edit_Permissions(position, directory) VALUES (26,166);
 INSERT INTO Edit_Permissions(position, directory) VALUES (27,166);
 INSERT INTO Edit_Permissions(position, directory) VALUES (28,166);

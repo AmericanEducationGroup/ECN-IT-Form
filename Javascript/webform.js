@@ -8,6 +8,8 @@ function hideAllActionFields()
 		document.getElementById("newAddPositionForm").style.display = 'none';
 	if(document.getElementById("terminationForm") != null)
 		document.getElementById("terminationForm").style.display = 'none';
+	if(document.getElementById("requestChangeForm") != null)
+		document.getElementById("requestChangeForm").style.display = 'none';
 }
 
 function showActionFields(generalAction)
@@ -29,6 +31,10 @@ function showActionFields(generalAction)
 	else if(action == "termination")
 	{
 		document.getElementById("terminationForm").style.display = 'block';
+	}
+	else if(action == "requestChange")
+	{
+		document.getElementById("requestChangeForm").style.display = 'block';
 	}
 }
 
