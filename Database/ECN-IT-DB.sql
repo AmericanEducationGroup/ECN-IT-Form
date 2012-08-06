@@ -123,14 +123,14 @@ INSERT INTO Divisions (name) VALUES ("Little Sprouts"); -- 4
 
 -- Schools_Departments
 --  Corporate
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Administration", 1, "americanedgroup.com", "616-308-4402");					 					-- 1
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Coaching and Learning", 1, "americanedgroup.com", "616-308-4402");                           	-- 2
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Human Resources", 1, "americanedgroup.com", "616-308-4402");                                 	-- 3
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Information Technology", 1, "americanedgroup.com", "616-308-4402");                          	-- 4
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Finance", 1, "americanedgroup.com", "616-308-4402");                                         	-- 5
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Marketing", 1, "americanedgroup.com", "616-308-4402");                                       	-- 6
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("New Business Development", 1, "americanedgroup.com", "616-308-4402");                        	-- 7
-INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Procurement", 1, "americanedgroup.com", "616-308-4402");                                     	-- 8
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Administration", 1, "americanedgroup.com", "616-301-1221");					 					-- 1
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Coaching and Learning", 1, "americanedgroup.com", "616-301-1221");                           	-- 2
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Human Resources", 1, "americanedgroup.com", "616-301-1221");                                 	-- 3
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Information Technology", 1, "americanedgroup.com", "616-301-1221");                          	-- 4
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Finance", 1, "americanedgroup.com", "616-301-1221");                                         	-- 5
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Marketing", 1, "americanedgroup.com", "616-301-1221");                                       	-- 6
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("New Business Development", 1, "americanedgroup.com", "616-301-1221");                        	-- 7
+INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ("Procurement", 1, "americanedgroup.com", "616-301-1221");                                     	-- 8
 --  Fusion
 INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Huntington Beach", "HB", 2, "fusionacademy.com", "657-200-2300");     		-- 9
 INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ("Fusion Los Angeles", "LA", 2, "fusionacademy.com", "310-445-2516");          		-- 10

@@ -78,7 +78,7 @@ END //
 
 CREATE PROCEDURE insert_department(IN pName VARCHAR(64), IN pDivision INT, IN pPhoneNumber VARCHAR(15))
 BEGIN
-INSERT INTO schools_departments (name, division) VALUES (pName, pDivision, pPhoneNumber);
+INSERT INTO schools_departments (name, division, phoneNumber) VALUES (pName, pDivision, pPhoneNumber);
 END //
 
 CREATE PROCEDURE insert_send_to_dg(IN pDistributionGroup INT, IN pPosition INT)

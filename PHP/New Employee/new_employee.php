@@ -9,7 +9,7 @@
 	
 	
 	
-	$db = new mysqli("localhost:3306", "root", "", "ecn-it-db");
+	require "../dbConnect.php";
 
 	if($db->connect_errno)
 	{

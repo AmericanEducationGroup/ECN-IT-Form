@@ -1,6 +1,6 @@
 <?php
 
-	$db = new mysqli("localhost:3306", "root", "", "ecn-it-db");
+	require "../dbConnect.php";
 
 	if($db->connect_errno)
 	{
@@ -8,8 +8,8 @@
 		exit();
 	}
 
-	$newDepartment = $_POST["newDepartment"];
-	$result = $db->query("call insert_department('" .$newDepartment . "', 1)");
+	$newDepartment = $_POST["newSchool"];
+	$result = $db->query('INSERT INTO Schools_Departments (name, division, emailDomain, phoneNumber) VALUES ('" .$newDepartment . "', 1, "americanedgroup.com", "616-301-1221");');
 	$db->close();
 
 	if($result)

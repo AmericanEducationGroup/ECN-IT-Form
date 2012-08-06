@@ -1,6 +1,6 @@
 <?php
 
-	$db = new mysqli("localhost:3306", "root", "", "ecn-it-db");
+	require "../dbConnect.php";
 
 	if($db->connect_errno)
 	{
@@ -13,7 +13,7 @@
 	$newSchoolDivision = $_POST["newSchoolDivision"];
 	$newSchoolEmailDomain = $_POST["newSchoolEmailDomain"];
 	echo $newSchool . " " . $newSchoolAbbreviation . " " . $newSchoolDivision . " " . $newSchoolEmailDomain;
-	$result = $db->query("call insert_school('" . $newSchool . "','" . $newSchoolAbbreviation  . "','" . $newSchoolDivision . "', '" . $newSchoolEmailDomain . "')");
+	$result = $db->query("INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ('" .$newSchool . "','" . $newSchoolAbbreviation . "','" . $newSchoolDivision . "', '" . $newSchoolEmailDomain . "', '1234');");
 	$db->close();
 
 	if($result)

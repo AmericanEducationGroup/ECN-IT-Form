@@ -144,6 +144,7 @@ function showDGActionFields(dgAction)
 
 function showSourceActionFields(sourceAction)
 {
+	alert('test');
 	hideAllActionFields();
 	var action = sourceAction.options[sourceAction.selectedIndex].value;
 	if(action == "addDirectory")
