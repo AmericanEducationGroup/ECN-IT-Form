@@ -50,7 +50,7 @@ function newEmpSchoolDepartmentDD(newEmpsDivision)
 	document.getElementById("newEmpDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Employee/newEmpSchoolDepartmentDD.php",
+		url: "../New Employee/newEmpSchoolDepartmentDD.php",
 		data: "newEmpsDivision="+newEmpsDivision,
 		success: function(msg){ $("#newEmployeeForm").append(msg);}
 	});
@@ -61,7 +61,7 @@ function newEmpPositionDD(newEmpsSchoolDepartment)
 	document.getElementById("newEmpSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Employee/newEmpPositionDD.php",
+		url: "../New Employee/newEmpPositionDD.php",
 		data: "newEmpsSchoolDepartment="+newEmpsSchoolDepartment,
 		success: function(msg){ $("#newEmployeeForm").append(msg);}
 	});
@@ -83,7 +83,7 @@ function newPosSchoolDepartmentDD(newPosDivision)
 	document.getElementById("newPosDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Position/newPosSchoolDepartmentDD.php",
+		url: "../New Position/newPosSchoolDepartmentDD.php",
 		data: "newPosDivision="+newPosDivision,
 		success: function(msg){ $("#newPositionForm").append(msg);}
 	});
@@ -94,7 +94,7 @@ function newPosPositionDD(newPosSchoolDepartment)
 	document.getElementById("newPosSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Position/newPosPositionDD.php",
+		url: "../New Position/newPosPositionDD.php",
 		data: "newPosSchoolDepartment="+newPosSchoolDepartment,
 		success: function(msg){ $("#newPositionForm").append(msg);}
 	});
@@ -116,7 +116,7 @@ function newAddPosSchoolDepartmentDD(newPosDivision)
 	document.getElementById("newAddPosDivision").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Additional Position/newAddPosSchoolDepartmentDD.php",
+		url: "../New Additional Position/newAddPosSchoolDepartmentDD.php",
 		data: "newAddPosDivision="+newPosDivision,
 		success: function(msg){ $("#newAddPositionForm").append(msg);}
 	});
@@ -127,7 +127,7 @@ function newAddPosPositionDD(newPosSchoolDepartment)
 	document.getElementById("newAddPosSchoolDepartment").disabled = true;
 	$.ajax({
 		type: "POST",
-		url: "PHP/New Additional Position/newAddPosPositionDD.php",
+		url: "../New Additional Position/newAddPosPositionDD.php",
 		data: "newAddPosSchoolDepartment="+newPosSchoolDepartment,
 		success: function(msg){ $("#newAddPositionForm").append(msg);}
 	});

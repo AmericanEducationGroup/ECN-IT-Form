@@ -19,9 +19,9 @@
 
 	// create email address
 	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newEmpSchoolDepartment'] . "'");
-
+	
 	$row = $result->fetch_assoc();
-
+	
 	$email = substr($_POST['newEmpFirstName'], 0,1) . $_POST['newEmpLastName'] . "@" . $row['emailDomain'];
 	$message = $message . "\r\nEmail: " . $email;
 	$message = $message . "\r\nPassword: 0-password";
