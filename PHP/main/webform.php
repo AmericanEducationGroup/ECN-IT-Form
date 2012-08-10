@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>ECN IT Web Form</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="../../Javascript/webform.js"></script>
 		<link href="../../CSS/webform.css" rel="stylesheet" type="text/css" />
@@ -7,24 +10,24 @@
 	<body>
 	<div class="styled-select" id="styled-select">
 		<div class="title-wording">
-		<a href="webform.php"><img src="/ECN-IT-Form/Resources/WebFormTitle.png" alt="Web Form"></img></a> 
+		<a href="webform.php"><img src="../../Resources/WebFormTitle.PNG" alt="Web Form"></a> 
 		<!-- <h1>ECN IT Web Form</h1>-->
 		</div>
 		<h3>What action would you like to take?</h3>
-		<select id="actionCategory" onchange="showActionFields(this);"">
+		<select id="actionCategory" onchange="showActionFields(this);">
 			<option disabled selected style='display:none;'>Choose an action.</option>
-			<option value="newEmployee"">New Employee - Give a new employee IT permissions</option>
+			<option value="newEmployee">New Employee - Give a new employee IT permissions</option>
 			<option value="newPosition">New Position - Replace an existing employee's IT permissions</option>
 			<option value="additionalPosition">Additional Position - Give an existing employee additional IT permissions</option>
 			<option value="termination">Termination - Remove all of an employee's IT permissions</option>
 			<option value="requestChange">Request a change to this form (e.g., new position, new school, additional field, etc.)</option>
 		</select>
 			<!-- New Employee -->
-				<form id="newEmployeeForm" onsubmit="prepNewEmp()" action="../New Employee/new_employee.php" method="post" style="display: none;">
+				<form id="newEmployeeForm" onsubmit="prepNewEmp()" action="../New%20Employee/new_employee.php" method="post" style="display:none;">
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the new employee's first name?									<input type="text" placeholder="First Name?" name="newEmpFirstName"/><br>
 					What is the new employee's last name?									<input type="text" placeholder="Last Name?" name="newEmpLastName"/><br>
-					What is the new employee's division?									<?php require '../New Employee/newEmpDivisionDD.php'; ?>
+					What is the new employee's division?									<?php require'../New Employee/newEmpDivisionDD.php'; ?>
 					<input type="text" placeholder="" id="newEmpDivisionHolder" name="newEmpDivisionHolder" style="display: none;"/>
 					<input type="text" placeholder="" id="newEmpSchoolDepHolder" name="newEmpSchoolDepHolder" style="display: none;"/>
 					<input type="text" placeholder="" id="newEmpPositionHolder" name="newEmpPositionHolder" style="display: none;"/>
@@ -32,7 +35,7 @@
 
 
 			<!-- New Position -->
-				<form id="newPositionForm" onsubmit="prepNewPos()" action="../New Position/new_position.php" method="post" style="display: none;">
+				<form id="newPositionForm" onsubmit="prepNewPos()" action="../New%20Position/new_position.php" method="post" style="display:none;">
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the employee's first name'?										<input type="text" placeholder="First Name?" name="newPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" name="newPosLastName"/><br>
@@ -44,7 +47,7 @@
 				</form>
 
 			<!-- Additional Position -->
-				<form id="newAddPositionForm" onsubmit="prepNewAddPos()" action="../New Additional Position/new_add_position.php" method="post" style="display: none;">
+				<form id="newAddPositionForm" onsubmit="prepNewAddPos()" action="../New%20Additional%20Position/new_add_position.php" method="post" style="display:none;">
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the employee's first name'?										<input type="text" placeholder="First Name?" name="newAddPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" name="newAddPosLastName"/><br>
@@ -56,7 +59,7 @@
 				</form>
 
 			<!-- Termination -->
-				<form id="terminationForm" action="../Termination/termination.php" method="post" style="display: none;">
+				<form id="terminationForm" action="../Termination/termination.php" method="post" style="display:none;">
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the first name of the terminated employee?						<input type="text" placeholder="First Name?" name="termFirstName"/><br>
 					What is the last name of the terminated employee?						<input type="text" placeholder="Last Name?" name="termLastName"/><br>
@@ -73,3 +76,4 @@
 	</div>
 	</body>
 </html>
+	
