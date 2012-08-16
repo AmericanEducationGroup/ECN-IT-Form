@@ -1,10 +1,12 @@
 <?php
-	$to      = 'aeg.ecn.it.form@gmail.com';
+	$to      = $_POST['emailAddress'];
 	$subject = 'ECN-IT-Form Submission: Termination';
 	$message = "Please remove all Source permissions, email access, and send/receive DG permissions from this terminated employee:";
-	$message = $message . "\r\nFirst Name: " . $_POST['termFirstName'] . "\r\nLast Name: " . $_POST['termLastName'];
+	$message = $message . "\r\nFirst Name: " . $_POST['termFirstName'] . "\r\nLast Name: " . $_POST['termLastName'] . "\r\n";
 
-	$headers = 'From: ' . $_POST['emailAddress'] . "\r\n" .
+	$message = $message . "Automated Email Response: " . $_POST['autoResponse'];
+
+	$headers = 'From: ECN-IT-Form@noreply.com' . "\r\n" .
 	'Reply-To: aeg.ecn.it.form@gmail.com' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 		
@@ -16,3 +18,4 @@
 	}
 		$db->close();
 ?>
+

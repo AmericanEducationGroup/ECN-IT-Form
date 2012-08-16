@@ -63,6 +63,7 @@
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the first name of the terminated employee?						<input type="text" placeholder="First Name?" name="termFirstName"/><br>
 					What is the last name of the terminated employee?						<input type="text" placeholder="Last Name?" name="termLastName"/><br>
+					What should the terminated employee's Automatic Email Response be?		<br><textarea rows="3" cols="80" placeholder="Automated email response?" name="autoResponse"></textarea><br>
 					<input type="submit">
 				</form>
 				
