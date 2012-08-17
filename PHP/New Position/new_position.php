@@ -7,7 +7,7 @@
 	$message = $message . "\r\nDivision: " . $_POST['newPosDivisionHolder'];
 	$message = $message . "\r\nSchool/Department: " . $_POST['newPosSchoolDepHolder'];
 	$message = $message . "\r\nPosition: " . $_POST['newPosPositionHolder'];
-	
+
 	require "../dbConnect.php";
 
 	if($db->connect_errno)
@@ -21,9 +21,6 @@
 
 	$row = $result->fetch_assoc();
 
-	$email = substr($_POST['newPosFirstName'], 0,1) . $_POST['newPosLastName'] . "@" . $row['emailDomain'];
-	$message = $message . "\r\nEmail: " . $email;
-	$message = $message . "\r\nPassword: 0-password";
 
 	// Source read permissions
 	$message = $message . "\r\nSource READ permissions:";
@@ -45,7 +42,7 @@
 			$message = $message . "\r\n" . $directory_path . "\r\n";
 		}
 	}
-	
+
 	$message = $message . "\r\nSource EDIT/DELETE permissions:";
 
 	// Source edit permissions
