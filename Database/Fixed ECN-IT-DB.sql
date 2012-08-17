@@ -1125,172 +1125,172 @@ INSERT INTO directory_owner (directory, owner_position) VALUES (106, 41);
 
 -- American Education Group/Schools/Fusion Division/Long Island/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (107, 210);
+INSERT INTO directory_owner (directory, owner_position) VALUES (155, 210);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (108, 210);
+INSERT INTO directory_owner (directory, owner_position) VALUES (156, 210);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (109, 210);
+INSERT INTO directory_owner (directory, owner_position) VALUES (157, 210);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (110, 210);
+INSERT INTO directory_owner (directory, owner_position) VALUES (158, 210);
 
 -- American Education Group/Schools/Fusion Division/Los Angeles/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (111, 54);
+INSERT INTO directory_owner (directory, owner_position) VALUES (107, 54);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (112, 54);
+INSERT INTO directory_owner (directory, owner_position) VALUES (108, 54);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (113, 54);
+INSERT INTO directory_owner (directory, owner_position) VALUES (109, 54);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (114, 54);
+INSERT INTO directory_owner (directory, owner_position) VALUES (110, 54);
 
 -- American Education Group/Schools/Fusion Division/Los Gatos/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (115, 67);
+INSERT INTO directory_owner (directory, owner_position) VALUES (111, 67);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (116, 67);
+INSERT INTO directory_owner (directory, owner_position) VALUES (112, 67);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (117, 67);
+INSERT INTO directory_owner (directory, owner_position) VALUES (113, 67);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (118, 67);
+INSERT INTO directory_owner (directory, owner_position) VALUES (114, 67);
 
 -- American Education Group/Schools/Fusion Division/Manhattan/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (119, 197);
+INSERT INTO directory_owner (directory, owner_position) VALUES (151, 197);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (120, 197);
+INSERT INTO directory_owner (directory, owner_position) VALUES (152, 197);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (121, 197);
+INSERT INTO directory_owner (directory, owner_position) VALUES (153, 197);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (122, 197);
+INSERT INTO directory_owner (directory, owner_position) VALUES (154, 197);
 
 -- American Education Group/Schools/Fusion Division/Mission Viejo/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (123, 80);
+INSERT INTO directory_owner (directory, owner_position) VALUES (115, 80);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (124, 80);
+INSERT INTO directory_owner (directory, owner_position) VALUES (116, 80);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (125, 80);
+INSERT INTO directory_owner (directory, owner_position) VALUES (117, 80);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (126, 80);
+INSERT INTO directory_owner (directory, owner_position) VALUES (118, 80);
 
 -- American Education Group/Schools/Fusion Division/Pasadena/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (127, 93);
+INSERT INTO directory_owner (directory, owner_position) VALUES (119, 93);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (128, 93);
+INSERT INTO directory_owner (directory, owner_position) VALUES (120, 93);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (129, 93);
+INSERT INTO directory_owner (directory, owner_position) VALUES (121, 93);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (130, 93);
+INSERT INTO directory_owner (directory, owner_position) VALUES (132, 93);
 
 -- American Education Group/Schools/Fusion Division/Regional/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (131, 231);
+-- INSERT INTO directory_owner (directory, owner_position) VALUES (131, 231);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (132, 231);
+-- INSERT INTO directory_owner (directory, owner_position) VALUES (132, 231);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (133, 231);
+-- INSERT INTO directory_owner (directory, owner_position) VALUES (133, 231);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (134, 231);
+-- INSERT INTO directory_owner (directory, owner_position) VALUES (134, 231);
 
 -- American Education Group/Schools/Fusion Division/San Francisco/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (135, 119);
+INSERT INTO directory_owner (directory, owner_position) VALUES (127, 119);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (136, 119);
+INSERT INTO directory_owner (directory, owner_position) VALUES (128, 119);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (137, 119);
+INSERT INTO directory_owner (directory, owner_position) VALUES (129, 119);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (138, 119);
+INSERT INTO directory_owner (directory, owner_position) VALUES (130, 119);
 
 -- American Education Group/Schools/Fusion Division/San Mateo/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (139, 132);
+INSERT INTO directory_owner (directory, owner_position) VALUES (131, 132);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (140, 132);
+INSERT INTO directory_owner (directory, owner_position) VALUES (132, 132);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (141, 132);
+INSERT INTO directory_owner (directory, owner_position) VALUES (133, 132);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (142, 132);
+INSERT INTO directory_owner (directory, owner_position) VALUES (134, 132);
 
 -- American Education Group/Schools/Fusion Division/Solana Beach/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (143, 158);
+INSERT INTO directory_owner (directory, owner_position) VALUES (139, 158);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (144, 158);
+INSERT INTO directory_owner (directory, owner_position) VALUES (140, 158);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (145, 158);
+INSERT INTO directory_owner (directory, owner_position) VALUES (141, 158);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (146, 158);
+INSERT INTO directory_owner (directory, owner_position) VALUES (142, 158);
 
 -- American Education Group/Schools/Fusion Division/South Bay/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (147, 145);
+INSERT INTO directory_owner (directory, owner_position) VALUES (135, 145);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (148, 145);
+INSERT INTO directory_owner (directory, owner_position) VALUES (136, 145);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (149, 145);
+INSERT INTO directory_owner (directory, owner_position) VALUES (137, 145);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (150, 145);
+INSERT INTO directory_owner (directory, owner_position) VALUES (138, 145);
 
 -- American Education Group/Schools/Fusion Division/Walnut Creek/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (151, 171);
+INSERT INTO directory_owner (directory, owner_position) VALUES (143, 171);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (152, 171);
+INSERT INTO directory_owner (directory, owner_position) VALUES (144, 171);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (153, 171);
+INSERT INTO directory_owner (directory, owner_position) VALUES (145, 171);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (154, 171);
+INSERT INTO directory_owner (directory, owner_position) VALUES (146, 171);
 
 -- American Education Group/Schools/Fusion Division/Warner Center/
 --   Staff
-INSERT INTO directory_owner (directory, owner_position) VALUES (155, 184);
+INSERT INTO directory_owner (directory, owner_position) VALUES (147, 184);
 
 --   Public
-INSERT INTO directory_owner (directory, owner_position) VALUES (156, 184);
+INSERT INTO directory_owner (directory, owner_position) VALUES (148, 184);
 
 --   Administrators
-INSERT INTO directory_owner (directory, owner_position) VALUES (157, 184);
+INSERT INTO directory_owner (directory, owner_position) VALUES (149, 184);
 
 --   Head of School
-INSERT INTO directory_owner (directory, owner_position) VALUES (158, 184);
+INSERT INTO directory_owner (directory, owner_position) VALUES (150, 184);
 
 -- American Education Group/Schools/Fusion Division/Fusionology/
 --   Fusionology Content
@@ -1467,6 +1467,10 @@ INSERT INTO directory_owner (directory, owner_position) VALUES (201, 9);
 INSERT INTO directory_owner (directory, owner_position) VALUES (202, 233);
 INSERT INTO directory_owner (directory, owner_position) VALUES (202, 239);
 INSERT INTO directory_owner (directory, owner_position) VALUES (202, 244);
+
+-- American Education Group/Schools/Fusion Division/San Diego
+INSERT INTO directory_owner (directory, owner_position) VALUES (203, 106);
+
 
 
 
@@ -2511,6 +2515,7 @@ INSERT INTO read_permissions(position, directory) VALUES (195,82);
 INSERT INTO read_permissions(position, directory) VALUES (208,82);
 INSERT INTO read_permissions(position, directory) VALUES (221,82);
 --     Fusionologist
+
 INSERT INTO read_permissions(position, directory) VALUES (40,82);
 INSERT INTO read_permissions(position, directory) VALUES (53,82);
 INSERT INTO read_permissions(position, directory) VALUES (66,82);
@@ -5350,6 +5355,7 @@ INSERT INTO read_permissions(position, directory) VALUES (131,160);
 INSERT INTO read_permissions(position, directory) VALUES (144,160);
 INSERT INTO read_permissions(position, directory) VALUES (157,160);
 INSERT INTO read_permissions(position, directory) VALUES (170,160);
+
 INSERT INTO read_permissions(position, directory) VALUES (183,160);
 INSERT INTO read_permissions(position, directory) VALUES (196,160);
 INSERT INTO read_permissions(position, directory) VALUES (209,160);
