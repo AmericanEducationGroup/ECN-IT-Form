@@ -7436,12 +7436,12 @@ INSERT INTO edit_permissions(position, directory) VALUES (296, 177);
 
 -- Americane Education Group/Schools/Fusion Division/Curriculum/
 --   Private
-INSERT INTO read_permissions(position, directory) VALUES (7,178);
-INSERT INTO read_permissions(position, directory) VALUES (8,178);
-INSERT INTO read_permissions(position, directory) VALUES (9,178);
-INSERT INTO read_permissions(position, directory) VALUES (10,178);
-INSERT INTO read_permissions(position, directory) VALUES (231,178);
-INSERT INTO read_permissions(position, directory) VALUES (296,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (7,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (8,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (9,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (10,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (231,178);
+-- INSERT INTO read_permissions(position, directory) VALUES (296,178);
 
 INSERT INTO edit_permissions(position, directory) VALUES (7,178);
 INSERT INTO edit_permissions(position, directory) VALUES (8,178);
