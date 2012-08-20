@@ -78,6 +78,28 @@ function prepNewEmp()
 }
 
 // New Position
+function oldPosSchoolDepartmentDD(oldPosDivision)
+{
+	document.getElementById("oldPosDivision").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "../New Position/oldPosSchoolDepartmentDD.php",
+		data: "oldPosDivision="+oldPosDivision,
+		success: function(msg){ $("#newPositionForm").append(msg);}
+	});
+}
+
+function oldPosPositionDD(oldPosSchoolDepartment)
+{
+	document.getElementById("oldPosSchoolDepartment").disabled = true;
+	$.ajax({
+		type: "POST",
+		url: "../New Position/oldPosPositionDD.php",
+		data: "oldPosSchoolDepartment="+oldPosSchoolDepartment,
+		success: function(msg){ $("#newPositionForm").append(msg);}
+	});
+}
+
 function newPosSchoolDepartmentDD(newPosDivision)
 {
 	document.getElementById("newPosDivision").disabled = true;
@@ -108,6 +130,13 @@ function prepNewPos()
 	document.getElementById("newPosDivisionHolder").value = document.getElementById("newPosDivision").options[document.getElementById("newPosDivision").selectedIndex].text;
 	document.getElementById("newPosSchoolDepHolder").value = document.getElementById("newPosSchoolDepartment").options[document.getElementById("newPosSchoolDepartment").selectedIndex].text;
 	document.getElementById("newPosPositionHolder").value = document.getElementById("newPosPosition").options[document.getElementById("newPosPosition").selectedIndex].text;
+	
+	document.getElementById("oldPosDivision").disabled = false;
+	document.getElementById("oldPosSchoolDepartment").disabled = false;
+
+	document.getElementById("oldPosDivisionHolder").value = document.getElementById("oldPosDivision").options[document.getElementById("oldPosDivision").selectedIndex].text;
+	document.getElementById("oldPosSchoolDepHolder").value = document.getElementById("oldPosSchoolDepartment").options[document.getElementById("oldPosSchoolDepartment").selectedIndex].text;
+	document.getElementById("oldPosPositionHolder").value = document.getElementById("oldPosPosition").options[document.getElementById("oldPosPosition").selectedIndex].text;
 }
 
 // Additional Position

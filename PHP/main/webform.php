@@ -38,12 +38,13 @@
 				<form id="newPositionForm" onsubmit="prepNewPos()" action="../New%20Position/new_position.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?"  name="emailAddress">
 					What is the employee's first name'?										<input type="text" placeholder="First Name?" name="newPosFirstName"/><br>
-					What is the employee's last name?										<input type="text" placeholder="Last Name?" name="newPosLastName"/><br>
-					<h3>New Position Details</h3>
-					What division is the new position in?									<?php require '../New Position/newPosDivisionDD.php'; ?>
-					<input type="text" placeholder="" id="newPosDivisionHolder" name="newPosDivisionHolder" style="display: none;"/>
-					<input type="text" placeholder="" id="newPosSchoolDepHolder" name="newPosSchoolDepHolder" style="display: none;"/>
-					<input type="text" placeholder="" id="newPosPositionHolder" name="newPosPositionHolder" style="display: none;"/>
+					What is the employee's last name?										<input type="text" placeholder="Last Name?" name="newPosLastName"/><br>	
+									
+					<h3>Old Position Details</h3>
+					What division was the old position in?									<?php require '../New Position/oldPosDivisionDD.php'; ?>
+					<input type="text" placeholder="" id="oldPosDivisionHolder" name="oldPosDivisionHolder" style="display: none;"/>
+					<input type="text" placeholder="" id="oldPosSchoolDepHolder" name="oldPosSchoolDepHolder" style="display: none;"/>
+					<input type="text" placeholder="" id="oldPosPositionHolder" name="oldPosPositionHolder" style="display: none;"/>
 				</form>
 
 			<!-- Additional Position -->

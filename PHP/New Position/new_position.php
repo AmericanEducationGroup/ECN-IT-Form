@@ -21,9 +21,50 @@
 
 	$row = $result->fetch_assoc();
 
+	// Remove OLD Source read permissions
+	$message = $message . "\r\nRemove OLD Source READ permissions:";
+	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['oldPosPosition'] . "'");
+	if($result->num_rows > 0)
+	{
+		while ($row = $result->fetch_assoc())
+		{
+			$i = $row['directory'];
+			$directory_path = "";
+			while($i != 1)
+			{
+				$directory_result = $db->query("SELECT name, parent FROM source_directories WHERE sourceDirectoryID = '" . $i . "'");
+				$directory_row = $directory_result->fetch_assoc();
+				$directory_path = $directory_row['name'] . "/" . $directory_path;
+				$i = $directory_row['parent'];
+			}
+			$directory_path = "/American Education Group/" . $directory_path;
+			$message = $message . "\r\n" . $directory_path . "\r\n";
+		}
+	}
 
-	// Source read permissions
-	$message = $message . "\r\nSource READ permissions:";
+	// Remove OLD Source edit permissions
+	$message = $message . "\r\nRemove OLD Source CONTRIBUTE permissions:";
+	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['oldPosPosition'] . "'");
+	if($result->num_rows > 0)
+	{
+		while ($row = $result->fetch_assoc())
+		{
+			$i = $row['directory'];
+			$directory_path = "";
+			while($i != 1)
+			{
+				$directory_result = $db->query("SELECT name, parent FROM source_directories WHERE sourceDirectoryID = '" . $i . "'");
+				$directory_row = $directory_result->fetch_assoc();
+				$directory_path = $directory_row['name'] . "/" . $directory_path;
+				$i = $directory_row['parent'];
+			}
+			$directory_path = "/American Education Group/" . $directory_path;
+			$message = $message . "\r\n" . $directory_path . "\r\n";
+		}
+	}
+
+	// Add NEW Source read permissions
+	$message = $message . "\r\nAdd NEW Source READ permissions:";
 	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -43,9 +84,9 @@
 		}
 	}
 
-	$message = $message . "\r\nSource CONTRIBUTE permissions:";
 
-	// Source edit permissions
+	// Add NEW Source edit permissions
+	$message = $message . "\r\nAdd NEW Source CONTRIBUTE permissions:";
 	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{

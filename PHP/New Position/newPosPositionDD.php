@@ -12,7 +12,7 @@
 	$result = $db->query("SELECT positionID, title FROM positions WHERE school_department = '" . $newPosSchoolDepartment . "'");
 ?>
 
-	What is the new employee's position?
+	What is the employee's new position?
 	<select name='newPosPosition' id='newPosPosition'>
 		<option disabled selected style='display:none;'>Choose a position.</option>
 
