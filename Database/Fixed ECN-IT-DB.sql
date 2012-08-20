@@ -4136,19 +4136,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (6,101);
 
 -- American Education Group/Schools/Fusion Division/Huntington Beach/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (34, 103);
-INSERT INTO read_permissions(position, directory) VALUES (35, 103);
-INSERT INTO read_permissions(position, directory) VALUES (36, 103);
-INSERT INTO read_permissions(position, directory) VALUES (37, 103);
-INSERT INTO read_permissions(position, directory) VALUES (38, 103);
-INSERT INTO read_permissions(position, directory) VALUES (39, 103);
-INSERT INTO read_permissions(position, directory) VALUES (40, 103);
-INSERT INTO read_permissions(position, directory) VALUES (41, 103);
-INSERT INTO read_permissions(position, directory) VALUES (42, 103);
-INSERT INTO read_permissions(position, directory) VALUES (43, 103);
-INSERT INTO read_permissions(position, directory) VALUES (44, 103);
-INSERT INTO read_permissions(position, directory) VALUES (45, 103);
-INSERT INTO read_permissions(position, directory) VALUES (46, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (34, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (35, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (36, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (37, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (38, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (39, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (40, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (41, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (42, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (43, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (44, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (45, 103);
+-- INSERT INTO read_permissions(position, directory) VALUES (46, 103);
 
 INSERT INTO edit_permissions(position, directory) VALUES (34, 103);
 INSERT INTO edit_permissions(position, directory) VALUES (35, 103);
@@ -4203,19 +4203,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (41, 106);
 
 -- American Education Group/Schools/Fusion Division/Los Angeles/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (47, 107);
-INSERT INTO read_permissions(position, directory) VALUES (48, 107);
-INSERT INTO read_permissions(position, directory) VALUES (49, 107);
-INSERT INTO read_permissions(position, directory) VALUES (50, 107);
-INSERT INTO read_permissions(position, directory) VALUES (51, 107);
-INSERT INTO read_permissions(position, directory) VALUES (52, 107);
-INSERT INTO read_permissions(position, directory) VALUES (53, 107);
-INSERT INTO read_permissions(position, directory) VALUES (54, 107);
-INSERT INTO read_permissions(position, directory) VALUES (55, 107);
-INSERT INTO read_permissions(position, directory) VALUES (56, 107);
-INSERT INTO read_permissions(position, directory) VALUES (57, 107);
-INSERT INTO read_permissions(position, directory) VALUES (58, 107);
-INSERT INTO read_permissions(position, directory) VALUES (59, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (47, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (48, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (49, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (50, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (51, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (52, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (53, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (54, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (55, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (56, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (57, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (58, 107);
+-- INSERT INTO read_permissions(position, directory) VALUES (59, 107);
 
 INSERT INTO edit_permissions(position, directory) VALUES (47, 107);
 INSERT INTO edit_permissions(position, directory) VALUES (48, 107);
@@ -4270,19 +4270,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (54, 110);
 
 -- American Education Group/Schools/Fusion Division/Los Gatos/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (60, 111);
-INSERT INTO read_permissions(position, directory) VALUES (61, 111);
-INSERT INTO read_permissions(position, directory) VALUES (62, 111);
-INSERT INTO read_permissions(position, directory) VALUES (63, 111);
-INSERT INTO read_permissions(position, directory) VALUES (64, 111);
-INSERT INTO read_permissions(position, directory) VALUES (65, 111);
-INSERT INTO read_permissions(position, directory) VALUES (66, 111);
-INSERT INTO read_permissions(position, directory) VALUES (67, 111);
-INSERT INTO read_permissions(position, directory) VALUES (68, 111);
-INSERT INTO read_permissions(position, directory) VALUES (69, 111);
-INSERT INTO read_permissions(position, directory) VALUES (70, 111);
-INSERT INTO read_permissions(position, directory) VALUES (71, 111);
-INSERT INTO read_permissions(position, directory) VALUES (72, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (60, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (61, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (62, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (63, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (64, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (65, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (66, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (67, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (68, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (69, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (70, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (71, 111);
+-- INSERT INTO read_permissions(position, directory) VALUES (72, 111);
 
 INSERT INTO edit_permissions(position, directory) VALUES (60, 111);
 INSERT INTO edit_permissions(position, directory) VALUES (61, 111);
@@ -4337,19 +4337,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (67, 114);
 
 -- American Education Group/Schools/Fusion Division/Mission Viejo/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (73, 115);
-INSERT INTO read_permissions(position, directory) VALUES (74, 115);
-INSERT INTO read_permissions(position, directory) VALUES (75, 115);
-INSERT INTO read_permissions(position, directory) VALUES (76, 115);
-INSERT INTO read_permissions(position, directory) VALUES (77, 115);
-INSERT INTO read_permissions(position, directory) VALUES (78, 115);
-INSERT INTO read_permissions(position, directory) VALUES (79, 115);
-INSERT INTO read_permissions(position, directory) VALUES (80, 115);
-INSERT INTO read_permissions(position, directory) VALUES (81, 115);
-INSERT INTO read_permissions(position, directory) VALUES (82, 115);
-INSERT INTO read_permissions(position, directory) VALUES (83, 115);
-INSERT INTO read_permissions(position, directory) VALUES (84, 115);
-INSERT INTO read_permissions(position, directory) VALUES (85, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (73, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (74, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (75, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (76, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (77, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (78, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (79, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (80, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (81, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (82, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (83, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (84, 115);
+-- INSERT INTO read_permissions(position, directory) VALUES (85, 115);
 
 INSERT INTO edit_permissions(position, directory) VALUES (73, 115);
 INSERT INTO edit_permissions(position, directory) VALUES (74, 115);
@@ -4404,19 +4404,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (80, 118);
 
 -- American Education Group/Schools/Fusion Division/Pasadena/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (86, 119);
-INSERT INTO read_permissions(position, directory) VALUES (87, 119);
-INSERT INTO read_permissions(position, directory) VALUES (88, 119);
-INSERT INTO read_permissions(position, directory) VALUES (89, 119);
-INSERT INTO read_permissions(position, directory) VALUES (90, 119);
-INSERT INTO read_permissions(position, directory) VALUES (91, 119);
-INSERT INTO read_permissions(position, directory) VALUES (92, 119);
-INSERT INTO read_permissions(position, directory) VALUES (93, 119);
-INSERT INTO read_permissions(position, directory) VALUES (94, 119);
-INSERT INTO read_permissions(position, directory) VALUES (95, 119);
-INSERT INTO read_permissions(position, directory) VALUES (96, 119);
-INSERT INTO read_permissions(position, directory) VALUES (97, 119);
-INSERT INTO read_permissions(position, directory) VALUES (98, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (86, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (87, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (88, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (89, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (90, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (91, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (92, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (93, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (94, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (95, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (96, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (97, 119);
+-- INSERT INTO read_permissions(position, directory) VALUES (98, 119);
 
 INSERT INTO edit_permissions(position, directory) VALUES (86, 119);
 INSERT INTO edit_permissions(position, directory) VALUES (87, 119);
@@ -4471,19 +4471,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (93, 122);
 
 -- American Education Group/Schools/Fusion Division/San Diego/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (99, 123);
-INSERT INTO read_permissions(position, directory) VALUES (100, 123);
-INSERT INTO read_permissions(position, directory) VALUES (101, 123);
-INSERT INTO read_permissions(position, directory) VALUES (102, 123);
-INSERT INTO read_permissions(position, directory) VALUES (103, 123);
-INSERT INTO read_permissions(position, directory) VALUES (104, 123);
-INSERT INTO read_permissions(position, directory) VALUES (105, 123);
-INSERT INTO read_permissions(position, directory) VALUES (106, 123);
-INSERT INTO read_permissions(position, directory) VALUES (107, 123);
-INSERT INTO read_permissions(position, directory) VALUES (108, 123);
-INSERT INTO read_permissions(position, directory) VALUES (109, 123);
-INSERT INTO read_permissions(position, directory) VALUES (110, 123);
-INSERT INTO read_permissions(position, directory) VALUES (111, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (99, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (100, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (101, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (102, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (103, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (104, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (105, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (106, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (107, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (108, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (109, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (110, 123);
+-- INSERT INTO read_permissions(position, directory) VALUES (111, 123);
 
 INSERT INTO edit_permissions(position, directory) VALUES (99, 123);
 INSERT INTO edit_permissions(position, directory) VALUES (100, 123);
@@ -4538,19 +4538,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (106, 126);
 
 -- American Education Group/Schools/Fusion Division/San Francisco/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (112, 127);
-INSERT INTO read_permissions(position, directory) VALUES (113, 127);
-INSERT INTO read_permissions(position, directory) VALUES (114, 127);
-INSERT INTO read_permissions(position, directory) VALUES (115, 127);
-INSERT INTO read_permissions(position, directory) VALUES (116, 127);
-INSERT INTO read_permissions(position, directory) VALUES (117, 127);
-INSERT INTO read_permissions(position, directory) VALUES (118, 127);
-INSERT INTO read_permissions(position, directory) VALUES (119, 127);
-INSERT INTO read_permissions(position, directory) VALUES (120, 127);
-INSERT INTO read_permissions(position, directory) VALUES (121, 127);
-INSERT INTO read_permissions(position, directory) VALUES (122, 127);
-INSERT INTO read_permissions(position, directory) VALUES (123, 127);
-INSERT INTO read_permissions(position, directory) VALUES (124, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (112, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (113, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (114, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (115, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (116, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (117, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (118, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (119, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (120, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (121, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (122, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (123, 127);
+-- INSERT INTO read_permissions(position, directory) VALUES (124, 127);
 
 INSERT INTO edit_permissions(position, directory) VALUES (112, 127);
 INSERT INTO edit_permissions(position, directory) VALUES (113, 127);
@@ -4605,19 +4605,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (119, 130);
 
 -- American Education Group/Schools/Fusion Division/San Mateo/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (125, 131);
-INSERT INTO read_permissions(position, directory) VALUES (126, 131);
-INSERT INTO read_permissions(position, directory) VALUES (127, 131);
-INSERT INTO read_permissions(position, directory) VALUES (128, 131);
-INSERT INTO read_permissions(position, directory) VALUES (129, 131);
-INSERT INTO read_permissions(position, directory) VALUES (130, 131);
-INSERT INTO read_permissions(position, directory) VALUES (131, 131);
-INSERT INTO read_permissions(position, directory) VALUES (132, 131);
-INSERT INTO read_permissions(position, directory) VALUES (133, 131);
-INSERT INTO read_permissions(position, directory) VALUES (134, 131);
-INSERT INTO read_permissions(position, directory) VALUES (135, 131);
-INSERT INTO read_permissions(position, directory) VALUES (136, 131);
-INSERT INTO read_permissions(position, directory) VALUES (137, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (125, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (126, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (127, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (128, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (129, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (130, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (131, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (132, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (133, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (134, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (135, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (136, 131);
+-- INSERT INTO read_permissions(position, directory) VALUES (137, 131);
 
 
 INSERT INTO edit_permissions(position, directory) VALUES (125, 131);
@@ -4673,19 +4673,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (132, 134);
 
 -- American Education Group/Schools/Fusion Division/South Bay/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (138, 135);
-INSERT INTO read_permissions(position, directory) VALUES (139, 135);
-INSERT INTO read_permissions(position, directory) VALUES (140, 135);
-INSERT INTO read_permissions(position, directory) VALUES (141, 135);
-INSERT INTO read_permissions(position, directory) VALUES (142, 135);
-INSERT INTO read_permissions(position, directory) VALUES (143, 135);
-INSERT INTO read_permissions(position, directory) VALUES (144, 135);
-INSERT INTO read_permissions(position, directory) VALUES (145, 135);
-INSERT INTO read_permissions(position, directory) VALUES (146, 135);
-INSERT INTO read_permissions(position, directory) VALUES (147, 135);
-INSERT INTO read_permissions(position, directory) VALUES (148, 135);
-INSERT INTO read_permissions(position, directory) VALUES (149, 135);
-INSERT INTO read_permissions(position, directory) VALUES (150, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (138, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (139, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (140, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (141, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (142, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (143, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (144, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (145, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (146, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (147, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (148, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (149, 135);
+-- INSERT INTO read_permissions(position, directory) VALUES (150, 135);
 
 INSERT INTO edit_permissions(position, directory) VALUES (138, 135);
 INSERT INTO edit_permissions(position, directory) VALUES (139, 135);
@@ -4740,19 +4740,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (145, 138);
 
 -- American Education Group/Schools/Fusion Division/Solana Beach/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (151, 139);
-INSERT INTO read_permissions(position, directory) VALUES (152, 139);
-INSERT INTO read_permissions(position, directory) VALUES (153, 139);
-INSERT INTO read_permissions(position, directory) VALUES (154, 139);
-INSERT INTO read_permissions(position, directory) VALUES (155, 139);
-INSERT INTO read_permissions(position, directory) VALUES (156, 139);
-INSERT INTO read_permissions(position, directory) VALUES (157, 139);
-INSERT INTO read_permissions(position, directory) VALUES (158, 139);
-INSERT INTO read_permissions(position, directory) VALUES (159, 139);
-INSERT INTO read_permissions(position, directory) VALUES (160, 139);
-INSERT INTO read_permissions(position, directory) VALUES (161, 139);
-INSERT INTO read_permissions(position, directory) VALUES (162, 139);
-INSERT INTO read_permissions(position, directory) VALUES (163, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (151, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (152, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (153, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (154, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (155, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (156, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (157, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (158, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (159, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (160, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (161, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (162, 139);
+-- INSERT INTO read_permissions(position, directory) VALUES (163, 139);
 
 INSERT INTO edit_permissions(position, directory) VALUES (151, 139);
 INSERT INTO edit_permissions(position, directory) VALUES (152, 139);
@@ -4807,19 +4807,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (158, 142);
 
 -- American Education Group/Schools/Fusion Division/Walnut Creek/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (164, 143);
-INSERT INTO read_permissions(position, directory) VALUES (165, 143);
-INSERT INTO read_permissions(position, directory) VALUES (166, 143);
-INSERT INTO read_permissions(position, directory) VALUES (167, 143);
-INSERT INTO read_permissions(position, directory) VALUES (168, 143);
-INSERT INTO read_permissions(position, directory) VALUES (169, 143);
-INSERT INTO read_permissions(position, directory) VALUES (170, 143);
-INSERT INTO read_permissions(position, directory) VALUES (171, 143);
-INSERT INTO read_permissions(position, directory) VALUES (172, 143);
-INSERT INTO read_permissions(position, directory) VALUES (173, 143);
-INSERT INTO read_permissions(position, directory) VALUES (174, 143);
-INSERT INTO read_permissions(position, directory) VALUES (175, 143);
-INSERT INTO read_permissions(position, directory) VALUES (176, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (164, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (165, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (166, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (167, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (168, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (169, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (170, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (171, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (172, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (173, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (174, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (175, 143);
+-- INSERT INTO read_permissions(position, directory) VALUES (176, 143);
 
 INSERT INTO edit_permissions(position, directory) VALUES (164, 143);
 INSERT INTO edit_permissions(position, directory) VALUES (165, 143);
@@ -4874,19 +4874,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (171, 146);
 
 -- American Education Group/Schools/Fusion Division/Warner Center/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (177, 147);
-INSERT INTO read_permissions(position, directory) VALUES (178, 147);
-INSERT INTO read_permissions(position, directory) VALUES (179, 147);
-INSERT INTO read_permissions(position, directory) VALUES (180, 147);
-INSERT INTO read_permissions(position, directory) VALUES (181, 147);
-INSERT INTO read_permissions(position, directory) VALUES (182, 147);
-INSERT INTO read_permissions(position, directory) VALUES (183, 147);
-INSERT INTO read_permissions(position, directory) VALUES (184, 147);
-INSERT INTO read_permissions(position, directory) VALUES (185, 147);
-INSERT INTO read_permissions(position, directory) VALUES (186, 147);
-INSERT INTO read_permissions(position, directory) VALUES (187, 147);
-INSERT INTO read_permissions(position, directory) VALUES (188, 147);
-INSERT INTO read_permissions(position, directory) VALUES (189, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (177, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (178, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (179, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (180, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (181, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (182, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (183, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (184, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (185, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (186, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (187, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (188, 147);
+-- INSERT INTO read_permissions(position, directory) VALUES (189, 147);
 
 INSERT INTO edit_permissions(position, directory) VALUES (177, 147);
 INSERT INTO edit_permissions(position, directory) VALUES (178, 147);
@@ -4941,19 +4941,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (184, 150);
 
 -- American Education Group/Schools/Fusion Division/Manhattan/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (190, 151);
-INSERT INTO read_permissions(position, directory) VALUES (191, 151);
-INSERT INTO read_permissions(position, directory) VALUES (192, 151);
-INSERT INTO read_permissions(position, directory) VALUES (193, 151);
-INSERT INTO read_permissions(position, directory) VALUES (194, 151);
-INSERT INTO read_permissions(position, directory) VALUES (195, 151);
-INSERT INTO read_permissions(position, directory) VALUES (196, 151);
-INSERT INTO read_permissions(position, directory) VALUES (197, 151);
-INSERT INTO read_permissions(position, directory) VALUES (198, 151);
-INSERT INTO read_permissions(position, directory) VALUES (199, 151);
-INSERT INTO read_permissions(position, directory) VALUES (200, 151);
-INSERT INTO read_permissions(position, directory) VALUES (201, 151);
-INSERT INTO read_permissions(position, directory) VALUES (202, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (190, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (191, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (192, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (193, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (194, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (195, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (196, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (197, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (198, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (199, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (200, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (201, 151);
+-- INSERT INTO read_permissions(position, directory) VALUES (202, 151);
 
 INSERT INTO edit_permissions(position, directory) VALUES (190, 151);
 INSERT INTO edit_permissions(position, directory) VALUES (191, 151);
@@ -5008,19 +5008,19 @@ INSERT INTO edit_permissions(position, directory) VALUES (197, 154);
 
 -- American Education Group/Schools/Fusion Division/Long Island/
 --   Staff
-INSERT INTO read_permissions(position, directory) VALUES (203, 155);
-INSERT INTO read_permissions(position, directory) VALUES (204, 155);
-INSERT INTO read_permissions(position, directory) VALUES (205, 155);
-INSERT INTO read_permissions(position, directory) VALUES (206, 155);
-INSERT INTO read_permissions(position, directory) VALUES (207, 155);
-INSERT INTO read_permissions(position, directory) VALUES (208, 155);
-INSERT INTO read_permissions(position, directory) VALUES (209, 155);
-INSERT INTO read_permissions(position, directory) VALUES (210, 155);
-INSERT INTO read_permissions(position, directory) VALUES (211, 155);
-INSERT INTO read_permissions(position, directory) VALUES (212, 155);
-INSERT INTO read_permissions(position, directory) VALUES (213, 155);
-INSERT INTO read_permissions(position, directory) VALUES (214, 155);
-INSERT INTO read_permissions(position, directory) VALUES (215, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (203, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (204, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (205, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (206, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (207, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (208, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (209, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (210, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (211, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (212, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (213, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (214, 155);
+-- INSERT INTO read_permissions(position, directory) VALUES (215, 155);
 
 INSERT INTO edit_permissions(position, directory) VALUES (203, 155);
 INSERT INTO edit_permissions(position, directory) VALUES (204, 155);
