@@ -38,7 +38,7 @@
 		}
 	}
 	
-	$message = $message . "\r\nSource EDIT/DELETE permissions:";
+	$message = $message . "\r\nSource CONTRIBUTE permissions:";
 
 	// Source edit permissions
 	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['newAddPosPosition'] . "'");
