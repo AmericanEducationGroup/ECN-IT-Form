@@ -17,7 +17,7 @@
 	}
 
 	// create email address
-	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newPosSchoolDepartment'] . "'");
+	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newPosSchoolDepartment'] . "'\r\n");
 
 	$row = $result->fetch_assoc();
 
@@ -38,12 +38,12 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 
 	// Remove OLD Source edit permissions
-	$message = $message . "\r\nRemove OLD Source CONTRIBUTE permissions:";
+	$message = $message . "\r\n\r\nRemove OLD Source CONTRIBUTE permissions:";
 	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['oldPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -59,12 +59,12 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 
 	// Add NEW Source read permissions
-	$message = $message . "\r\nAdd NEW Source READ permissions:";
+	$message = $message . "\r\n\r\nAdd NEW Source READ permissions:";
 	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -80,13 +80,13 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 
 
 	// Add NEW Source edit permissions
-	$message = $message . "\r\nAdd NEW Source CONTRIBUTE permissions:";
+	$message = $message . "\r\n\r\nAdd NEW Source CONTRIBUTE permissions:";
 	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -102,12 +102,12 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 
 	// receive DG
-	$message = $message . "\r\nThis employee should RECEIVE emails sent to these distribution groups:";
+	$message = $message . "\r\n\r\nThis employee should RECEIVE emails sent to these distribution groups:";
 	$result = $db->query("SELECT distributionGroup FROM receive_dg WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -120,7 +120,7 @@
 	}
 
 	// send DG
-	$message = $message . "\r\nThis employee should be able to SEND to these distribution groups:";
+	$message = $message . "\r\n\r\nThis employee should be able to SEND to these distribution groups:";
 	$result = $db->query("SELECT distributionGroup FROM send_to_dg WHERE position = '" . $_POST['newPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
