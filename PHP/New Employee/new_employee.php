@@ -25,9 +25,9 @@
 	$email = substr($_POST['newEmpFirstName'], 0,1) . $_POST['newEmpLastName'] . "@" . $row['emailDomain'];
 	$message = $message . "\r\nEmail: " . $email;
 	$message = $message . "\r\nPassword: 0-password";
-	$message = $message . "\r\nSource READ permissions:";
 
 	// Source read permissions
+	$message = $message . "\r\n\r\nSource READ permissions:";
 	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['newEmpPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -43,13 +43,13 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 	
-	$message = $message . "\r\nSource CONTRIBUTE permissions:";
 
 	// Source edit permissions
+	$message = $message . "\r\n\r\nSource CONTRIBUTE permissions:";
 	$result = $db->query("SELECT editPermissionID, directory FROM edit_permissions WHERE position = '" . $_POST['newEmpPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -65,12 +65,12 @@
 				$i = $directory_row['parent'];
 			}
 			$directory_path = "/American Education Group/" . $directory_path;
-			$message = $message . "\r\n" . $directory_path . "\r\n";
+			$message = $message . "\r\n" . $directory_path;
 		}
 	}
 
 	// receive DG
-	$message = $message . "\r\nThis employee should RECEIVE emails sent to these distribution groups:";
+	$message = $message . "\r\n\r\nThis employee should RECEIVE emails sent to these distribution groups:";
 	$result = $db->query("SELECT distributionGroup FROM receive_dg WHERE position = '" . $_POST['newEmpPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -78,12 +78,12 @@
 		{
 			$result2 = $db->query("SELECT dgName FROM distribution_groups WHERE distributionGroupID = '" . $row['distributionGroup'] . "'");
 			$row2 = $result2->fetch_assoc();
-			$message = $message . "\r\n" . $row2['dgName'] . "\r\n";
+			$message = $message . "\r\n" . $row2['dgName'];
 		}
 	}
 
 	// send DG
-	$message = $message . "\r\nThis employee should be able to SEND to these distribution groups:";
+	$message = $message . "\r\n\r\nThis employee should be able to SEND to these distribution groups:";
 	$result = $db->query("SELECT distributionGroup FROM send_to_dg WHERE position = '" . $_POST['newEmpPosition'] . "'");
 	if($result->num_rows > 0)
 	{
@@ -91,7 +91,7 @@
 		{
 			$result2 = $db->query("SELECT dgName FROM distribution_groups WHERE distributionGroupID = '" . $row['distributionGroup'] . "'");
 			$row2 = $result2->fetch_assoc();
-			$message = $message . "\r\n" . $row2['dgName'] . "\r\n";
+			$message = $message . "\r\n" . $row2['dgName'];
 		}
 	}
 	

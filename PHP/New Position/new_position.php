@@ -22,7 +22,7 @@
 	$row = $result->fetch_assoc();
 
 	// Remove OLD Source read permissions
-	$message = $message . "\r\nRemove OLD Source READ permissions:";
+	$message = $message . "\r\n\r\nRemove OLD Source READ permissions:";
 	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['oldPosPosition'] . "'");
 	if($result->num_rows > 0)
 	{
