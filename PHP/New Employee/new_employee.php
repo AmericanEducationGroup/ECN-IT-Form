@@ -1,5 +1,5 @@
 <?php
-	$to      = 'aeg.ecn.it.form@gmail.com';
+	$to      = $_POST['emailAddress'];
 	$subject = 'ECN-IT-Form Submission: New Employee';
 	$message = "First name: " . $_POST['newEmpFirstName'];
 	$message = $message . "\r\nLast Name: " . $_POST['newEmpLastName'];
@@ -25,7 +25,26 @@
 	$email = substr($_POST['newEmpFirstName'], 0,1) . $_POST['newEmpLastName'] . "@" . $row['emailDomain'];
 	$message = $message . "\r\nEmail: " . $email;
 	$message = $message . "\r\nPassword: 0-password";
-
+	
+	// create curriculum loft account
+	$school = $_POST['newEmpSchoolDepHolder'];
+	if($school=="Fusion Mission Viejo" || $school=="Fusion Solana Beach" || $school=="Fusion Los Angeles" || $school=="Fusion Pasadena" || $school=="Fusion Warner Center" || $school=="Fusion Walnut Creek" || $school=="Fusion San Francisco")
+	{
+		$position = $_POST['newEmpPositionHolder'];
+		if($position=="Head of School" || $position=="Assistant Director")
+		{
+			$message = $message . "\r\nCurriculum Loft: Administrator";
+		}
+		else
+		{
+			$message = $message . "\r\nCurriculum Loft: Teacher";
+		}
+	}
+	else
+	{
+		$message = $message . "\r\nCurriculum Loft: None";
+	}
+	
 	// Source read permissions
 	$message = $message . "\r\n\r\nSource READ permissions:";
 	$result = $db->query("SELECT readPermissionID, directory FROM read_permissions WHERE position = '" . $_POST['newEmpPosition'] . "'");
@@ -95,9 +114,9 @@
 		}
 	}
 	
-	$headers = 'From: ' . $_POST['emailAddress'] . "\r\n" .
-		'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
-		'X-Mailer: PHP/' . phpversion();
+	$headers = 'From: ECN-IT-Form@noreply.com' . "\r\n" .
+	'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
+	'X-Mailer: PHP/' . phpversion();
 		
 
 	if (mail($to, $subject, $message, $headers)) {

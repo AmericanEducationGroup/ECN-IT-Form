@@ -1,5 +1,5 @@
 <?php
-	$to      = 'aeg.ecn.it.form@gmail.com';
+	$to      = $_POST['emailAddress'];
 	$subject = 'ECN-IT-Form Submission: New Position';
 	$message = "Please remove all current Source permissions, send/receive DG permissions, and (if necessary) this user's email account. Replace with the following:";
 	$message = $message . "\r\nFirst name: " . $_POST['newPosFirstName'];
@@ -20,6 +20,27 @@
 	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newPosSchoolDepartment'] . "'\r\n");
 
 	$row = $result->fetch_assoc();
+
+	
+	
+	// create curriculum loft account
+	$school = $_POST['newPosSchoolDepHolder'];
+	if($school=="Fusion Mission Viejo" || $school=="Fusion Solana Beach" || $school=="Fusion Los Angeles" || $school=="Fusion Pasadena" || $school=="Fusion Warner Center" || $school=="Fusion Walnut Creek" || $school=="Fusion San Francisco")
+	{
+		$position = $_POST['newPosPositionHolder'];
+		if($position=="Head of School" || $position=="Assistant Director")
+		{
+			$message = $message . "\r\nCurriculum Loft: Administrator";
+		}
+		else
+		{
+			$message = $message . "\r\nCurriculum Loft: Teacher (don't change if employee is already an Administrator)";
+		}
+	}
+	else
+	{
+		$message = $message . "\r\nCurriculum Loft: None (don't remove if employee is already a user)";
+	}
 
 	// Remove OLD Source read permissions
 	$message = $message . "\r\n\r\nRemove OLD Source READ permissions:";
@@ -132,9 +153,9 @@
 		}
 	}
 	
-	$headers = 'From: ' . $_POST['emailAddress'] . "\r\n" .
-		'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
-		'X-Mailer: PHP/' . phpversion();
+	$headers = 'From: ECN-IT-Form@noreply.com' . "\r\n" .
+	'Reply-To: marbogast@americanedgroup.com' . "\r\n" .
+	'X-Mailer: PHP/' . phpversion();
 		
 
 	if (mail($to, $subject, $message, $headers)) {
