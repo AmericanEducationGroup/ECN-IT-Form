@@ -1,0 +1,11 @@
+INSERT INTO `source_directories` (sourceDirectoryID, name, parent) VALUES (207, "Fusion Mission Viejo", 169);
+INSERT INTO `directory_owner` (directory, owner_position) VALUES (207, 17);
+INSERT INTO `directory_owner` (directory, owner_position) VALUES (207, 18);
+INSERT INTO `directory_owner` (directory, owner_position) VALUES (207, 231);
+INSERT INTO `directory_owner` (directory, owner_position) VALUES (207, 296);
+INSERT INTO `read_permissions` (directory, position) VALUES (207, 76);
+INSERT INTO `edit_permissions` (directory, position) VALUES (207, 73);
+INSERT INTO `edit_permissions` (directory, position) VALUES (207, 77);
+INSERT INTO `edit_permissions` (directory, position) VALUES (207, 80);
+INSERT INTO `edit_permissions` (directory, position) VALUES (207, 81);
+INSERT INTO `edit_permissions` (directory, position) VALUES (207, 82);
