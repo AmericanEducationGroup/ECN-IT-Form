@@ -16,7 +16,18 @@
 		exit();
 	}
 
-	
+	// phone number
+	$result = $db->query("SELECT phoneNumber FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newAddPosSchoolDepartment'] . "'\r\n");
+	$row = $result->fetch_assoc();
+	$phone = $row['phoneNumber'];
+	$message = $message . "\r\nPhone Number: " . $phone;
+
+	// create email address
+	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newAddPosSchoolDepartment'] . "'");
+	$row = $result->fetch_assoc();
+	$email = substr($_POST['newAddPosFirstName'], 0,1) . $_POST['newAddPosLastName'] . "@" . $row['emailDomain'];
+	$message = $message . "\r\nEmail: " . $email;
+	$message = $message . "\r\nPassword: 0-password";
 	
 	// create curriculum loft account
 	$school = $_POST['newAddPosSchoolDepHolder'];

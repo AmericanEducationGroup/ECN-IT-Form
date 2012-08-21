@@ -16,10 +16,18 @@
 		exit();
 	}
 
+	// phone number
+	$result = $db->query("SELECT phoneNumber FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newPosSchoolDepartment'] . "'\r\n");
+	$row = $result->fetch_assoc();
+	$phone = $row['phoneNumber'];
+	$message = $message . "\r\nPhone Number: " . $phone;
+
 	// create email address
 	$result = $db->query("SELECT emailDomain FROM schools_departments WHERE schoolDepartmentID = '" . $_POST['newPosSchoolDepartment'] . "'\r\n");
-
 	$row = $result->fetch_assoc();
+	$email = substr($_POST['newPosFirstName'], 0,1) . $_POST['newPosLastName'] . "@" . $row['emailDomain'];
+	$message = $message . "\r\nEmail: " . $email;
+	$message = $message . "\r\nPassword: 0-password";
 
 	
 	
