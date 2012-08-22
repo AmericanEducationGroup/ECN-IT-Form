@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Aug 21, 2012 at 01:38 PM
+-- Generation Time: Aug 22, 2012 at 05:08 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -21,9 +21,6 @@ USE `ecnitdb`;
 --
 -- Table structure for table `directory_owner`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 21, 2012 at 01:26 PM
---
 
 DROP TABLE IF EXISTS `directory_owner`;
 CREATE TABLE IF NOT EXISTS `directory_owner` (
@@ -33,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `directory_owner` (
   PRIMARY KEY (`directoryOwnerID`),
   UNIQUE KEY `directory` (`directory`,`owner_position`),
   KEY `owner_position` (`owner_position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=373 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=375 ;
 
 --
 -- Dumping data for table `directory_owner`
@@ -411,14 +408,13 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(370, 235, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(371, 235, 296);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(372, 236, 231);
+INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(373, 237, 18);
+INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(374, 237, 231);
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `distribution_groups`
---
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 09:10 PM
 --
 
 DROP TABLE IF EXISTS `distribution_groups`;
@@ -492,9 +488,6 @@ INSERT INTO `distribution_groups` (`distributionGroupID`, `dgName`) VALUES(53, '
 --
 -- Table structure for table `divisions`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 06:52 PM
---
 
 DROP TABLE IF EXISTS `divisions`;
 CREATE TABLE IF NOT EXISTS `divisions` (
@@ -518,9 +511,6 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 --
 -- Table structure for table `edit_permissions`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 21, 2012 at 01:26 PM
---
 
 DROP TABLE IF EXISTS `edit_permissions`;
 CREATE TABLE IF NOT EXISTS `edit_permissions` (
@@ -530,7 +520,7 @@ CREATE TABLE IF NOT EXISTS `edit_permissions` (
   PRIMARY KEY (`editPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2305 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2393 ;
 
 --
 -- Dumping data for table `edit_permissions`
@@ -2021,6 +2011,47 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1483, 20, 168);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1484, 21, 168);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1485, 22, 168);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2392, 22, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2391, 21, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2390, 20, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2389, 19, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2388, 18, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2387, 17, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2386, 16, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2385, 4, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2384, 3, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2383, 2, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2382, 1, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2381, 231, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2380, 296, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2349, 223, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2348, 210, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2347, 197, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2346, 184, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2345, 171, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2344, 158, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2343, 145, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2342, 132, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2341, 119, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2340, 106, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2339, 93, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2338, 80, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2337, 67, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2336, 54, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2335, 41, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2350, 42, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2351, 55, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2352, 68, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2353, 81, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2354, 94, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2355, 107, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2356, 120, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2357, 133, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2358, 146, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2359, 159, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2360, 172, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2361, 185, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2362, 198, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2304, 231, 236);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1572, 1, 171);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1573, 2, 171);
@@ -2070,23 +2101,23 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1617, 226, 174);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1618, 231, 174);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1619, 291, 174);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1620, 44, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1621, 57, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1622, 70, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1623, 83, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1624, 96, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1625, 109, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1626, 122, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1627, 135, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1628, 148, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1629, 161, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1630, 174, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1631, 187, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1632, 200, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1633, 213, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1634, 226, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1635, 231, 175);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1636, 296, 175);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2363, 211, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2364, 224, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2365, 34, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2366, 47, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2367, 60, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2368, 73, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2369, 86, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2370, 99, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2371, 112, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2372, 125, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2373, 138, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2374, 151, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2375, 164, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2376, 177, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2377, 190, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2378, 203, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2379, 216, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2037, 7, 178);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2038, 8, 178);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2039, 9, 178);
@@ -2359,9 +2390,6 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 
 --
 -- Table structure for table `positions`
---
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 06:52 PM
 --
 
 DROP TABLE IF EXISTS `positions`;
@@ -2682,9 +2710,6 @@ INSERT INTO `positions` (`positionID`, `title`, `division`, `school_department`)
 --
 -- Table structure for table `read_permissions`
 --
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 09:18 PM
---
 
 DROP TABLE IF EXISTS `read_permissions`;
 CREATE TABLE IF NOT EXISTS `read_permissions` (
@@ -2694,7 +2719,7 @@ CREATE TABLE IF NOT EXISTS `read_permissions` (
   PRIMARY KEY (`readPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2866 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2896 ;
 
 --
 -- Dumping data for table `read_permissions`
@@ -3077,189 +3102,36 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(1602, 224, 159);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(1603, 225, 159);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(1604, 226, 159);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2124, 34, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2125, 35, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2126, 36, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2127, 37, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2128, 38, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2129, 39, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2130, 40, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2131, 41, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2132, 42, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2133, 43, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2135, 45, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2136, 46, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2137, 47, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2138, 48, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2139, 49, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2140, 50, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2141, 51, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2142, 52, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2143, 53, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2144, 54, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2145, 55, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2146, 56, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2148, 58, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2149, 59, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2150, 60, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2151, 61, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2152, 62, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2153, 63, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2154, 64, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2155, 65, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2156, 66, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2157, 67, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2158, 68, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2159, 69, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2161, 71, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2162, 72, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2163, 73, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2164, 74, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2165, 75, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2166, 76, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2167, 77, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2168, 78, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2169, 79, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2170, 80, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2171, 81, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2172, 82, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2174, 84, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2175, 85, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2176, 86, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2177, 87, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2178, 88, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2179, 89, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2180, 90, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2181, 91, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2182, 92, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2183, 93, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2184, 94, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2185, 95, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2187, 97, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2188, 98, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2189, 99, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2190, 100, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2191, 101, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2192, 102, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2193, 103, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2194, 104, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2195, 105, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2196, 106, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2197, 107, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2198, 108, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2200, 110, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2201, 111, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2202, 112, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2203, 113, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2204, 114, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2205, 115, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2206, 116, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2207, 117, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2208, 118, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2209, 119, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2210, 120, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2211, 121, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2213, 123, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2214, 124, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2215, 125, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2216, 126, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2217, 127, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2218, 128, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2219, 129, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2220, 130, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2221, 131, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2222, 132, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2223, 133, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2224, 134, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2226, 136, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2227, 137, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2228, 138, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2229, 139, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2230, 140, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2231, 141, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2232, 142, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2233, 143, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2234, 144, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2235, 145, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2236, 146, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2237, 147, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2239, 149, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2240, 150, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2241, 151, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2242, 152, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2243, 153, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2244, 154, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2245, 155, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2246, 156, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2247, 157, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2248, 158, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2249, 159, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2250, 160, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2252, 162, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2253, 163, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2254, 164, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2255, 165, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2256, 166, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2257, 167, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2258, 168, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2259, 169, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2260, 170, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2261, 171, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2262, 172, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2263, 173, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2265, 175, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2266, 176, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2267, 177, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2268, 178, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2269, 179, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2270, 180, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2271, 181, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2272, 182, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2273, 183, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2274, 184, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2275, 185, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2276, 186, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2278, 188, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2279, 189, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2280, 190, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2281, 191, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2282, 192, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2283, 193, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2284, 194, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2285, 195, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2286, 196, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2287, 197, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2288, 198, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2289, 199, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2291, 201, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2292, 202, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2293, 203, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2294, 204, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2295, 205, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2296, 206, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2297, 207, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2298, 208, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2299, 209, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2300, 210, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2301, 211, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2302, 212, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2304, 214, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2305, 215, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2306, 216, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2307, 217, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2308, 218, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2309, 219, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2310, 220, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2311, 221, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2312, 222, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2313, 223, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2314, 224, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2315, 225, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2317, 227, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2318, 228, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2319, 229, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2320, 230, 175);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2322, 295, 175);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2895, 224, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2894, 211, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2893, 198, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2892, 185, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2891, 172, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2890, 159, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2889, 146, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2888, 133, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2887, 120, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2886, 107, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2885, 94, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2884, 81, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2883, 68, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2882, 55, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2881, 42, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2880, 223, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2879, 210, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2878, 197, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2877, 184, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2876, 171, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2875, 158, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2874, 145, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2873, 132, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2872, 119, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2871, 106, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2870, 93, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2869, 80, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2868, 67, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2867, 54, 236);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2866, 41, 236);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2836, 37, 204);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2837, 50, 205);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2838, 63, 206);
@@ -3295,9 +3167,6 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 
 --
 -- Table structure for table `receive_dg`
---
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 06:52 PM
 --
 
 DROP TABLE IF EXISTS `receive_dg`;
@@ -3942,9 +3811,6 @@ INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES
 --
 -- Table structure for table `schools_departments`
 --
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 09:11 PM
---
 
 DROP TABLE IF EXISTS `schools_departments`;
 CREATE TABLE IF NOT EXISTS `schools_departments` (
@@ -4013,9 +3879,6 @@ INSERT INTO `schools_departments` (`schoolDepartmentID`, `name`, `abbreviation`,
 
 --
 -- Table structure for table `send_to_dg`
---
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 06:52 PM
 --
 
 DROP TABLE IF EXISTS `send_to_dg`;
@@ -4414,9 +4277,6 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 --
 -- Table structure for table `source_directories`
 --
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 21, 2012 at 01:25 PM
---
 
 DROP TABLE IF EXISTS `source_directories`;
 CREATE TABLE IF NOT EXISTS `source_directories` (
@@ -4426,7 +4286,7 @@ CREATE TABLE IF NOT EXISTS `source_directories` (
   PRIMARY KEY (`sourceDirectoryID`),
   UNIQUE KEY `name` (`name`,`parent`),
   KEY `parent` (`parent`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=237 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=238 ;
 
 --
 -- Dumping data for table `source_directories`
@@ -4667,4 +4527,5 @@ INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(234, 'Fusion Woodbury', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(235, 'Fusion Westchester', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(236, 'Collections Process', 169);
+INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(237, 'Accounts Receivable', 65);
 
