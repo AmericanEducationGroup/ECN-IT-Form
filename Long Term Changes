@@ -1,8 +1,9 @@
+Form sanitizing (for security)
 Add field checking
 Log-in
 Table for position titles
 Ability to change choice in all drop-downs
-Form sanitizing (for security)
+Fix Assistant Director -> Regional Team
 
 Incorporate into a more general IT Forms site
 	Log-in pulled through Active Directory
