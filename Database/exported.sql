@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Aug 28, 2012 at 03:11 PM
+-- Generation Time: Aug 28, 2012 at 04:11 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -3905,7 +3905,7 @@ INSERT INTO `schools_departments` (`schoolDepartmentID`, `name`, `abbreviation`,
 -- Table structure for table `send_to_dg`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 06:52 PM
+-- Last update: Aug 28, 2012 at 04:09 PM
 --
 
 DROP TABLE IF EXISTS `send_to_dg`;
@@ -3916,7 +3916,7 @@ CREATE TABLE IF NOT EXISTS `send_to_dg` (
   PRIMARY KEY (`sendToDGID`),
   UNIQUE KEY `distributionGroup` (`distributionGroup`,`position`),
   KEY `position` (`position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=377 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=467 ;
 
 --
 -- Dumping data for table `send_to_dg`
@@ -4298,6 +4298,96 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(374, 24, 232);
 INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(375, 24, 295);
 INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(376, 24, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(377, 17, 86);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(378, 17, 87);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(379, 17, 89);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(380, 17, 90);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(381, 17, 91);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(382, 17, 92);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(383, 17, 93);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(384, 17, 94);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(385, 17, 95);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(386, 17, 96);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(387, 17, 97);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(388, 17, 98);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(389, 18, 138);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(390, 18, 139);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(391, 18, 141);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(392, 18, 142);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(393, 18, 143);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(394, 18, 144);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(395, 18, 145);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(396, 18, 146);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(397, 18, 147);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(398, 18, 148);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(399, 18, 149);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(400, 18, 150);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(401, 19, 99);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(402, 19, 100);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(403, 19, 102);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(404, 19, 103);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(405, 19, 104);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(406, 19, 105);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(407, 19, 106);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(408, 19, 107);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(409, 19, 108);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(410, 19, 109);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(411, 19, 110);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(412, 19, 111);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(413, 20, 112);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(414, 20, 113);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(415, 20, 115);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(416, 20, 116);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(417, 20, 117);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(418, 20, 118);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(419, 20, 119);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(420, 20, 120);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(421, 20, 121);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(422, 20, 122);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(423, 20, 123);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(424, 20, 124);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(425, 16, 229);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(426, 16, 230);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(427, 16, 231);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(428, 16, 232);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(429, 16, 295);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(430, 16, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(431, 17, 229);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(432, 17, 230);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(433, 17, 231);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(434, 17, 232);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(435, 17, 295);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(436, 17, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(437, 18, 229);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(438, 18, 230);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(439, 18, 231);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(440, 18, 232);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(441, 18, 295);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(442, 18, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(443, 19, 229);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(444, 19, 230);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(445, 19, 231);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(446, 19, 232);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(447, 19, 295);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(448, 19, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(449, 20, 229);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(450, 20, 230);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(451, 20, 231);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(452, 20, 232);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(453, 20, 295);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(454, 20, 296);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(455, 21, 151);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(456, 21, 152);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(457, 21, 154);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(458, 21, 155);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(459, 21, 156);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(460, 21, 157);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(461, 21, 158);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(462, 21, 159);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(463, 21, 160);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(464, 21, 161);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(465, 21, 162);
+INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(466, 21, 163);
 
 -- --------------------------------------------------------
 
