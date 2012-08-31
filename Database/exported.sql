@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Aug 31, 2012 at 02:00 PM
+-- Generation Time: Aug 31, 2012 at 02:15 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -13,6 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `ecnitdb`
 --
+CREATE DATABASE `ecnitdb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `ecnitdb`;
 
 -- --------------------------------------------------------
 
@@ -546,7 +548,7 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 -- Table structure for table `edit_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 31, 2012 at 01:59 PM
+-- Last update: Aug 31, 2012 at 02:05 PM
 --
 
 DROP TABLE IF EXISTS `edit_permissions`;
@@ -557,7 +559,7 @@ CREATE TABLE IF NOT EXISTS `edit_permissions` (
   PRIMARY KEY (`editPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2625 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2626 ;
 
 --
 -- Dumping data for table `edit_permissions`
@@ -2654,6 +2656,7 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2622, 197, 250);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2623, 210, 251);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2624, 223, 253);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2625, 6, 170);
 
 -- --------------------------------------------------------
 
