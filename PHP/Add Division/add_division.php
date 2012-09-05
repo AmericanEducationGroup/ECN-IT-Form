@@ -9,7 +9,7 @@
 	}
 
 	$newDivisionName = $_POST["newDivision"];
-	$result = $db->query("call insert_divisions('" . $newDivisionName . "')");
+	$result = $db->query("INSERT INTO divisions (name) VALUES ('" . $newDivisionName . "')");
 	$db->close();
 
 	if($result)

@@ -10,7 +10,7 @@
 
 	$giveSendDG = $_POST["giveSendDG"];
 	$giveDGSendPosition = $_POST["giveDGSendPosition"];
-	$result = $db->query("call insert_send_to_dg('" . $giveSendDG . "', '" . $giveDGSendPosition . "')");
+	$result = $db->query("INSERT INTO send_to_dg (distributionGroup, position) VALUES ('" . $giveSendDG . "', '" . $giveDGSendPosition . "');");
 	$db->close();
 
 	if($result)

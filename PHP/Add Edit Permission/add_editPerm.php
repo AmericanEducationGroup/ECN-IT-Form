@@ -11,7 +11,7 @@
 	
 	$newEditPermPosition = $_POST["newEditPermPosition"];
 	$newEditPermDirectory = $_POST["newEditPermDirectory"];
-	$result = $db->query("call insert_edit_permissions(" . $newEditPermPosition . ", " . $newEditPermDirectory . ")");
+	$result = $db->query("INSERT INTO edit_permissions (position, directory) VALUES ('" . $newEditPermPosition . "', '" . $newEditPermDirectory . "');");
 	$db->close();
 
 	if($result)

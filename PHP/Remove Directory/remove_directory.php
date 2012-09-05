@@ -9,7 +9,7 @@
 	}
 
 	$latestDirectory = $_POST["latestRemovedDirectory"];
-	$result = $db->query("call remove_source_directories('" . $latestDirectory . "')");
+	$result = $db->query("DELETE FROM source_directories WHERE sourceDirectoryID = '" . $latestDirectory . "';");
 	$db->close();
 
 	if($result)

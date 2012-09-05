@@ -9,7 +9,7 @@
 	}
 
 	$newDG = $_POST["newDG"];
-	$result = $db->query("call insert_distribution_groups('" . $newDG . "')");
+	$result = $db->query("INSERT INTO distribution_groups (dgName) VALUES ('" . $newDG . "');");
 	$db->close();
 
 	if($result)

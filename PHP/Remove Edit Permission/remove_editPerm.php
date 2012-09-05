@@ -9,7 +9,7 @@
 	}
 
 	$removedEditPermsID = $_POST["removedEditPermsID"];
-	$result = $db->query("call remove_edit_permissions('" . $removedEditPermsID . "')");
+	$result = $db->query("DELETE FROM edit_permissions WHERE editPermissionID = '" . $removedEditPermsID . "';");
 	$db->close();
 
 	if($result)

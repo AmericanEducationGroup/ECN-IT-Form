@@ -9,7 +9,7 @@
 	}
 
 	$removeDGReceiveDG = $_POST["removeDGReceiveDG"];
-	$result = $db->query("call remove_receive_dg('" . $removeDGReceiveDG . "')");
+	$result = $db->query("DELETE FROM receive_dg WHERE receiveDGID = '" . $removeDGReceiveDG . "';");
 	$db->close();
 
 	if($result)

@@ -7,6 +7,7 @@ Fix Assistant Director -> Regional Team
 Add easier to use administrative options (e.g., "all fusion HOSs")
 Fix DB collation from swedish to something else
 Add DB support for foreign keys (currently they are written in, but not supported by default in MariaDB) by switching to InnoDB or XtraDB
+Consider separating schools and departments into two tables
 
 Incorporate into a more general IT Forms site
 	Log-in pulled through Active Directory

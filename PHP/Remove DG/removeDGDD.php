@@ -8,7 +8,7 @@
 		exit();
 	}
 
-	$result = $db->query("call viewAll_distribution_groups()");
+	$result = $db->query("SELECT distributionGroupID, dgName FROM distribution_groups;");
 ?>
 
 <select name='removedDG' id='removedDG'>

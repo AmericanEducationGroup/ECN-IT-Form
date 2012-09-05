@@ -10,7 +10,7 @@
 
 	$giveReceiveDG = $_POST["giveReceiveDG"];
 	$giveDGReceivePosition = $_POST["giveDGReceivePosition"];
-	$result = $db->query("call insert_receive_dg('" . $giveReceiveDG . "', '" . $giveDGReceivePosition . "')");
+	$result = $db->query("INSERT INTO receive_dg (distributionGroup, position) VALUES ('" . $giveReceiveDG . "', '" . $giveDGReceivePosition . "');");
 	$db->close();
 
 	if($result)

@@ -9,7 +9,7 @@
 	}
 
 	$removeDGSendDG = $_POST["removeDGSendDG"];
-	$result = $db->query("call remove_send_to_dg('" . $removeDGSendDG . "')");
+	$result = $db->query("DELETE FROM send_to_dg WHERE sendToDGID = '" . $removeDGSendDG . "';");
 	$db->close();
 
 	if($result)

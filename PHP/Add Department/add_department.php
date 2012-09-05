@@ -13,7 +13,7 @@
 	$db->close();
 
 	if($result)
-		header( 'Location: ../../HTML/success.html' ) ;
-	else
-		header( 'Location: ../../HTML/failure.html') ;
+		//header( 'Location: ../../HTML/success.html' ) ;
+	//else
+		//header( 'Location: ../../HTML/failure.html') ;
 ?>

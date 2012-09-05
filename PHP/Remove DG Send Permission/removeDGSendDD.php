@@ -7,7 +7,7 @@
 		exit();
 	}
 
-	$result = $db->query("call viewAll_distribution_groups()");
+	$result = $db->query("SELECT distributionGroupID, dgName FROM distributionGroups;");
 ?>
 
 <select onchange='giveDGSend-PositionDD(this)' name='giveSendDG' id='giveSendDG'>

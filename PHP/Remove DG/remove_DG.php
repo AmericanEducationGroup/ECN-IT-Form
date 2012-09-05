@@ -9,7 +9,7 @@
 	}
 
 	$removedDG = $_POST["removedDG"];
-	$result = $db->query("call remove_distribution_groups('" . $removedDG . "')");
+	$result = $db->query("DELETE FROM distribution_groups WHERE distributionGroupID = '" . $removedDG . "';");
 	$db->close();
 
 	if($result)

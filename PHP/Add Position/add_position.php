@@ -12,7 +12,7 @@
 	$newPosition = $_POST["newPosition"];
 	$addedPositionsDivision = $_REQUEST["addedPositionsDivision"];
 	$addedPositionsSchoolDepartment = $_REQUEST["addedPositionsSchoolDepartment"];
-	$result = $db->query("call insert_positions('" . $newPosition . "', '" . $addedPositionsDivision . "', '" . $addedPositionsSchoolDepartment . "')");
+	$result = $db->query("INSERT INTO positions (title, division, school_department) VALUES ('" . $newPosition . "', '" . $addedPositionsDivision . "', '" . $addedPositionsSchoolDepartment . "');");
 	$db->close();
 
 	if($result)

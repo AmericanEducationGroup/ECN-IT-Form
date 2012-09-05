@@ -11,8 +11,7 @@
 	
 	$newReadPermPosition = $_POST["newReadPermPosition"];
 	$newReadPermDirectory = $_POST["newReadPermDirectory"];
-	echo $newReadPermPosition . " " . $newReadPermDirectory;
-	$result = $db->query("call insert_read_permissions(" . $newReadPermPosition . ", " . $newReadPermDirectory . ")");
+	$result = $db->query("INSERT INTO read_permissions (position, directory) VALUES ('" . $newReadPermPosition . "', '" . $newReadPermDirectory . "');");
 	$db->close();
 
 	if($result)

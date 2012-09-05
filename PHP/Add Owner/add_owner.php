@@ -11,7 +11,7 @@
 	
 	$latestOwnersDirectory = $_POST["latestOwnersDirectory"];
 	$latestOwnersPosition = $_POST["latestOwnersPosition"];
-	$result = $db->query("call insert_directory_owner('" . $latestOwnersDirectory . "', '" . $latestOwnersPosition . "')");
+	$result = $db->query("INSERT INTO directory_owner (directory, owner_position) VALUES ('" . $latestOwnersDirectory . "', '" . $latestOwnersPosition . "');");
 	$db->close();
 
 	if($result)

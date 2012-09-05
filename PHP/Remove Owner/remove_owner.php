@@ -9,8 +9,7 @@
 	}
 
 	$removedDirectoryOwnerID = $_POST["removedOwnersDirectory"];
-	echo $removedOwnersPosition . " " . $removedOwnersDirectory;
-	$result = $db->query("call remove_directory_owner(" . $removedDirectoryOwnerID . ")");
+	$result = $db->query("DELETE FROM directory_owner WHERE directoryOwnerID = '" . $removedDirectoryOwnerID . "';");
 	$db->close();
 
 	if($result)

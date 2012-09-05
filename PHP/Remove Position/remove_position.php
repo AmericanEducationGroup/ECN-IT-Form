@@ -10,7 +10,7 @@
 
 	
 	$removedPosition = $_POST["removedPosition"];
-	$result = $db->query("call remove_positions('" . $removedPosition . "')");
+	$result = $db->query("DELETE FROM positions WHERE positionID = '" . $removedPosition . "';");
 	$db->close();
 
 	if($result)

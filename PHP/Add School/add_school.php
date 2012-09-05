@@ -12,12 +12,14 @@
 	$newSchoolAbbreviation = $_POST["newSchoolAbbreviation"];
 	$newSchoolDivision = $_POST["newSchoolDivision"];
 	$newSchoolEmailDomain = $_POST["newSchoolEmailDomain"];
-	echo $newSchool . " " . $newSchoolAbbreviation . " " . $newSchoolDivision . " " . $newSchoolEmailDomain;
-	$result = $db->query("INSERT INTO Schools_Departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ('" .$newSchool . "','" . $newSchoolAbbreviation . "','" . $newSchoolDivision . "', '" . $newSchoolEmailDomain . "', '1234');");
+	$newSchoolPhoneNumber = $_POST["newSchoolPhoneNumber"];
+	$result = $db->query("INSERT INTO schools_departments (name, abbreviation, division, emailDomain, phoneNumber) VALUES ('" . $newSchool . "','" . $newSchoolAbbreviation . "','" . $newSchoolDivision . "', '" . $newSchoolEmailDomain . "', '" . $newSchoolPhoneNumber . "');");// fix numbers
 	$db->close();
 
+	
 	if($result)
 		header( 'Location: ../../HTML/success.html' ) ;
 	else
 		header( 'Location: ../../HTML/failure.html') ;
+	
 ?>

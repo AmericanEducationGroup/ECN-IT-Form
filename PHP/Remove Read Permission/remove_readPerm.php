@@ -9,7 +9,7 @@
 	}
 
 	$removedReadPermsID = $_POST["removedReadPermsID"];
-	$result = $db->query("call remove_read_permissions('" . $removedReadPermsID . "')");
+	$result = $db->query("DELETE FROM read_permissions WHERE readPermissionID = '" . $removedReadPermsID . "';");
 	$db->close();
 
 	if($result)

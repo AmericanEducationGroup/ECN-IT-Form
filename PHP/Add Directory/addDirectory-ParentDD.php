@@ -1,6 +1,6 @@
 <?php 
 
-	require 'PHP/dbConnect.php';
+	require '../dbConnect.php';
 
 	if($db->connect_errno)
 	{

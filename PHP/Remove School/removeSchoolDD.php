@@ -13,7 +13,7 @@
 	$result = $db->query("SELECT name, schoolDepartmentID FROM schools_departments WHERE division = '" . $removedSchoolsDivision . "'");
 ?>
 
-	Which school or department would you like to remove?
+	<br>Which school or department would you like to remove?
 	<select name='removedSchoolDepartmentID' id='removedSchoolDepartmentID'>
 		<option disabled selected style='display:none;'>Choose a school/department.</option>
 
