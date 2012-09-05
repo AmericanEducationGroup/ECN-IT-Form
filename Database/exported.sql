@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Aug 31, 2012 at 03:43 PM
+-- Generation Time: Sep 05, 2012 at 02:15 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -22,7 +22,7 @@ USE `ecnitdb`;
 -- Table structure for table `directory_owner`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 31, 2012 at 03:14 PM
+-- Last update: Sep 04, 2012 at 03:02 PM
 --
 
 DROP TABLE IF EXISTS `directory_owner`;
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `directory_owner` (
   PRIMARY KEY (`directoryOwnerID`),
   UNIQUE KEY `directory` (`directory`,`owner_position`),
   KEY `owner_position` (`owner_position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=411 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=412 ;
 
 --
 -- Dumping data for table `directory_owner`
@@ -456,7 +456,7 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 -- Table structure for table `distribution_groups`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 09:10 PM
+-- Last update: Sep 04, 2012 at 03:39 PM
 --
 
 DROP TABLE IF EXISTS `distribution_groups`;
@@ -465,7 +465,7 @@ CREATE TABLE IF NOT EXISTS `distribution_groups` (
   `dgName` varchar(64) NOT NULL,
   PRIMARY KEY (`distributionGroupID`),
   UNIQUE KEY `dgName` (`dgName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=54 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=55 ;
 
 --
 -- Dumping data for table `distribution_groups`
@@ -531,7 +531,7 @@ INSERT INTO `distribution_groups` (`distributionGroupID`, `dgName`) VALUES(53, '
 -- Table structure for table `divisions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 06:52 PM
+-- Last update: Sep 04, 2012 at 12:50 PM
 --
 
 DROP TABLE IF EXISTS `divisions`;
@@ -540,7 +540,7 @@ CREATE TABLE IF NOT EXISTS `divisions` (
   `name` varchar(64) NOT NULL,
   PRIMARY KEY (`divisionID`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `divisions`
@@ -557,7 +557,7 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 -- Table structure for table `edit_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 31, 2012 at 03:18 PM
+-- Last update: Sep 04, 2012 at 03:13 PM
 --
 
 DROP TABLE IF EXISTS `edit_permissions`;
@@ -568,7 +568,7 @@ CREATE TABLE IF NOT EXISTS `edit_permissions` (
   PRIMARY KEY (`editPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2635 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2636 ;
 
 --
 -- Dumping data for table `edit_permissions`
@@ -2682,7 +2682,7 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 -- Table structure for table `positions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Aug 20, 2012 at 06:52 PM
+-- Last update: Sep 04, 2012 at 02:45 PM
 --
 
 DROP TABLE IF EXISTS `positions`;
@@ -2695,7 +2695,7 @@ CREATE TABLE IF NOT EXISTS `positions` (
   UNIQUE KEY `title` (`title`,`division`,`school_department`),
   KEY `division` (`division`),
   KEY `school_department` (`school_department`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=297 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=298 ;
 
 --
 -- Dumping data for table `positions`
@@ -3004,7 +3004,7 @@ INSERT INTO `positions` (`positionID`, `title`, `division`, `school_department`)
 -- Table structure for table `read_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 31, 2012 at 03:42 PM
+-- Last update: Sep 04, 2012 at 03:09 PM
 --
 
 DROP TABLE IF EXISTS `read_permissions`;
@@ -3015,7 +3015,7 @@ CREATE TABLE IF NOT EXISTS `read_permissions` (
   PRIMARY KEY (`readPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3685 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3687 ;
 
 --
 -- Dumping data for table `read_permissions`
@@ -4065,6 +4065,7 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3682, 296, 265);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3683, 296, 266);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3684, 296, 267);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3685, 252, 21);
 
 -- --------------------------------------------------------
 
@@ -4072,7 +4073,7 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 -- Table structure for table `receive_dg`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 06:52 PM
+-- Last update: Sep 05, 2012 at 02:10 PM
 --
 
 DROP TABLE IF EXISTS `receive_dg`;
@@ -4083,7 +4084,7 @@ CREATE TABLE IF NOT EXISTS `receive_dg` (
   PRIMARY KEY (`receiveDGID`),
   UNIQUE KEY `distributionGroup` (`distributionGroup`,`position`),
   KEY `position` (`position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=623 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=625 ;
 
 --
 -- Dumping data for table `receive_dg`
@@ -4433,68 +4434,6 @@ INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(342, 10, 230);
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(343, 10, 231);
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(344, 10, 232);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(345, 10, 233);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(346, 10, 234);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(347, 10, 235);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(348, 10, 236);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(349, 10, 237);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(350, 10, 238);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(351, 10, 239);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(352, 10, 240);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(353, 10, 241);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(354, 10, 242);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(355, 10, 243);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(356, 10, 244);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(357, 10, 245);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(358, 10, 246);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(359, 10, 247);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(360, 10, 248);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(361, 10, 249);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(362, 10, 250);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(363, 10, 251);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(364, 10, 252);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(365, 10, 253);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(366, 10, 254);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(367, 10, 255);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(368, 10, 256);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(369, 10, 257);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(370, 10, 258);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(371, 10, 259);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(372, 10, 260);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(373, 10, 261);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(374, 10, 262);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(375, 10, 263);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(376, 10, 264);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(377, 10, 265);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(378, 10, 266);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(379, 10, 267);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(380, 10, 268);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(381, 10, 269);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(382, 10, 270);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(383, 10, 271);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(384, 10, 272);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(385, 10, 273);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(386, 10, 274);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(387, 10, 275);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(388, 10, 276);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(389, 10, 277);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(390, 10, 278);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(391, 10, 279);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(392, 10, 280);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(393, 10, 281);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(394, 10, 282);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(395, 10, 283);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(396, 10, 284);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(397, 10, 285);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(398, 10, 286);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(399, 10, 287);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(400, 10, 288);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(401, 10, 289);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(402, 10, 290);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(403, 10, 291);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(404, 10, 292);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(405, 10, 293);
-INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(406, 10, 294);
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(407, 10, 295);
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(408, 10, 296);
 INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES(409, 11, 34);
@@ -4718,7 +4657,7 @@ INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES
 -- Table structure for table `schools_departments`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 20, 2012 at 09:11 PM
+-- Last update: Sep 04, 2012 at 02:35 PM
 --
 
 DROP TABLE IF EXISTS `schools_departments`;
@@ -4733,7 +4672,7 @@ CREATE TABLE IF NOT EXISTS `schools_departments` (
   UNIQUE KEY `name` (`name`),
   UNIQUE KEY `abbreviation` (`abbreviation`),
   KEY `division` (`division`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
 
 --
 -- Dumping data for table `schools_departments`
@@ -4790,7 +4729,7 @@ INSERT INTO `schools_departments` (`schoolDepartmentID`, `name`, `abbreviation`,
 -- Table structure for table `send_to_dg`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 28, 2012 at 04:09 PM
+-- Last update: Sep 04, 2012 at 03:49 PM
 --
 
 DROP TABLE IF EXISTS `send_to_dg`;
@@ -4801,7 +4740,7 @@ CREATE TABLE IF NOT EXISTS `send_to_dg` (
   PRIMARY KEY (`sendToDGID`),
   UNIQUE KEY `distributionGroup` (`distributionGroup`,`position`),
   KEY `position` (`position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=467 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=468 ;
 
 --
 -- Dumping data for table `send_to_dg`
@@ -5280,7 +5219,7 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 -- Table structure for table `source_directories`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Aug 31, 2012 at 02:34 PM
+-- Last update: Sep 04, 2012 at 02:54 PM
 -- Last check: Aug 31, 2012 at 02:34 PM
 --
 
@@ -5292,7 +5231,7 @@ CREATE TABLE IF NOT EXISTS `source_directories` (
   PRIMARY KEY (`sourceDirectoryID`),
   UNIQUE KEY `name` (`name`,`parent`),
   KEY `parent` (`parent`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=270 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=271 ;
 
 --
 -- Dumping data for table `source_directories`
