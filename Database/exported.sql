@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Sep 05, 2012 at 10:29 PM
+-- Generation Time: Sep 12, 2012 at 04:58 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
