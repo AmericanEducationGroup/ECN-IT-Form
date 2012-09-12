@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Sep 12, 2012 at 04:58 PM
+-- Generation Time: Sep 12, 2012 at 05:04 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -22,7 +22,7 @@ USE `ecnitdb`;
 -- Table structure for table `directory_owner`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 04, 2012 at 03:02 PM
+-- Last update: Sep 12, 2012 at 05:03 PM
 --
 
 DROP TABLE IF EXISTS `directory_owner`;
@@ -410,7 +410,6 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(369, 235, 18);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(370, 235, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(371, 235, 296);
-INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(372, 236, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(373, 237, 18);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(374, 237, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(375, 238, 18);
@@ -557,7 +556,7 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 -- Table structure for table `edit_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 04, 2012 at 03:13 PM
+-- Last update: Sep 12, 2012 at 05:03 PM
 --
 
 DROP TABLE IF EXISTS `edit_permissions`;
@@ -2144,7 +2143,6 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2360, 172, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2361, 185, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2362, 198, 237);
-INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2304, 231, 236);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1572, 1, 171);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1573, 2, 171);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1574, 3, 171);
@@ -3004,7 +3002,7 @@ INSERT INTO `positions` (`positionID`, `title`, `division`, `school_department`)
 -- Table structure for table `read_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 05, 2012 at 10:27 PM
+-- Last update: Sep 12, 2012 at 05:03 PM
 --
 
 DROP TABLE IF EXISTS `read_permissions`;
@@ -3596,36 +3594,6 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3256, 66, 265);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(3254, 65, 266);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2896, 6, 237);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2895, 224, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2894, 211, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2893, 198, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2892, 185, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2891, 172, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2890, 159, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2889, 146, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2888, 133, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2887, 120, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2886, 107, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2885, 94, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2884, 81, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2883, 68, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2882, 55, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2881, 42, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2880, 223, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2879, 210, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2878, 197, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2877, 184, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2876, 171, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2875, 158, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2874, 145, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2873, 132, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2872, 119, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2871, 106, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2870, 93, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2869, 80, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2868, 67, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2867, 54, 236);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2866, 41, 236);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2836, 37, 204);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2837, 50, 205);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(2838, 63, 206);
@@ -5046,7 +5014,7 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 -- Table structure for table `source_directories`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 04, 2012 at 02:54 PM
+-- Last update: Sep 12, 2012 at 05:04 PM
 -- Last check: Aug 31, 2012 at 02:34 PM
 --
 
@@ -5298,7 +5266,6 @@ INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(233, 'Fusion Manhattan', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(234, 'Fusion Woodbury', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(235, 'Fusion Westchester', 170);
-INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(236, 'Collections Process', 169);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(237, 'Accounts Receivable', 65);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(238, 'Financial Information', 4);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(239, 'Fusion Solana Beach', 238);
