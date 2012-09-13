@@ -24,7 +24,7 @@
 			<option value="requestChange">Request a change to this form (e.g., new position, new school, additional field, etc.)</option>
 		</select>
 			<!-- New Employee -->
-				<form id="newEmployeeForm" onsubmit="prepNewEmp()" action="../New%20Employee/new_employee.php" method="post" style="display: none;">
+				<form id="newEmployeeForm" onsubmit="return prepNewEmp();" action="../New%20Employee/new_employee.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="newEmpEmailAddress"  name="emailAddress">
 					What is the new employee's first name?									<input type="text" placeholder="First Name?" id="newEmpFirstName" name="newEmpFirstName"/><br>
 					What is the new employee's last name?									<input type="text" placeholder="Last Name?" id="newEmpLastName" name="newEmpLastName"/><br>
@@ -36,7 +36,7 @@
 
 
 			<!-- New Position -->
-				<form id="newPositionForm" onsubmit="prepNewPos()" action="../New%20Position/new_position.php" method="post" style="display: none;">
+				<form id="newPositionForm" onsubmit="return prepNewPos();" action="../New%20Position/new_position.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="newPosEmailAddress"  name="emailAddress">
 					What is the employee's first name'?										<input type="text" placeholder="First Name?" id="newPosFirstName" name="newPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" id="newPosLastName" name="newPosLastName"/><br>	
@@ -49,7 +49,7 @@
 				</form>
 
 			<!-- Additional Position -->
-				<form id="newAddPositionForm" onsubmit="prepNewAddPos()" action="../New%20Additional%20Position/new_add_position.php" method="post" style="display: none;">
+				<form id="newAddPositionForm" onsubmit="return prepNewAddPos();" action="../New%20Additional%20Position/new_add_position.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="newAddPosEmailAddress" name="emailAddress">
 					What is the employee's first name'?										<input type="text" placeholder="First Name?" id="newAddPosFirstName" name="newAddPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" id="newAddPosLastName" name="newAddPosLastName"/><br>
@@ -61,7 +61,7 @@
 				</form>
 
 			<!-- Termination -->
-				<form id="terminationForm" action="../Termination/termination.php" method="post" style="display: none;">
+				<form id="terminationForm" onsubmit="return prepTermination();" action="../Termination/termination.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="termEmailAddress" name="emailAddress">
 					What is the first name of the terminated employee?						<input type="text" placeholder="First Name?" id="termFirstName" name="termFirstName"/><br>
 					What is the last name of the terminated employee?						<input type="text" placeholder="Last Name?" id="termLastName" name="termLastName"/><br>

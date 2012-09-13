@@ -44,6 +44,55 @@ function removeById(elementID)
 	oldElement.parentNode.removeChild(oldElement);
 }
 
+
+
+/* 	A simple check for a valid email address.
+	From w3schools.com/js/js_form_validation.asp */
+function validEmail(email)
+{
+	var atpos=email.indexOf("@");
+	var dotpos=email.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+	{
+		alert("Please enter a valid e-mail address.");
+		return false;
+	}
+	return true;
+}
+
+/*	Simple check for a valid first name */
+function validFirstName(firstName)
+{
+	if(firstName == null || firstName == "" || !(/^[a-zA-Z\s\-]+$/.test(firstName)))
+	{
+		alert("Please enter a valid first name.");
+		return false;
+	}
+	return true;
+}
+
+/*	Simple check for a valid last name */
+function validLastName(lastName)
+{
+	if(lastName == null || lastName == "" || !(/^[a-zA-Z\s\-]+$/.test(lastName)))
+	{
+		alert("Please enter a valid last name.");
+		return false;
+	}
+	return true;
+}
+
+/* Confirms that a position was chosen (default for unchosen == 0) */
+function validPosition(position)
+{
+	if(position == 0)
+	{
+		alert("Please choose a position.");
+		return false;
+	}
+	return true;
+}
+
 // New Employee
 function newEmpSchoolDepartmentDD(newEmpsDivision)
 {
@@ -69,12 +118,25 @@ function newEmpPositionDD(newEmpsSchoolDepartment)
 
 function prepNewEmp()
 {
+	/* Check for valid form inputs */
+	var email = document.getElementById("newEmpEmailAddress").value;
+	var firstName = document.getElementById("newEmpFirstName").value;
+	var lastName = document.getElementById("newEmpLastName").value;
+	var position = document.getElementById("newEmpPosition").selectedIndex	// position of 0 means no choice was made
+	
+	if(!validEmail(email) || !validFirstName(firstName) || !validLastName(lastName) || !validPosition(position))
+	{
+		return false;
+	}
+		
 	document.getElementById("newEmpDivision").disabled = false;
 	document.getElementById("newEmpSchoolDepartment").disabled = false;
 
 	document.getElementById("newEmpDivisionHolder").value = document.getElementById("newEmpDivision").options[document.getElementById("newEmpDivision").selectedIndex].text;
 	document.getElementById("newEmpSchoolDepHolder").value = document.getElementById("newEmpSchoolDepartment").options[document.getElementById("newEmpSchoolDepartment").selectedIndex].text;
 	document.getElementById("newEmpPositionHolder").value = document.getElementById("newEmpPosition").options[document.getElementById("newEmpPosition").selectedIndex].text;
+
+	return true;
 }
 
 // New Position
@@ -124,6 +186,17 @@ function newPosPositionDD(newPosSchoolDepartment)
 
 function prepNewPos()
 {
+	/* Check for valid form inputs */
+	var email = document.getElementById("newPosEmailAddress").value;
+	var firstName = document.getElementById("newPosFirstName").value;
+	var lastName = document.getElementById("newPosLastName").value;
+	var oldPosition = document.getElementById("oldPosPosition").selectedIndex	// position of 0 means no choice was made
+	var newPosition = document.getElementById("newPosPosition").selectedIndex	// position of 0 means no choice was made
+	
+	if(!validEmail(email) || !validFirstName(firstName) || !validLastName(lastName) || !validPosition(oldPosition) || !validPosition(newPosition))
+	{
+		return false;
+	}
 	document.getElementById("newPosDivision").disabled = false;
 	document.getElementById("newPosSchoolDepartment").disabled = false;
 
@@ -137,6 +210,8 @@ function prepNewPos()
 	document.getElementById("oldPosDivisionHolder").value = document.getElementById("oldPosDivision").options[document.getElementById("oldPosDivision").selectedIndex].text;
 	document.getElementById("oldPosSchoolDepHolder").value = document.getElementById("oldPosSchoolDepartment").options[document.getElementById("oldPosSchoolDepartment").selectedIndex].text;
 	document.getElementById("oldPosPositionHolder").value = document.getElementById("oldPosPosition").options[document.getElementById("oldPosPosition").selectedIndex].text;
+
+	return true;
 }
 
 // Additional Position
@@ -164,11 +239,40 @@ function newAddPosPositionDD(newPosSchoolDepartment)
 
 function prepNewAddPos()
 {
+	/* Check for valid form inputs */
+	var email = document.getElementById("newAddPosEmailAddress").value;
+	var firstName = document.getElementById("newAddPosFirstName").value;
+	var lastName = document.getElementById("newAddPosLastName").value;
+	var position = document.getElementById("newAddPosPosition").selectedIndex	// position of 0 means no choice was made
+	
+	if(!validEmail(email) || !validFirstName(firstName) || !validLastName(lastName) || !validPosition(position))
+	{
+		return false;
+	}
+	
 	document.getElementById("newAddPosDivision").disabled = false;
 	document.getElementById("newAddPosSchoolDepartment").disabled = false;
 	document.getElementById("newAddPosDivisionHolder").value = document.getElementById("newAddPosDivision").options[document.getElementById("newAddPosDivision").selectedIndex].text;
 	document.getElementById("newAddPosSchoolDepHolder").value = document.getElementById("newAddPosSchoolDepartment").options[document.getElementById("newAddPosSchoolDepartment").selectedIndex].text;
 	document.getElementById("newAddPosPositionHolder").value = document.getElementById("newAddPosPosition").options[document.getElementById("newAddPosPosition").selectedIndex].text;
+
+	return true;
+}
+
+// Termination
+function prepTermination()
+{
+	/* Check for valid form inputs */
+	var email = document.getElementById("termEmailAddress").value;
+	var firstName = document.getElementById("termFirstName").value;
+	var lastName = document.getElementById("termLastName").value;
+	
+	if(!validEmail(email) || !validFirstName(firstName) || !validLastName(lastName))
+	{
+		return false;
+	}
+	return true;
+
 }
 
 
