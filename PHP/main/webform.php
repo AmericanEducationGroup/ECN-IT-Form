@@ -38,7 +38,7 @@
 			<!-- New Position -->
 				<form id="newPositionForm" onsubmit="return prepNewPos();" action="../New%20Position/new_position.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="newPosEmailAddress"  name="emailAddress">
-					What is the employee's first name'?										<input type="text" placeholder="First Name?" id="newPosFirstName" name="newPosFirstName"/><br>
+					What is the employee's first name?										<input type="text" placeholder="First Name?" id="newPosFirstName" name="newPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" id="newPosLastName" name="newPosLastName"/><br>	
 									
 					<h3>Old Position Details</h3>
@@ -51,7 +51,7 @@
 			<!-- Additional Position -->
 				<form id="newAddPositionForm" onsubmit="return prepNewAddPos();" action="../New%20Additional%20Position/new_add_position.php" method="post" style="display: none;">
 					What is your email address?												<input type="text" placeholder="Email Address?" id="newAddPosEmailAddress" name="emailAddress">
-					What is the employee's first name'?										<input type="text" placeholder="First Name?" id="newAddPosFirstName" name="newAddPosFirstName"/><br>
+					What is the employee's first name?										<input type="text" placeholder="First Name?" id="newAddPosFirstName" name="newAddPosFirstName"/><br>
 					What is the employee's last name?										<input type="text" placeholder="Last Name?" id="newAddPosLastName" name="newAddPosLastName"/><br>
 					<h3>Additional Position Details</h3>
 					What division is the new position in?									<?php require '../New Additional Position/newAddPosDivisionDD.php'; ?>
