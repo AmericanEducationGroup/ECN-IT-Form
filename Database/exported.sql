@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Sep 12, 2012 at 05:04 PM
+-- Generation Time: Sep 19, 2012 at 03:20 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -22,7 +22,7 @@ USE `ecnitdb`;
 -- Table structure for table `directory_owner`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 12, 2012 at 05:03 PM
+-- Last update: Sep 13, 2012 at 06:11 PM
 --
 
 DROP TABLE IF EXISTS `directory_owner`;
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `directory_owner` (
   PRIMARY KEY (`directoryOwnerID`),
   UNIQUE KEY `directory` (`directory`,`owner_position`),
   KEY `owner_position` (`owner_position`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=412 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=413 ;
 
 --
 -- Dumping data for table `directory_owner`
@@ -410,6 +410,7 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(369, 235, 18);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(370, 235, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(371, 235, 296);
+INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(412, 271, 14);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(373, 237, 18);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(374, 237, 231);
 INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`) VALUES(375, 238, 18);
@@ -530,7 +531,7 @@ INSERT INTO `distribution_groups` (`distributionGroupID`, `dgName`) VALUES(53, '
 -- Table structure for table `divisions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 04, 2012 at 12:50 PM
+-- Last update: Sep 19, 2012 at 03:14 PM
 --
 
 DROP TABLE IF EXISTS `divisions`;
@@ -539,7 +540,7 @@ CREATE TABLE IF NOT EXISTS `divisions` (
   `name` varchar(64) NOT NULL,
   PRIMARY KEY (`divisionID`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `divisions`
@@ -556,7 +557,7 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 -- Table structure for table `edit_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 12, 2012 at 05:03 PM
+-- Last update: Sep 13, 2012 at 06:19 PM
 --
 
 DROP TABLE IF EXISTS `edit_permissions`;
@@ -567,7 +568,7 @@ CREATE TABLE IF NOT EXISTS `edit_permissions` (
   PRIMARY KEY (`editPermissionID`),
   UNIQUE KEY `position` (`position`,`directory`),
   KEY `directory` (`directory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2636 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2638 ;
 
 --
 -- Dumping data for table `edit_permissions`
@@ -2143,6 +2144,7 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2360, 172, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2361, 185, 237);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2362, 198, 237);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2636, 14, 271);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1572, 1, 171);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1573, 2, 171);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(1574, 3, 171);
@@ -2673,6 +2675,7 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2632, 10, 267);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2633, 31, 267);
 INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2634, 32, 267);
+INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VALUES(2637, 15, 271);
 
 -- --------------------------------------------------------
 
@@ -3002,7 +3005,7 @@ INSERT INTO `positions` (`positionID`, `title`, `division`, `school_department`)
 -- Table structure for table `read_permissions`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 12, 2012 at 05:03 PM
+-- Last update: Sep 19, 2012 at 03:13 PM
 --
 
 DROP TABLE IF EXISTS `read_permissions`;
@@ -3082,7 +3085,7 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(114, 193, 35);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(115, 206, 35);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(116, 219, 35);
-INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(117, 35, 35);
+INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(117, 34, 35);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(118, 47, 35);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(119, 60, 35);
 INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VALUES(120, 73, 35);
@@ -4452,7 +4455,7 @@ INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES
 -- Table structure for table `schools_departments`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 04, 2012 at 02:35 PM
+-- Last update: Sep 19, 2012 at 03:15 PM
 --
 
 DROP TABLE IF EXISTS `schools_departments`;
@@ -4467,7 +4470,7 @@ CREATE TABLE IF NOT EXISTS `schools_departments` (
   UNIQUE KEY `name` (`name`),
   UNIQUE KEY `abbreviation` (`abbreviation`),
   KEY `division` (`division`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=52 ;
 
 --
 -- Dumping data for table `schools_departments`
@@ -5014,7 +5017,7 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 -- Table structure for table `source_directories`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 12, 2012 at 05:04 PM
+-- Last update: Sep 13, 2012 at 06:09 PM
 -- Last check: Aug 31, 2012 at 02:34 PM
 --
 
@@ -5026,7 +5029,7 @@ CREATE TABLE IF NOT EXISTS `source_directories` (
   PRIMARY KEY (`sourceDirectoryID`),
   UNIQUE KEY `name` (`name`,`parent`),
   KEY `parent` (`parent`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=271 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=272 ;
 
 --
 -- Dumping data for table `source_directories`
@@ -5266,6 +5269,7 @@ INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(233, 'Fusion Manhattan', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(234, 'Fusion Woodbury', 170);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(235, 'Fusion Westchester', 170);
+INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(271, 'SIS Experts', 6);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(237, 'Accounts Receivable', 65);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(238, 'Financial Information', 4);
 INSERT INTO `source_directories` (`sourceDirectoryID`, `name`, `parent`) VALUES(239, 'Fusion Solana Beach', 238);
