@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Sep 19, 2012 at 03:20 PM
+-- Generation Time: Sep 27, 2012 at 06:04 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -456,7 +456,7 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 -- Table structure for table `distribution_groups`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 05, 2012 at 03:10 PM
+-- Last update: Sep 27, 2012 at 05:36 PM
 --
 
 DROP TABLE IF EXISTS `distribution_groups`;
@@ -465,7 +465,7 @@ CREATE TABLE IF NOT EXISTS `distribution_groups` (
   `dgName` varchar(64) NOT NULL,
   PRIMARY KEY (`distributionGroupID`),
   UNIQUE KEY `dgName` (`dgName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=56 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;
 
 --
 -- Dumping data for table `distribution_groups`
@@ -2683,7 +2683,7 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 -- Table structure for table `positions`
 --
 -- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 05, 2012 at 03:01 PM
+-- Last update: Sep 26, 2012 at 07:31 PM
 --
 
 DROP TABLE IF EXISTS `positions`;
@@ -2696,7 +2696,7 @@ CREATE TABLE IF NOT EXISTS `positions` (
   UNIQUE KEY `title` (`title`,`division`,`school_department`),
   KEY `division` (`division`),
   KEY `school_department` (`school_department`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=299 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=300 ;
 
 --
 -- Dumping data for table `positions`
@@ -5017,7 +5017,7 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 -- Table structure for table `source_directories`
 --
 -- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 13, 2012 at 06:09 PM
+-- Last update: Sep 26, 2012 at 07:31 PM
 -- Last check: Aug 31, 2012 at 02:34 PM
 --
 
@@ -5029,7 +5029,7 @@ CREATE TABLE IF NOT EXISTS `source_directories` (
   PRIMARY KEY (`sourceDirectoryID`),
   UNIQUE KEY `name` (`name`,`parent`),
   KEY `parent` (`parent`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=272 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=273 ;
 
 --
 -- Dumping data for table `source_directories`
