@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: ecnitdb.db
--- Generation Time: Sep 27, 2012 at 06:04 PM
+-- Generation Time: Oct 02, 2012 at 08:49 PM
 -- Server version: 5.3.7
 -- PHP Version: 5.3.10-nfsn2
 
@@ -20,9 +20,6 @@ USE `ecnitdb`;
 
 --
 -- Table structure for table `directory_owner`
---
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 13, 2012 at 06:11 PM
 --
 
 DROP TABLE IF EXISTS `directory_owner`;
@@ -455,9 +452,6 @@ INSERT INTO `directory_owner` (`directoryOwnerID`, `directory`, `owner_position`
 --
 -- Table structure for table `distribution_groups`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 27, 2012 at 05:36 PM
---
 
 DROP TABLE IF EXISTS `distribution_groups`;
 CREATE TABLE IF NOT EXISTS `distribution_groups` (
@@ -465,7 +459,7 @@ CREATE TABLE IF NOT EXISTS `distribution_groups` (
   `dgName` varchar(64) NOT NULL,
   PRIMARY KEY (`distributionGroupID`),
   UNIQUE KEY `dgName` (`dgName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=59 ;
 
 --
 -- Dumping data for table `distribution_groups`
@@ -530,9 +524,6 @@ INSERT INTO `distribution_groups` (`distributionGroupID`, `dgName`) VALUES(53, '
 --
 -- Table structure for table `divisions`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 19, 2012 at 03:14 PM
---
 
 DROP TABLE IF EXISTS `divisions`;
 CREATE TABLE IF NOT EXISTS `divisions` (
@@ -555,9 +546,6 @@ INSERT INTO `divisions` (`divisionID`, `name`) VALUES(4, 'Little Sprouts');
 
 --
 -- Table structure for table `edit_permissions`
---
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 13, 2012 at 06:19 PM
 --
 
 DROP TABLE IF EXISTS `edit_permissions`;
@@ -2682,9 +2670,6 @@ INSERT INTO `edit_permissions` (`editPermissionID`, `position`, `directory`) VAL
 --
 -- Table structure for table `positions`
 --
--- Creation: Aug 20, 2012 at 06:51 PM
--- Last update: Sep 26, 2012 at 07:31 PM
---
 
 DROP TABLE IF EXISTS `positions`;
 CREATE TABLE IF NOT EXISTS `positions` (
@@ -3003,9 +2988,6 @@ INSERT INTO `positions` (`positionID`, `title`, `division`, `school_department`)
 
 --
 -- Table structure for table `read_permissions`
---
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 19, 2012 at 03:13 PM
 --
 
 DROP TABLE IF EXISTS `read_permissions`;
@@ -3870,9 +3852,6 @@ INSERT INTO `read_permissions` (`readPermissionID`, `position`, `directory`) VAL
 --
 -- Table structure for table `receive_dg`
 --
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 05, 2012 at 02:10 PM
---
 
 DROP TABLE IF EXISTS `receive_dg`;
 CREATE TABLE IF NOT EXISTS `receive_dg` (
@@ -4454,9 +4433,6 @@ INSERT INTO `receive_dg` (`receiveDGID`, `distributionGroup`, `position`) VALUES
 --
 -- Table structure for table `schools_departments`
 --
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 19, 2012 at 03:15 PM
---
 
 DROP TABLE IF EXISTS `schools_departments`;
 CREATE TABLE IF NOT EXISTS `schools_departments` (
@@ -4525,9 +4501,6 @@ INSERT INTO `schools_departments` (`schoolDepartmentID`, `name`, `abbreviation`,
 
 --
 -- Table structure for table `send_to_dg`
---
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 04, 2012 at 03:49 PM
 --
 
 DROP TABLE IF EXISTS `send_to_dg`;
@@ -5015,10 +4988,6 @@ INSERT INTO `send_to_dg` (`sendToDGID`, `distributionGroup`, `position`) VALUES(
 
 --
 -- Table structure for table `source_directories`
---
--- Creation: Aug 20, 2012 at 06:52 PM
--- Last update: Sep 26, 2012 at 07:31 PM
--- Last check: Aug 31, 2012 at 02:34 PM
 --
 
 DROP TABLE IF EXISTS `source_directories`;
