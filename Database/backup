@@ -1,0 +1,5 @@
+#!/bin/bash
+ssh americanedgroup_ecn-it-form@ssh.phx.nearlyfreespeech.net mysqldump --user=backup --password=0-backup --host=ecnitdb.db ecnitdb > c://xampp/htdocs/ECN-IT-Form/Database/exported3.sql
+git add -a
+git commit -m "backup"
+git push
