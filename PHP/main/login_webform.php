@@ -7,8 +7,9 @@
 	</head>
 	<body>
 		<form action="redirect_webform.php" method="post">
-					Web Form Password<br><input type="password" placeholder="Web Form Password?" name="pw"/>
+					<br><input type="password" placeholder="Web Form Password?" name="pw"/>
 					<br><input type="submit" />
+					<br>Please email marbogast if you need the password. 
 		</form>
 	</body>
 </html>
